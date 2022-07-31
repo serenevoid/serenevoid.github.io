@@ -5,7 +5,20 @@ date: 2022-07-24T23:04:04+05:30
 aliases: ["about-us","about-hugo","contact"]
 draft: false
 ---
-![Example image](van_hohenheim.jpg)
+
+<style>
+.avatar-user {
+    border-radius: 50% !important;
+}
+.width-full {
+    width: 25% !important;
+}
+.border {
+    border: 2px solid lightgrey !important;
+}
+</style>
+
+<img class="avatar-user width-full border" src="https://avatars.githubusercontent.com/u/41177205?v=4">
 
 Hi! My name is Void and I am a Software Engineer and has worked on tech 
 domains like web development, game development, workflow automations, CLI tool 
