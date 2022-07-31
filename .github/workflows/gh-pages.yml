@@ -1,10 +1,9 @@
 name: GitHub Pages Deploy
 
 on:
-  push:
+  pull_request:
     branches:
       - master  # Set a branch name to trigger deployment
-  pull_request:
 
 jobs:
   deploy:
@@ -19,10 +18,17 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Read .env
+        id: hugo-version
+        run: |
+          . ./.env
+          echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.85.0'
+          hugo-version: '${{ steps.hugo-version.outputs.HUGO_VERSION }}'
+          extended: true
 
       - name: Build
         run: hugo --minify
