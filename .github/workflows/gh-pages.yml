@@ -1,7 +1,7 @@
 name: GitHub Pages Deploy
 
 on:
-  pull_request:
+  push:
     branches:
       - master  # Set a branch name to trigger deployment
 
