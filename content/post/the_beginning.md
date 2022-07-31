@@ -8,6 +8,8 @@ draft: false
 The story of how I built a project in 2 weeks without any previous technical knowledge.
 <!--more-->
 
+<img src="https://wallpapercave.com/wp/wp1864279.jpg">
+
 When I walked into the training company I had signed up a month for, I wasn’t 
 expecting much of an internship experience. When you think about it, most 
 internships offered at a price are pretty much predictable; you meet instructors, 
