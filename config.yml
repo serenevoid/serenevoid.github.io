@@ -16,12 +16,12 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
+  title: Voice of the Void
   description: "A simple personal Blog site"
   keywords: [Blog, Portfolio]
   author: Void
   # author: ["Me", "You"] # multiple authors
-  images: [""]
+  images: ["https://avatars.githubusercontent.com/u/41177205"]
   DateFormat: "August 30, 2020"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -52,7 +52,7 @@ params:
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
