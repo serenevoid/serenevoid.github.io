@@ -1,24 +1,11 @@
 ---
 title: "About"
-description: "Hugo, the world’s fastest framework for building websites"
 date: 2022-07-24T23:04:04+05:30
-aliases: ["about-us","about-hugo","contact"]
+aliases: ["about-us","contact"]
 draft: false
 ---
 
-<style>
-.avatar-user {
-    border-radius: 50% !important;
-}
-.width-full {
-    width: 25% !important;
-}
-.border {
-    border: 2px solid lightgrey !important;
-}
-</style>
-
-<img class="avatar-user width-full border" src="https://avatars.githubusercontent.com/u/41177205?v=4">
+![profile](https://avatars.githubusercontent.com/u/41177205#center)
 
 Hi! My name is Void and I am a Software Engineer and has worked on tech 
 domains like web development, game development, workflow automations, CLI tool 
@@ -36,4 +23,4 @@ optimize and automate stuff because I love it. I always try to make work easier
 for my teammates by automating repetitive tasks.
 
 Other than tech stuff, my interests are pencil sketching, music production, 
-origami and singing.(I'm bad at it so please don't ask me to sing..)
+origami and singing.

@@ -8,7 +8,7 @@ draft: false
 The story of how I built a project in 2 weeks without any previous technical knowledge.
 <!--more-->
 
-<img src="https://wallpapercave.com/wp/wp1864279.jpg">
+![raspberrypi](https://wallpapercave.com/wp/wp1864279.jpg#center)
 
 When I walked into the training company I had signed up a month for, I wasn’t 
 expecting much of an internship experience. When you think about it, most 
