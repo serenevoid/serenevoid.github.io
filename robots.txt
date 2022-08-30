@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://serenevoid.github.com/voice-of-the-void/sitemap.xml
