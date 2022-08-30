@@ -5,9 +5,6 @@ date: 2022-07-24T23:41:24+05:30
 tags: ["non-tech", "motivation"]
 draft: false
 ---
-The story of how I built a project in 2 weeks without any previous technical knowledge.
-<!--more-->
-
 ![raspberrypi](https://wallpapercave.com/wp/wp1864279.jpg#center)
 
 When I walked into the training company I had signed up a month for, I wasn’t 
