@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Voice of the Void</title>
-    <link>https://serenevoid.github.com/voice-of-the-void/</link>
+    <link>https://serenevoid.github.io/voice-of-the-void/</link>
     <description>Recent content on Voice of the Void</description>
     <image>
-      <url>https://serenevoid.github.com/voice-of-the-void</url>
-      <link>https://serenevoid.github.com/voice-of-the-void</link>
+      <url>https://serenevoid.github.io/voice-of-the-void</url>
+      <link>https://serenevoid.github.io/voice-of-the-void</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 24 Jul 2022 23:41:24 +0530</lastBuildDate><atom:link href="https://serenevoid.github.com/voice-of-the-void/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jul 2022 23:41:24 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/voice-of-the-void/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I Broke My Computer Apart After Taking a Training: Here’s What I Learned.</title>
-      <link>https://serenevoid.github.com/voice-of-the-void/post/the_beginning/</link>
+      <link>https://serenevoid.github.io/voice-of-the-void/post/the_beginning/</link>
       <pubDate>Sun, 24 Jul 2022 23:41:24 +0530</pubDate>
       
-      <guid>https://serenevoid.github.com/voice-of-the-void/post/the_beginning/</guid>
+      <guid>https://serenevoid.github.io/voice-of-the-void/post/the_beginning/</guid>
       <description>The story of how I built a project in 2 weeks without any previous technical knowledge.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://serenevoid.github.com/voice-of-the-void/about/</link>
+      <link>https://serenevoid.github.io/voice-of-the-void/about/</link>
       <pubDate>Sun, 24 Jul 2022 23:04:04 +0530</pubDate>
       
-      <guid>https://serenevoid.github.com/voice-of-the-void/about/</guid>
+      <guid>https://serenevoid.github.io/voice-of-the-void/about/</guid>
       <description>Hi! My name is Void and I am a Software Engineer and has worked on tech domains like web development, game development, workflow automations, CLI tool building, image processing and more. I have also worked as a maths teacher/content developer and also led a team who was incharge of Visual Content Communication.
 I am fueled by my passion for understanding and learning about tech. Mostly about computer software. I&amp;rsquo;ll always consider myself as a student and I try to learn whenever possible.</description>
     </item>
