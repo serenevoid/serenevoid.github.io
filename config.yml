@@ -16,21 +16,21 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Voice of the Void
-  description: "A simple personal Blog site"
-  keywords: [Blog, Portfolio]
-  author: Void
+    # title: Voice of the Void
+    # description: "A simple personal Blog site"
+    # keywords: [Blog, Portfolio]
+    # author: Void
   # author: ["Me", "You"] # multiple authors
-  images: ["https://avatars.githubusercontent.com/u/41177205"]
-  DateFormat: "August 30, 2020"
+  # images: ""
+  # DateFormat: "January 2, 2009"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
