@@ -17,12 +17,11 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Voice of the Void
-  description: A simple personal Blog site
+  description: A personal Blog site and nothing more
   keywords: [Blog, Portfolio]
   author: Void
   # author: ["Me", "You"] # multiple authors
-  images: 
-  - https://avatars.githubusercontent.com/u/41177205?s=128&v=4
+  images: ""
   # DateFormat: "January 2, 2009"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
