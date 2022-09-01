@@ -114,8 +114,8 @@ menu:
       url: /tags/
       weight: 20
     - identifier: example
-      name: GitHub
-      url: https://github.com/serenevoid
+      name: Discord
+      url: https://discord.com/users/691560965308809237
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
