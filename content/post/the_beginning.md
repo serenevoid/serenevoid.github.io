@@ -49,9 +49,9 @@ impact. I wouldn’t have had the courage to openly ask simple questions to
 someone who was distinguished and experienced. But here, it was different. By 
 the end of the one-month training, I was enriched in more ways than one.
 
-So, if you did not land that prized internship offer and have to pay for 
-training in the summer, don’t be disheartened. There are plenty of things that 
-can come out of it if you have the will to learn and build and rebuild.
+> So, if you did not land that prized internship offer and have to pay for 
+> training in the summer, don’t be disheartened. There are plenty of things that 
+> can come out of it if you have the will to learn and build and rebuild.
 
 By senior year, I became identified as a technical person; I was helping other 
 people with their image processing projects. After college, I also worked at the 
