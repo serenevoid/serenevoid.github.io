@@ -5,7 +5,16 @@
     <link>https://serenevoid.github.io/voice-of-the-void/</link>
     <description>Recent content on Voice of the Void</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 07 Aug 2022 09:12:26 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/voice-of-the-void/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Aug 2022 00:09:28 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/voice-of-the-void/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Neovim with Lua</title>
+      <link>https://serenevoid.github.io/voice-of-the-void/post/neovim_setup/</link>
+      <pubDate>Sun, 21 Aug 2022 00:09:28 +0530</pubDate>
+      
+      <guid>https://serenevoid.github.io/voice-of-the-void/post/neovim_setup/</guid>
+      <description>An easy guide to get started with your first neovim setup</description>
+    </item>
+    
     <item>
       <title>Vim? Even in this era of advanced IDEs?</title>
       <link>https://serenevoid.github.io/voice-of-the-void/post/why_vim/</link>
