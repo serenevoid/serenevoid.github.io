@@ -95,7 +95,7 @@ that provides pairing of brackets and parentheses that is essential for a code
 editor.
 16. [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - A plugin 
 that has intelligent code commenting functionality.
-17. [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter") - 
+17. [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - 
 A plugin that provides a simple and easy way to interact with the treesitter inside neovim.
 Treesitter is an incremental parsing system for programming tools.
 18. [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - 

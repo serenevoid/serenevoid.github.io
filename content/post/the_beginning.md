@@ -5,7 +5,7 @@ date: 2022-07-24T23:41:24+05:30
 tags: ["non-tech", "motivation"]
 draft: false
 ---
-![raspberrypi](https://wallpapercave.com/wp/wp1864279.jpg#center)
+![raspberrypi](https://storables.com/wp-content/uploads/2020/05/connecting-thumb-drive-to-computer-1200x800.jpeg#center)
 
 When I walked into the training company I had signed up a month for, I wasn’t 
 expecting much of an internship experience. When you think about it, most 
