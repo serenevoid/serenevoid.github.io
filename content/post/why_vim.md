@@ -23,7 +23,7 @@ it was VIM. But I was awestruck seeing him navigate through the code.
 It was lightning fast. I couldn't even see how he moved through it even when he 
 was presenting his keyboard with a camera. 
 
-![Vim](https://hackaday.com/wp-content/uploads/2016/08/editor-wars-vim.jpg)
+![Vim](https://cdn.shopify.com/s/files/1/2563/1456/products/s_04f7cb89-be20-42fa-8e69-dee218b59adb_1200x1200.png)
 
 I have used VIM before and I didn't like it. It had a steeper learning curve and 
 I always felt I was so slow using it. But after watching him, I was convinced to 
