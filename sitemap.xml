@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/</loc>
+    <loc>https://serenevoid.github.io/</loc>
     <lastmod>2022-08-21T00:09:28+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/tags/neovim/</loc>
+    <loc>https://serenevoid.github.io/tags/neovim/</loc>
     <lastmod>2022-08-21T00:09:28+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/post/</loc>
+    <loc>https://serenevoid.github.io/post/</loc>
     <lastmod>2022-08-21T00:09:28+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/post/setting_up_neovim/</loc>
+    <loc>https://serenevoid.github.io/post/setting_up_neovim/</loc>
     <lastmod>2022-08-21T00:09:28+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/tags/</loc>
+    <loc>https://serenevoid.github.io/tags/</loc>
     <lastmod>2022-08-21T00:09:28+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/tags/tech/</loc>
+    <loc>https://serenevoid.github.io/tags/tech/</loc>
     <lastmod>2022-08-21T00:09:28+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/post/why_vim/</loc>
+    <loc>https://serenevoid.github.io/post/why_vim/</loc>
     <lastmod>2022-08-07T09:12:26+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/post/the_beginning/</loc>
+    <loc>https://serenevoid.github.io/post/the_beginning/</loc>
     <lastmod>2022-07-24T23:41:24+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/tags/motivation/</loc>
+    <loc>https://serenevoid.github.io/tags/motivation/</loc>
     <lastmod>2022-07-24T23:41:24+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/tags/non-tech/</loc>
+    <loc>https://serenevoid.github.io/tags/non-tech/</loc>
     <lastmod>2022-07-24T23:41:24+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/about/</loc>
+    <loc>https://serenevoid.github.io/about/</loc>
     <lastmod>2022-07-24T23:04:04+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/archives/</loc>
+    <loc>https://serenevoid.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/voice-of-the-void/categories/</loc>
+    <loc>https://serenevoid.github.io/categories/</loc>
   </url>
 </urlset>

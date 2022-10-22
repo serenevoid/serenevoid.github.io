@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Voice of the Void</title>
-    <link>https://serenevoid.github.io/voice-of-the-void/tags/</link>
+    <link>https://serenevoid.github.io/tags/</link>
     <description>Recent content in Tags on Voice of the Void</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 Aug 2022 00:09:28 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/voice-of-the-void/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Aug 2022 00:09:28 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>neovim</title>
-      <link>https://serenevoid.github.io/voice-of-the-void/tags/neovim/</link>
+      <link>https://serenevoid.github.io/tags/neovim/</link>
       <pubDate>Sun, 21 Aug 2022 00:09:28 +0530</pubDate>
       
-      <guid>https://serenevoid.github.io/voice-of-the-void/tags/neovim/</guid>
+      <guid>https://serenevoid.github.io/tags/neovim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tech</title>
-      <link>https://serenevoid.github.io/voice-of-the-void/tags/tech/</link>
+      <link>https://serenevoid.github.io/tags/tech/</link>
       <pubDate>Sun, 21 Aug 2022 00:09:28 +0530</pubDate>
       
-      <guid>https://serenevoid.github.io/voice-of-the-void/tags/tech/</guid>
+      <guid>https://serenevoid.github.io/tags/tech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>motivation</title>
-      <link>https://serenevoid.github.io/voice-of-the-void/tags/motivation/</link>
+      <link>https://serenevoid.github.io/tags/motivation/</link>
       <pubDate>Sun, 24 Jul 2022 23:41:24 +0530</pubDate>
       
-      <guid>https://serenevoid.github.io/voice-of-the-void/tags/motivation/</guid>
+      <guid>https://serenevoid.github.io/tags/motivation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>non-tech</title>
-      <link>https://serenevoid.github.io/voice-of-the-void/tags/non-tech/</link>
+      <link>https://serenevoid.github.io/tags/non-tech/</link>
       <pubDate>Sun, 24 Jul 2022 23:41:24 +0530</pubDate>
       
-      <guid>https://serenevoid.github.io/voice-of-the-void/tags/non-tech/</guid>
+      <guid>https://serenevoid.github.io/tags/non-tech/</guid>
       <description></description>
     </item>
     
