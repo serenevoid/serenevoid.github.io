@@ -3,21 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://serenevoid.github.io/</loc>
-    <lastmod>2022-08-21T00:09:28+05:30</lastmod>
+    <lastmod>2022-08-28T09:12:26+05:30</lastmod>
+  </url><url>
+    <loc>https://serenevoid.github.io/tags/blog/</loc>
+    <lastmod>2022-08-28T09:12:26+05:30</lastmod>
+  </url><url>
+    <loc>https://serenevoid.github.io/post/</loc>
+    <lastmod>2022-08-28T09:12:26+05:30</lastmod>
+  </url><url>
+    <loc>https://serenevoid.github.io/post/why_hugo/</loc>
+    <lastmod>2022-08-28T09:12:26+05:30</lastmod>
+  </url><url>
+    <loc>https://serenevoid.github.io/tags/</loc>
+    <lastmod>2022-08-28T09:12:26+05:30</lastmod>
+  </url><url>
+    <loc>https://serenevoid.github.io/tags/tech/</loc>
+    <lastmod>2022-08-28T09:12:26+05:30</lastmod>
   </url><url>
     <loc>https://serenevoid.github.io/tags/neovim/</loc>
     <lastmod>2022-08-21T00:09:28+05:30</lastmod>
   </url><url>
-    <loc>https://serenevoid.github.io/post/</loc>
-    <lastmod>2022-08-21T00:09:28+05:30</lastmod>
-  </url><url>
     <loc>https://serenevoid.github.io/post/setting_up_neovim/</loc>
-    <lastmod>2022-08-21T00:09:28+05:30</lastmod>
-  </url><url>
-    <loc>https://serenevoid.github.io/tags/</loc>
-    <lastmod>2022-08-21T00:09:28+05:30</lastmod>
-  </url><url>
-    <loc>https://serenevoid.github.io/tags/tech/</loc>
     <lastmod>2022-08-21T00:09:28+05:30</lastmod>
   </url><url>
     <loc>https://serenevoid.github.io/post/why_vim/</loc>
