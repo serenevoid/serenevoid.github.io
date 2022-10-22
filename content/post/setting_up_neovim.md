@@ -5,7 +5,7 @@ date: 2022-08-21T00:09:28+05:30
 tags: ["tech", "neovim"]
 draft: false
 ---
-![nvim_screenshot](/voice-of-the-void/nvim_rust.png)
+![nvim_screenshot](/neovim.png)
 ## Introduction:
 
 Setting up your text editor to make it suitable for programming is the most 
