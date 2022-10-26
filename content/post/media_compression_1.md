@@ -63,7 +63,7 @@ lot more color and is good for complex images with lots of color such as
 photographs (just like JPEG), while PNG-8 is more optimized for things with 
 simple colors, such as logos and user interface elements like icons and buttons.
 
-![comparison of png formats](http://scan-slides.com/images/options/bitDepth.png#center)
+![comparison of png formats](https://3.bp.blogspot.com/-hPeh-mgO_Qo/URQZ5h5OYwI/AAAAAAAAAF4/C0UICByhZLE/s1600/color_depth.jpg#center)
 
 With an 8-bit color depth, there are 256 colors. With 24-bit color depth, there 
 are 16,777,216 colors. As you can see, there will be a significant reduction in 
