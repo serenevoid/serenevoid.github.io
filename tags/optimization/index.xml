@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Optimization on Voice of the Void</title>
+    <link>https://serenevoid.github.io/tags/optimization/</link>
+    <description>Recent content in Optimization on Voice of the Void</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 25 Sep 2022 16:50:00 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Should you compress media when uploading them online? - Part 2</title>
+      <link>https://serenevoid.github.io/post/media_compression_2/</link>
+      <pubDate>Sun, 25 Sep 2022 16:50:00 +0000</pubDate>
+      
+      <guid>https://serenevoid.github.io/post/media_compression_2/</guid>
+      <description>Compressing audio and video files.</description>
+    </item>
+    
+    <item>
+      <title>Should you compress media when uploading them online? - Part 1</title>
+      <link>https://serenevoid.github.io/post/media_compression_1/</link>
+      <pubDate>Sun, 11 Sep 2022 12:50:00 +0000</pubDate>
+      
+      <guid>https://serenevoid.github.io/post/media_compression_1/</guid>
+      <description>Here is how you can compress your media with CLI tools or websites.</description>
+    </item>
+    
+  </channel>
+</rss>

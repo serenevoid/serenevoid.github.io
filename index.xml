@@ -5,7 +5,25 @@
     <link>https://serenevoid.github.io/</link>
     <description>Recent content on Voice of the Void</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Aug 2022 09:12:26 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 16:50:00 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Should you compress media when uploading them online? - Part 2</title>
+      <link>https://serenevoid.github.io/post/media_compression_2/</link>
+      <pubDate>Sun, 25 Sep 2022 16:50:00 +0000</pubDate>
+      
+      <guid>https://serenevoid.github.io/post/media_compression_2/</guid>
+      <description>Compressing audio and video files.</description>
+    </item>
+    
+    <item>
+      <title>Should you compress media when uploading them online? - Part 1</title>
+      <link>https://serenevoid.github.io/post/media_compression_1/</link>
+      <pubDate>Sun, 11 Sep 2022 12:50:00 +0000</pubDate>
+      
+      <guid>https://serenevoid.github.io/post/media_compression_1/</guid>
+      <description>Here is how you can compress your media with CLI tools or websites.</description>
+    </item>
+    
     <item>
       <title>Setting up a Personal Blog - So Simple Even Kids Do It</title>
       <link>https://serenevoid.github.io/post/why_hugo/</link>
