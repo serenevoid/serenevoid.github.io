@@ -2,7 +2,7 @@
 title: "I Broke My Computer Apart After Taking a Training: Here’s What I Learned."
 description: "The story of how I built a project in 2 weeks without any previous technical knowledge."
 date: 2022-07-24T23:41:24+05:30
-tags: ["non-tech", "motivation"]
+tags: ["Non-Tech", "Motivation"]
 draft: false
 ---
 ![raspberrypi](https://storables.com/wp-content/uploads/2020/05/connecting-thumb-drive-to-computer-1200x800.jpeg#center)

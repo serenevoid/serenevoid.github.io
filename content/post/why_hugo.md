@@ -2,7 +2,7 @@
 title: "Setting up a Personal Blog - So Simple Even Kids Do It"
 description: "A guide to create your own personal blog and host it for free"
 date: 2022-08-28T09:12:26+05:30
-tags: ["tech", "blog"]
+tags: ["Tech", "Blog"]
 draft: false
 ---
 ![blog-writing](https://www.iwriter.com/blog/wp-content/uploads/2019/01/writing-blogs-748x335.jpeg#center)
