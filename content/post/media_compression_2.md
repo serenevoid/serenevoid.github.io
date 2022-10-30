@@ -59,6 +59,8 @@ solution for all your basic audio and video processing needs.
 2. [mp3smaller](https://mp3smaller.com/) is a free online converter used 
 by many. It converts mp3 files to different bit rates.
 
+----
+
 ## Video
 The last type of media we send is videos. And they are the bulkiest among the 
 other two types. It also has more file types for all use cases.

@@ -1,6 +1,6 @@
 baseURL: "https://serenevoid.github.io/"
 title: Voice of the Void
-paginate: 4
+paginate: 8
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -27,7 +27,7 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -57,10 +57,10 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: Voice-of-the-void
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    enabled: true # needs to be explicitly set
+    title: Voice of the Void
+    subtitle: "Welcome to my personal blog site."
+    imageUrl: "https://avatars.githubusercontent.com/u/41177205"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
