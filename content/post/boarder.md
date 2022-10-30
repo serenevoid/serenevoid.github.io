@@ -1,5 +1,5 @@
 ---
-title: "My first serious side project worth showing people"
+title: "My second serious side project worth showing people"
 description: "A cli tool I built as a side project"
 date: 2022-11-06T10:59:02Z
 tags: ["Tech", "Go", "Tool"]
