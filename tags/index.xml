@@ -5,40 +5,22 @@
     <link>https://serenevoid.github.io/tags/</link>
     <description>Recent content in Tags on Voice of the Void</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Nov 2022 10:59:02 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Go</title>
-      <link>https://serenevoid.github.io/tags/go/</link>
-      <pubDate>Sun, 06 Nov 2022 10:59:02 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>https://serenevoid.github.io/tags/tech/</link>
-      <pubDate>Sun, 06 Nov 2022 10:59:02 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/tags/tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tool</title>
-      <link>https://serenevoid.github.io/tags/tool/</link>
-      <pubDate>Sun, 06 Nov 2022 10:59:02 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/tags/tool/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 23 Oct 2022 23:59:02 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Neovim</title>
       <link>https://serenevoid.github.io/tags/neovim/</link>
       <pubDate>Sun, 23 Oct 2022 23:59:02 +0000</pubDate>
       
       <guid>https://serenevoid.github.io/tags/neovim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://serenevoid.github.io/tags/tech/</link>
+      <pubDate>Sun, 23 Oct 2022 23:59:02 +0000</pubDate>
+      
+      <guid>https://serenevoid.github.io/tags/tech/</guid>
       <description></description>
     </item>
     
@@ -66,6 +48,15 @@
       <pubDate>Sun, 25 Sep 2022 16:50:00 +0000</pubDate>
       
       <guid>https://serenevoid.github.io/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>https://serenevoid.github.io/tags/tool/</link>
+      <pubDate>Sun, 25 Sep 2022 16:50:00 +0000</pubDate>
+      
+      <guid>https://serenevoid.github.io/tags/tool/</guid>
       <description></description>
     </item>
     
