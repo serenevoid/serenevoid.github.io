@@ -53,7 +53,7 @@ a folder `~/wiki/diary/` and open a file within that directory with the current 
 
 One of the challenges was to get the home directory of the OS. It varied for Windows 
 and Linux. So I had to take help from a plugin called 
-[Plenary](https://github.com/nvim-lua/plenary.nvim).
+[plenary.nvim](https://github.com/nvim-lua/plenary.nvim).
 
 ```lua
 local Path = require("plenary.path")
