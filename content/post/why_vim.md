@@ -57,6 +57,8 @@ just like how VSCode was before. But it changed soon. I became faster in
 codebase navigation, text editing, and overall developer experience. I was enjoying 
 it a lot.
 
+![meme](https://i.redd.it/aqc4zgj3ghw91.jpg#center)
+
 It was at that point that I was confident enough to uninstall VSCode from my system.
 I did that and I knew I'll never regret this decision. Well I switched from VIM 
 to [Neovim](https://neovim.io/) but never had to go back to VSCode or other non-modal 
