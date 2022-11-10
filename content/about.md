@@ -3,6 +3,7 @@ title: "About"
 date: 2022-07-24T23:04:04+05:30
 aliases: ["about-us","contact"]
 draft: false
+hideMeta: true
 ---
 
 ![profile](https://avatars.githubusercontent.com/u/41177205#center)
