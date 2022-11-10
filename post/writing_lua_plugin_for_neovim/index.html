@@ -63,9 +63,9 @@ result.</p><div class=highlight><pre tabindex=0 class=chroma><code class=languag
 </span></span><span class=line><span class=cl>    <span class=n>vim.api</span><span class=p>.</span><span class=n>nvim_win_set_buf</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=n>bufnr</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=kr>end</span>
 </span></span></code></pre></div><p>I added a keymap to toggle the states of a todo task in markdown. A todo task in
-markdown has two states.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=k>- [ ]</span> Todo
-</span></span><span class=line><span class=cl><span class=k>- [x]</span> Complete
-</span></span></code></pre></div><p>But I added one more state to show the task is in progress.</p><pre tabindex=0><code>- [ ] Todo
+markdown has two states.</p><pre tabindex=0><code>- [ ] Todo
+- [x] Complete
+</code></pre><p>But I added one more state to show the task is in progress.</p><pre tabindex=0><code>- [ ] Todo
 - [-] In Progress
 - [x] Complete
 </code></pre><p>So the toggle options cycled between these three when I pressed the keymaps.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=n>wiki.toggle_todo</span> <span class=o>=</span> <span class=kr>function</span><span class=p>()</span>
