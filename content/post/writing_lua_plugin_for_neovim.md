@@ -127,7 +127,10 @@ markdown has two states.
 But I added one more state to show the task is in progress. 
 ```
 - [ ] Todo
+- [_] Cancelled
 - [-] In Progress
+- [!] Urgent
+- [?] Query
 - [x] Complete
 ```
 
@@ -153,15 +156,19 @@ wiki.toggle_todo = function()
     if line:sub(box_start + 2, box_start + 2) == "]" then
         box_end = box_start + 2
     end
+    local todo_options = { " ", "_", "-", "!", "?", "x" }
     local state = line:sub(box_start + 1, box_start + 1)
-    if state == " " then
-        state = "-"
-    elseif state == "-" then
-        state = "x"
-    elseif state == "x" then
-        state = " "
+    for i, v in ipairs(todo_options) do
+        if v == state then
+            if i == table.maxn(todo_options) then
+                i = 0
+            end
+            state = todo_options[i + 1]
+            break
+        end
     end
-    local newline = line:sub(0, box_start) .. state .. line:sub(box_end, string.len(line))
+    local newline = line:sub(0, box_start) ..
+        state .. line:sub(box_end, string.len(line))
     vim.api.nvim_set_current_line(newline)
 end
 ```
