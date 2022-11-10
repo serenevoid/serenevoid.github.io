@@ -120,7 +120,7 @@ end
 
 I added a keymap to toggle the states of a todo task in markdown. A todo task in 
 markdown has two states.
-```markdown
+```
 - [ ] Todo
 - [x] Complete
 ```
