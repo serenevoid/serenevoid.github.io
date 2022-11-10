@@ -124,7 +124,7 @@ markdown has two states.
 - [ ] Todo
 - [x] Complete
 ```
-But I added one more state to show the task is in progress. 
+But I added few more states to show the status of the task.
 ```
 - [ ] Todo
 - [_] Cancelled
