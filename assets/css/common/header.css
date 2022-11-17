@@ -146,6 +146,7 @@ body:not(.dark) #sun {
         display: flex;
         align-items: center;
         justify-content: center;
+        background: var(--border)
     }
 
     #menu-overlay .active {
