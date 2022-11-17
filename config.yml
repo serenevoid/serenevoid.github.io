@@ -61,8 +61,8 @@ params:
     title: Voice of the Void
     subtitle: "Welcome to my personal blog site."
     imageUrl: "https://avatars.githubusercontent.com/u/41177205"
-    imageWidth: 120
-    imageHeight: 120
+    imageWidth: 180
+    imageHeight: 180
     imageTitle: my image
     buttons:
       - name: Posts
@@ -109,10 +109,6 @@ menu:
       name: Archives
       url: /archives
       weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
     - identifier: contact
       name: Discord
       url: https://discord.com/users/691560965308809237
