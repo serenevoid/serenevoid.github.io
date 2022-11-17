@@ -110,9 +110,9 @@ menu:
       url: /archives
       weight: 10
     - identifier: contact
-      name: Discord
-      url: https://discord.com/users/691560965308809237
-      weight: 30
+      name: Contact Me
+      url: /contact
+      weight: 10
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:

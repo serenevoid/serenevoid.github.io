@@ -1,0 +1,83 @@
+<div class="form-group row">
+  <label for="name" class="col-4 col-form-label">Name</label>
+  <div class="col-8">
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="fa fa-user"></i>
+      </div>
+      <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
+    </div>
+  </div>
+</div>
+<div class="form-group row">
+  <label for="email" class="col-4 col-form-label">E-mail address</label>
+  <div class="col-8">
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
+    </div>
+  </div>
+</div>
+<div class="form-group row">
+  <label for="message" class="col-4 col-form-label">Message</label>
+  <div class="col-8">
+    <textarea id="message" name="message" required="required" class="form-control"></textarea>
+  </div>
+</div>
+<div class="button-layer form-group row">
+  <div class="offset-4 col-8">
+    <button name="submit" type="submit" class="btn btn-primary" onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<style>
+.input-group {
+    background: var(--primary);
+    padding: 10px;
+}
+
+#message {
+    background: var(--primary);
+    padding: 10px;
+    width: 100%;
+}
+
+.button-layer {
+    width: 100%;
+    display: flex;
+    padding: 12px 16px 12px 16px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 16px;
+    background: var(--tertiary);
+}
+</style>
+
+<script>
+    function sendMessage() {
+      var name = document.getElementById("name");
+      var email = document.getElementById("email");
+      var message = document.getElementById("message");
+
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1042856908798820473/4Bbd9KHjsezmlSTEBqEUcMfV9OSkFqrcXBrwbR96tAlO1DFiiTudVNgOJmXq4ppBhxhM");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "Blog - Contact Me",
+        avatar_url: "",
+        content: `**Name**: ${name.value}\n**Email**: ${email.value}\n**Message**: ${message.value}`
+      }
+
+      request.send(JSON.stringify(params));
+      let isAccepted = window.confirm("Message Delivered");
+      if (isAccepted) {
+            window.open("https://serenevoid.github.io/", "_oarent");
+      }
+    }
+</script>
