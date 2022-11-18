@@ -21,7 +21,8 @@ params:
   keywords: [Blog, Portfolio]
   author: Void
   # author: ["Me", "You"] # multiple authors
-  images: ""
+  images:
+  - https://avatars.githubusercontent.com/u/41177205?v=4?s=400
   # DateFormat: "January 2, 2009"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
