@@ -62,10 +62,10 @@ wg_7920373
 
 ### Screenshots
 - Terminal View
-![Terminal](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/terminal.png "Terminal")
+![Terminal](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/terminal.webp "Terminal")
 - Normal View
-![Normal Mode](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/normal_mode.png "Normal Mode")
+![Normal Mode](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/normal_mode.webp "Normal Mode")
 - Preview Mode
-![Preview Mode](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/preview_mode.png "Preview Mode")
+![Preview Mode](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/preview_mode.webp "Preview Mode")
 
 ### [Download](https://github.com/serenevoid/boarder/releases/latest/)
