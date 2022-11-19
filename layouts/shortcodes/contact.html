@@ -87,9 +87,12 @@
       }
 
       request.send(JSON.stringify(params));
-      let isAccepted = window.confirm("Message Delivered");
-      if (isAccepted) {
+      request.onload = () => {
+          console.log(request.status)
+        if (request.status == 204)
             window.open("https://serenevoid.github.io/", "_parent");
-      }
+        else 
+            alert("Cannot send message to the Author")
+      };
     }
 </script>
