@@ -91,34 +91,5 @@
       <description>The story of how I built a project in 2 weeks without any previous technical knowledge.</description>
     </item>
     
-    <item>
-      <title>About</title>
-      <link>https://serenevoid.github.io/about/</link>
-      <pubDate>Sun, 24 Jul 2022 23:04:04 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/about/</guid>
-      <description>Hi! My name is Void and I am a Software Engineer and has worked on tech domains like web development, game development, workflow automations, CLI tool building, image processing and more. I have also worked as a maths teacher/content developer and also led a team who was incharge of Visual Content Communication.
-I am fueled by my passion for understanding and learning about tech. Mostly about computer software. I&amp;rsquo;ll always consider myself as a student and I try to learn whenever possible.</description>
-    </item>
-    
-    <item>
-      <title>Contact me</title>
-      <link>https://serenevoid.github.io/contact/</link>
-      <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/contact/</guid>
-      <description> Name E-mail address Message Send </description>
-    </item>
-    
-    <item>
-      <title>Dashboard</title>
-      <link>https://serenevoid.github.io/dashboard/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/dashboard/</guid>
-      <description> Pages Views post/boarder.md post/writing_lua_plugin_for_neovim.md post/broadening_knowledge.md post/media_compression_2.md post/media_compression_1.md post/why_hugo.md post/setting_up_neovim.md post/why_vim.md post/the_beginning.md about.md contact.md dashboard.md archives.md </description>
-    </item>
-    
-    
   </channel>
 </rss>
