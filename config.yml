@@ -22,7 +22,7 @@ params:
   author: Void
   # author: ["Me", "You"] # multiple authors
   images:
-  - https://avatars.githubusercontent.com/u/41177205?v=4?s=400
+  - cover.png
   # DateFormat: "January 2, 2009"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -60,11 +60,11 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Voice of the Void
-    subtitle: "Welcome to my personal blog site."
-    imageUrl: "https://avatars.githubusercontent.com/u/41177205"
+    subtitle: "A Linux Enthusiast, Software Engineer, and a normal human."
+    imageUrl: "profile.webp"
     imageWidth: 180
     imageHeight: 180
-    imageTitle: my image
+    imageTitle: profile
     buttons:
       - name: Posts
         url: posts

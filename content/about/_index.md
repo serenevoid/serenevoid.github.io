@@ -6,9 +6,7 @@ draft: false
 hideMeta: true
 ---
 
-![profile](https://avatars.githubusercontent.com/u/41177205#center)
-
-Hi! My name is Void and I am a Software Engineer and has worked on tech 
+Hi! My name is Aju. I am a Software Engineer and has worked on tech 
 domains like web development, game development, workflow automations, CLI tool 
 building, image processing and more.
 I have also worked as a maths teacher/content developer and also led a team who 
