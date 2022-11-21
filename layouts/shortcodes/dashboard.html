@@ -38,7 +38,7 @@
     var numberOfRows = table.rows.length;
     var namespace = window.location.hostname.split(".").filter(String).join("_");
     for (let i = 1; i < numberOfRows; i++) {
-        let post_name = table.rows[i].children[0].innerText.replaceALl(".md", "").replaceALl("/", "_");
+        let post_name = table.rows[i].children[0].innerText.replaceAll(".md", "").replaceALl("/", "_");
         var xhttpviews = new XMLHttpRequest();
         xhttpviews.onload = function () {
             // if (this.status != 200) return;
@@ -70,7 +70,6 @@
         var url = "https://api.countapi.xyz/get/" + namespace + "/" + post_name + "_view";
         xhttpviews.open("GET", url, true);
         xhttpviews.send();
-        console.log(url)
     }
     function delete_element(arr, i) {
         n = arr.length - 1;
