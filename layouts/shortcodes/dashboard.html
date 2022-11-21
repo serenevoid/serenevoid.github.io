@@ -36,7 +36,7 @@
 <script>
     var table = document.getElementById("table");
     var numberOfRows = table.rows.length;
-    var namespace = window.location.hostname;
+    var namespace = window.location.hostname.replace(".", "_");
     for (let i = 1; i < numberOfRows; i++) {
         let post_name = table.rows[i].children[0].innerText.replace(".md", "").replace("/", "_");
         var xhttpviews = new XMLHttpRequest();
@@ -67,8 +67,10 @@
                 }
             }
         };
-        xhttpviews.open("GET", "https://api.countapi.xyz/get/" + namespace + "/" + post_name + "_view", true);
+        var url = "https://api.countapi.xyz/get/" + namespace + "/" + post_name + "_view";
+        xhttpviews.open("GET", url, true);
         xhttpviews.send();
+        console.log(url)
     }
     function delete_element(arr, i) {
         n = arr.length - 1;
