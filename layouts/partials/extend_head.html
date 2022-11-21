@@ -7,9 +7,9 @@
         var namespace = window.location.hostname.split(".").filter(String).join("_");
         var key = window.location.pathname.split("/").filter(String).join("_");
         if (!key) key = "home";
-        url = "https://api.countapi.xyz/hit/" + namespace + "/" + key
+        url = "https://api.countapi.xyz/hit/" + namespace + "/" + key + "_view"
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", url, false);
+        xmlHttp.open("GET", url, true);
         xmlHttp.send(null);
     }
 </script>
