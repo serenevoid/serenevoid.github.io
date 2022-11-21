@@ -36,9 +36,9 @@
 <script>
     var table = document.getElementById("table");
     var numberOfRows = table.rows.length;
-    var namespace = window.location.hostname.replace(".", "_");
+    var namespace = window.location.hostname.split(".").filter(String).join("_");
     for (let i = 1; i < numberOfRows; i++) {
-        let post_name = table.rows[i].children[0].innerText.replace(".md", "").replace("/", "_");
+        let post_name = table.rows[i].children[0].innerText.replaceALl(".md", "").replaceALl("/", "_");
         var xhttpviews = new XMLHttpRequest();
         xhttpviews.onload = function () {
             // if (this.status != 200) return;
