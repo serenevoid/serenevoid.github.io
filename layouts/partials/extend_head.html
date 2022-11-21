@@ -4,6 +4,7 @@
 {{- /* Head custom content area end */ -}}
 <script>
     if (window.location.hostname != "localhost") {
+        if (!{{ .IsPage }}) return;
         var namespace = window.location.hostname.split(".").filter(String).join("_");
         var key = window.location.pathname.split("/").filter(String).join("_");
         if (!key) key = "home";
