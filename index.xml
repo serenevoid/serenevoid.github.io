@@ -110,6 +110,15 @@ I am fueled by my passion for understanding and learning about tech. Mostly abou
       <description> Name E-mail address Message Send </description>
     </item>
     
+    <item>
+      <title>Dashboard</title>
+      <link>https://serenevoid.github.io/dashboard/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://serenevoid.github.io/dashboard/</guid>
+      <description> Pages Views post/boarder.md post/writing_lua_plugin_for_neovim.md post/broadening_knowledge.md post/media_compression_2.md post/media_compression_1.md post/why_hugo.md post/setting_up_neovim.md post/why_vim.md post/the_beginning.md about.md contact.md dashboard.md archives.md </description>
+    </item>
+    
     
   </channel>
 </rss>
