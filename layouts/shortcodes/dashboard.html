@@ -1,0 +1,81 @@
+<div class="dashboard-container">
+    <table id="table">
+        <tr>
+            <th>
+                <h3>Pages</h3>
+            </th>
+            <th>
+                <h3>Views</h3>
+            </th>
+        </tr>
+        {{ range .Site.RegularPages }}
+        <tr>
+            <td>{{ .File.Path }}</td>
+            <td></td>
+        </tr>
+        {{ end }}
+    </table>
+</div>
+
+<style>
+    .dashboard-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<script>
+    var table = document.getElementById("table");
+    var numberOfRows = table.rows.length;
+    var namespace = window.location.hostname;
+    for (let i = 1; i < numberOfRows; i++) {
+        let post_name = table.rows[i].children[0].innerText.replace(".md", "").replace("/", "_");
+        var xhttpviews = new XMLHttpRequest();
+        xhttpviews.onload = function () {
+            // if (this.status != 200) return;
+            var value = JSON.parse(this.response).value
+            table.rows[i].children[1].innerText = `${value}`;
+            // table.rows[i].children[1].innerText = `${i}`;
+            if (i == numberOfRows - 1) {
+                let table_contents = [];
+                for (let j = 1; j < numberOfRows; j++) {
+                    table_contents.push({
+                        post_name: table.rows[j].children[0].innerText,
+                        views: Number(table.rows[j].children[1].innerText),
+                    })
+                }
+                let smallest_index = 0;
+                while (table_contents.length != 0) {
+                    for (let j = 0; j < table_contents.length; j++) {
+                        if (table_contents[j]["views"] < table_contents[smallest_index]["views"]) {
+                            smallest_index = j;
+                        }
+                    }
+                    let pos = table_contents.length;
+                    table.rows[pos].children[0].innerText = `${table_contents[smallest_index].post_name}`;
+                    table.rows[pos].children[1].innerText = `${table_contents[smallest_index].views}`;
+                    table_contents = delete_element(table_contents, smallest_index);
+                    console.log(table_contents);
+                }
+            }
+        };
+        xhttpviews.open("GET", "https://api.countapi.xyz/get/" + namespace + "/" + post_name + "_view", true);
+        xhttpviews.send();
+    }
+    function delete_element(arr, i) {
+        n = arr.length - 1;
+        for (let j = i; j < n; j++)
+            arr[j] = arr[j + 1];
+        arr.length = n;
+        return arr
+    }
+</script>
