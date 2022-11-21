@@ -4,13 +4,14 @@
 {{- /* Head custom content area end */ -}}
 <script>
     if (window.location.hostname != "localhost") {
-        if (!{{ .IsPage }}) return;
-        var namespace = window.location.hostname.split(".").filter(String).join("_");
-        var key = window.location.pathname.split("/").filter(String).join("_");
-        if (!key) key = "home";
-        url = "https://api.countapi.xyz/hit/" + namespace + "/" + key + "_view"
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", url, true);
-        xmlHttp.send(null);
+        if (!{{ .IsPage }}) {
+            var namespace = window.location.hostname.split(".").filter(String).join("_");
+            var key = window.location.pathname.split("/").filter(String).join("_");
+            if (!key) key = "home";
+            url = "https://api.countapi.xyz/hit/" + namespace + "/" + key + "_view"
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", url, true);
+            xmlHttp.send(null);
+        }
     }
 </script>
