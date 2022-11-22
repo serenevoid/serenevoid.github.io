@@ -60,7 +60,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Voice of the Void
-    subtitle: "A Linux Enthusiast, Software Engineer, and a normal human."
+    subtitle: "Software Engineer + Linux Enthusiast"
     imageUrl: "profile.webp"
     imageWidth: 180
     imageHeight: 180
