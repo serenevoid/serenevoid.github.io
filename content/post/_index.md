@@ -2,5 +2,5 @@
 aliases = ["posts","articles","blog","showcase","docs"]
 title = "Posts"
 author = "Void"
-ShowRssButtonInSectionTermList= true
+ShowRssButtonInSectionTermList= false
 +++

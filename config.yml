@@ -77,6 +77,14 @@ params:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
 
+  socialIcons:
+    - name: github
+      url: "https://github.com/serenevoid"
+    - name: discord
+      url: "https://discord.com/users/691560965308809237"
+    - name: Rss
+      url: "index.xml"
+
   analytics:
     google:
       SiteVerificationTag: ""
@@ -110,6 +118,10 @@ menu:
     - identifier: archives
       name: Archives
       url: /archives
+      weight: 10
+    - identifier: contact
+      name: Contact Me
+      url: /contact
       weight: 10
     - identifier: contact
       name: Contact Me
