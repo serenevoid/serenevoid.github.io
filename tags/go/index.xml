@@ -17,6 +17,72 @@
       
       <guid>https://serenevoid.github.io/post/boarder/</guid>
       <description>A cli tool I built as a side project</description>
+      <content:encoded><![CDATA[<h2 id="boarderhttpsgithubcomserenevoidboarder"><a href="https://github.com/serenevoid/boarder/">Boarder</a></h2>
+<p>Boarder is a minimal 4chan board hoarding client which fetches post data through
+open APIs from 4chan and then downloads all it&rsquo;s contents as well as embedded images.</p>
+<h4 id="what-is-4chan">What is 4chan?</h4>
+<p>4chan is a simple image based bulletin board which allows anyone to post comments
+or share images.</p>
+<h4 id="why-golang">Why Golang?</h4>
+<p>Go offers better developer experience. Achieving concurrency in go is very easy.
+Personally, I just completed learning Go. So I thought Go would be a perfect fit
+for this side project. Go also provides good HTTP templating which can be used to
+develop static sites by using a template and some data.</p>
+<h4 id="why-save-all-the-data-directly-without-using-a-database">Why save all the data directly without using a database?</h4>
+<p>A database encrypts the data and stores it in a single file or a set of files.
+In order to view the file, one has to decrypt the data from the database. This is
+an overhead. Saving the files as such in different folders or in a json file makes
+it easier to view the files independently without bothering to read any databases.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li>simple text file to add new threads</li>
+<li>download all media + thumbnails and their post informations</li>
+<li>media and thumbnails on separate folders to enable browsing media alone</li>
+<li>creates json file of the data on the individual folders</li>
+<li>creates a static html file for each thread to view the thread as a whole</li>
+<li>Features of Static html
+<ul>
+<li>Better UI</li>
+<li>Responsive</li>
+<li>Clicking on media goes to preview mode (similar to discord web client)</li>
+<li>Clicking on url opens media on new tab</li>
+</ul>
+</li>
+</ul>
+<h3 id="wip">WIP</h3>
+<p>This is not fully baked, but still usable. If you experience any issues,
+see some improvement you think would be amazing, or just have some feedback
+for boarder, make an issue!</p>
+<h4 id="future-improvements">Future Improvements</h4>
+<ol>
+<li>support for other board sites which archive 4chan data.</li>
+<li>a good tui to manage threads withouth editing the file directly.</li>
+</ol>
+<h3 id="usage">Usage</h3>
+<p>Add <code>threads.txt</code> and <code>template.html</code> on the folder where you will be running boarder.
+The contents of the text file would be the list of threads you want to subscribe to.
+The format to add a thread is <code>(board ID)_(thread No.)</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">// Anime Wallpaper
+</span></span><span class="line"><span class="cl">w_2185924
+</span></span><span class="line"><span class="cl">w_2223911
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// Wallpaper General
+</span></span><span class="line"><span class="cl">wg_7934675
+</span></span><span class="line"><span class="cl">wg_7920373
+</span></span></code></pre></div><h3 id="screenshots">Screenshots</h3>
+<ul>
+<li>Terminal View
+<img loading="lazy" src="https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/terminal.webp" alt="Terminal"  title="Terminal"  />
+</li>
+<li>Normal View
+<img loading="lazy" src="https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/normal_mode.webp" alt="Normal Mode"  title="Normal Mode"  />
+</li>
+<li>Preview Mode
+<img loading="lazy" src="https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/preview_mode.webp" alt="Preview Mode"  title="Preview Mode"  />
+</li>
+</ul>
+<h3 id="downloadhttpsgithubcomserenevoidboarderreleaseslatest"><a href="https://github.com/serenevoid/boarder/releases/latest/">Download</a></h3>
+]]></content:encoded>
     </item>
     
   </channel>

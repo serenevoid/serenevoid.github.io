@@ -17,6 +17,112 @@
       
       <guid>https://serenevoid.github.io/post/media_compression_2/</guid>
       <description>Compressing audio and video files.</description>
+      <content:encoded><![CDATA[<p>In this post, I will be going through the compression of Audio and Video files.
+Audio and Video files are fairly used by many but not as much as images. Even if
+the amount of video or audio sent is lower, each file is much bigger than a simple
+image.</p>
+<h2 id="audio">Audio</h2>
+<p>In the case of websites, audio size reduction doesn&rsquo;t have an impact like images.
+But it is necessary to reduce any media size to the optimal file size to save
+storage space.</p>
+<p>Audio files are categorized as:</p>
+<ol>
+<li>Uncompressed - WAV, AIFF, and PCM files</li>
+<li>Compressed Lossless - FLAC, WMA, and ALAC files</li>
+<li>Compressed Lossy - MP3 and AAC files</li>
+</ol>
+<p>But their file size depends on two factors, Bit Rate.</p>
+<p><strong>Bit Rate</strong> is the number of bits conveyed or processed per unit of time. The
+bit rate is expressed in the unit bit per second(bps). It can have SI unit
+prefixes like kilo, Mega, Giga, or more. The number of bits an audio requires
+per second depending on the Bit depth and the Sampling Rate.</p>
+<p>Bit depth is the number of bits required to show the value of the audio signal
+at one point in time. As bit depth increases, the audio quality increases, which
+increases the bit rate of the audio file.</p>
+<p>The Sampling Rate is the number of divisions of a digital wave signal. As the
+sampling rate increases, the audio quality increases, which increases the bit
+rate of the audio file.</p>
+<p><img loading="lazy" src="https://tomsrayaudiomastering.com/wp-content/uploads/2017/03/bit-depth-OPT.jpg#center" alt="sampling"  />
+</p>
+<h3 id="speech-and-sound">Speech and Sound</h3>
+<p>The average frequency range for human speech varies from 80Hz to 260Hz. This
+range is small when compared to all the sound effects. This way, we can remove
+the unused frequency range of sounds when we send voice messages or audio files
+of speeches to reduce the file size. 64kbps is ideal for sending voice clips
+without any loss in quality.</p>
+<h3 id="64kbps-vs-128256kbps">64kbps vs 128/256kbps</h3>
+<p>As mentioned above, 64 kbps is an idea for sending voice clips without any loss in
+sound quality. But if you have other sound effects, you should probably increase
+the bit rate to 128 or 256kbps for most frequency ranges. It is best for
+preserving the details in a song or a movie.</p>
+<h3 id="tools">Tools</h3>
+<p>There are tools available to convert or compress audio files online. Out of all
+those, here are two which I use often.</p>
+<ol>
+<li><a href="https://ffmpeg.org/">FFMPEG</a> is more than a converter. It is an all-in-one
+solution for all your basic audio and video processing needs.</li>
+<li><a href="https://mp3smaller.com/">mp3smaller</a> is a free online converter used
+by many. It converts mp3 files to different bit rates.</li>
+</ol>
+<hr>
+<h2 id="video">Video</h2>
+<p>The last type of media we send is videos. And they are the bulkiest among the
+other two types. It also has more file types for all use cases.</p>
+<h3 id="commonly-used-video-formats">Commonly used video formats:</h3>
+<ul>
+<li><strong>MP4</strong> - MPEG-4 (.mp4)
+<ul>
+<li>Can store audio files, video files, still images, and text.</li>
+<li>Provides high-quality video while maintaining relatively small file sizes.</li>
+</ul>
+</li>
+<li><strong>MKV</strong> - Matroska Video (.mkv)
+<ul>
+<li>Incorporates audio, video, and subtitles in a single file.</li>
+<li>Highly adaptive and easy to use since it supports almost any video and audio
+format.</li>
+</ul>
+</li>
+<li><strong>WEBM</strong> - (.webm)
+<ul>
+<li>Intended for use with HTML5.</li>
+<li>Require very little computer power to compress and unzip the files.</li>
+<li>Aimed to enable online video streaming on almost any device.</li>
+</ul>
+</li>
+</ul>
+<h3 id="frame-rate-and-video-resolution">Frame-rate and Video Resolution</h3>
+<p>Knowing about frame rates is the way to improve your video production quality.
+To understand frame rate, you should realize that a video is not a single
+continuous recording. Instead, its a set of images stitched together and flashed
+on a screen to produce motion. These images are called frames of the video.
+And the number of frames used per second is called the frame rate of a video.</p>
+<p>The standard frame rate is 24fps. But it is increased to 30fps for modern
+televisions and monitors. Most games use 60fps, and slow-motion videos are
+recorded with a 120fps camera.</p>
+<p><img loading="lazy" src="https://www.videoproc.com/images/vp-seo/frame-rate.jpg#center" alt="frame-rate comparison"  />
+</p>
+<p>The resolution of a video is the screen size. Just like an image, a video has a
+constant frame resolution.</p>
+<h3 id="format-h264-mp4">Format H.264 mp4</h3>
+<p>Advanced Video Coding (AVC), also called H.264, is the most widely used video
+compression standard. It is compatible with all major streaming protocols and
+container formats. It can encode high-quality video at lower bit rates than
+older compression standards. Over 90% of the video industry uses H.264.
+H.264 is a lossy compression standard, meaning unnecessary information is removed
+from the video. However, this should not impact the video&rsquo;s quality, since the
+important information for displaying the video is preserved.</p>
+<h3 id="tools-1">Tools</h3>
+<p>Due to the boom of streaming platforms, new tools to compress videos are born
+day-by-day. These are the ones that I found to be the best for basic
+needs.</p>
+<ol>
+<li><a href="https://ffmpeg.org/">FFMPEG</a> is capable of reducing the frame rate and also
+transcoding the video to other formats.</li>
+<li><a href="https://handbrake.fr/">Handbrake</a> is another tool with a GUI for transcoding
+video files.</li>
+</ol>
+]]></content:encoded>
     </item>
     
     <item>
@@ -26,6 +132,91 @@
       
       <guid>https://serenevoid.github.io/post/media_compression_1/</guid>
       <description>Here is how you can compress your media with CLI tools or websites.</description>
+      <content:encoded><![CDATA[<p>Have you ever thought of doing optimization algorithms on the media that you
+send online to reduce bandwidth usage or cloud storage space? What if I tell you
+that the images you send online can be compressed without losing quality?</p>
+<p>No, I am not talking about archiving the media into a zip file. I am talking about
+converting your individual media files into a smaller file size by sacrificing
+almost unnoticeable amount of quality.</p>
+<p>There are many advantages to reducing the file size of the media in all
+professions. For game developers, asset compression is crucial to reduce the
+game size. For web developers, asset compression will reduce the load times of
+the websites. For a  user, file compression would mean they can share files
+without much bandwidth.</p>
+<p>I will go through the three media categories one by one.</p>
+<h2 id="images">Images</h2>
+<p>Most of the media that people use on a website are images. And there are ways
+to send good quality images without much storage space. But before that, we
+should understand the major image formats and which should be where.</p>
+<h3 id="commonly-used-image-formats">Commonly used image formats</h3>
+<ul>
+<li><strong>JPEG</strong> - Joint Photographic Experts Group (.jpg or .jpeg)
+<ul>
+<li>JPEG is a lossy image format which reduce image size by
+sacrificing image quality.</li>
+<li>It is well suited for sharing files online.</li>
+</ul>
+</li>
+<li><strong>PNG</strong> - Portable Network Graphics (.png)
+<ul>
+<li>PNG is a lossless image format which preserves image quality when required.</li>
+<li>It was developed to replace GIF format with 256 colors, unlike PNG with
+16 million colors.</li>
+</ul>
+</li>
+<li><strong>SVG</strong> - Scalable Vector Graphics (.svg)
+<ul>
+<li>SVG is used to define vector-based graphics for the Web.</li>
+<li>Uses pure XML format.</li>
+<li>Can be zoomed to any scale losslessly.</li>
+<li>The best choice for vector graphics like icons, infographics, and more.</li>
+</ul>
+</li>
+<li><strong>WEBP</strong> (.webp)
+<ul>
+<li>Can display high-quality images with small file sizes. (lower than JPG
+and PNG)</li>
+<li>Has option for both lossy and lossless compression.</li>
+<li>Supports animations which make it an alternative to GIF format.</li>
+<li>Supports transparency like PNG.</li>
+<li>Maximum Resolution a webp image can have is 16,383 x 16,383 pixels.</li>
+</ul>
+</li>
+</ul>
+<p>All these formats have many advantages when used correctly in the correct places.</p>
+<h3 id="png-8-and-png-24">PNG-8 and PNG-24</h3>
+<p>From the <a href="https://www.webfx.com/blog/web-design/web-designers-guide-to-png-image-format/">Web Designer’s Guide to PNG Image Format</a></p>
+<blockquote>
+<p>There are two PNG formats: PNG-8 and PNG-24. The numbers are shorthand for
+saying &ldquo;8-bit PNG&rdquo; or &ldquo;24-bit PNG.&rdquo; Not to get too much into technicalities —
+because as a web designer, you probably do not care — 8-bit PNGs mean that the
+image is 8 bits per pixel, while 24-bit PNGs is 24 bits per pixel.</p>
+<p>To sum up the difference in plain English: Let’s just say PNG-24 can handle a
+lot more color and is good for complex images with lots of color such as
+photographs (just like JPEG), while PNG-8 is more optimized for things with
+simple colors, such as logos and user interface elements like icons and buttons.</p>
+</blockquote>
+<p><img loading="lazy" src="https://3.bp.blogspot.com/-hPeh-mgO_Qo/URQZ5h5OYwI/AAAAAAAAAF4/C0UICByhZLE/s1600/color_depth.jpg#center" alt="comparison of png formats"  />
+</p>
+<p>With an 8-bit color depth, there are 256 colors. With 24-bit color depth, there
+are 16,777,216 colors. As you can see, there will be a significant reduction in
+file size if you compress the images to 8-bit. If you don&rsquo;t see much difference
+between the two choices, 8-bit is the better option here.</p>
+<h3 id="tools">Tools</h3>
+<p>There are many tools out there that can compress images to reduce size. Here I
+am listing three of the unique ones I use.</p>
+<ol>
+<li><a href="https://www.photoshop.com/">Adobe Photoshop</a> is one of the most popular and
+well-known photo- and graphics-editing software applications.</li>
+<li><a href="https://imagemagick.org/">ImageMagick</a> is a free and open-source cross-platform
+software suite for displaying, creating, converting, modifying, and editing
+raster images.</li>
+<li><a href="https://pngquant.org/">PNGquant</a> is a command-line utility and a library for
+lossy compression of PNG images. It turns PNG-24 into PNG-8.</li>
+<li><a href="https://tinypng.com/">TinyPNG</a> is a free online tool that can compress images
+on the fly.</li>
+</ol>
+]]></content:encoded>
     </item>
     
   </channel>
