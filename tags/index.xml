@@ -9,13 +9,13 @@
       <link>https://serenevoid.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Nov 2022 10:59:02 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 12:59:02 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Go</title>
-      <link>https://serenevoid.github.io/tags/go/</link>
-      <pubDate>Sun, 06 Nov 2022 10:59:02 +0000</pubDate>
+      <title>Linux</title>
+      <link>https://serenevoid.github.io/tags/linux/</link>
+      <pubDate>Sun, 27 Nov 2022 12:59:02 +0000</pubDate>
       
-      <guid>https://serenevoid.github.io/tags/go/</guid>
+      <guid>https://serenevoid.github.io/tags/linux/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -23,9 +23,19 @@
     <item>
       <title>Tech</title>
       <link>https://serenevoid.github.io/tags/tech/</link>
-      <pubDate>Sun, 06 Nov 2022 10:59:02 +0000</pubDate>
+      <pubDate>Sun, 27 Nov 2022 12:59:02 +0000</pubDate>
       
       <guid>https://serenevoid.github.io/tags/tech/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://serenevoid.github.io/tags/go/</link>
+      <pubDate>Sun, 06 Nov 2022 10:59:02 +0000</pubDate>
+      
+      <guid>https://serenevoid.github.io/tags/go/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
