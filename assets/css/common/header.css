@@ -142,11 +142,20 @@ body:not(.dark) #sun {
         width: 100%;
         height: 100%;
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--border);
+        border: 1px solid var(--theme);
+    }
+
+    #menu-overlay > div > a {
+        width: 100%;
+        height: 100%;
         padding: 16px 16px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: var(--border)
     }
 
     #menu-overlay .active {
