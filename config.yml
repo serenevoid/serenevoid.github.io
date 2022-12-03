@@ -9,8 +9,15 @@ buildFuture: true
 buildExpired: false
 
 minify:
-  disableXML: true
+  disableXML: false
   minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
 
 params:
   env: production
@@ -79,10 +86,6 @@ params:
     - name: Rss
       url: "index.xml"
 
-  analytics:
-    google:
-      SiteVerificationTag: ""
-
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
@@ -90,20 +93,14 @@ params:
 
   # for search
   # https://fusejs.io/api/options.html
-    fuseOpts:
-        isCaseSensitive: false
-        shouldSort: true
-        location: 0
-        distance: 1000
-        threshold: 0.4
-        minMatchCharLength: 0
-        keys: ["title", "permalink", "summary", "content"]
-
-  outputs:
-    home:
-      - HTML
-      - RSS
-      - JSON # is necessary
+  fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 0
+      keys: ["title", "permalink", "summary", "content"]
 
 menu:
   main:
@@ -115,14 +112,18 @@ menu:
       name: Archives
       url: /archives
       weight: 2
+    - identifier: tags
+      name: Tags
+      url: /tags
+      weight: 3
     - identifier: about
       name: About
       url: /about
-      weight: 3
+      weight: 4
     - identifier: contact
       name: Contact Me
       url: /contact
-      weight: 4
+      weight: 5
 
 pygmentsUseClasses: true
 markup:
