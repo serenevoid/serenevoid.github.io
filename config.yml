@@ -8,23 +8,19 @@ buildDrafts: false
 buildFuture: true
 buildExpired: false
 
-# googleAnalytics: ""
-
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: Voice of the Void
   description: A personal Blog site and nothing more
   keywords: [Blog, Portfolio]
   author: Void
-  # author: ["Me", "You"] # multiple authors
   images:
   - cover.png
-  # DateFormat: "January 2, 2009"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -59,7 +55,7 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
+    enabled: false
     title: Voice of the Void
     subtitle: "A personal blog site and nothing more"
     imageUrl: "profile.webp"
@@ -92,23 +88,29 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  # editPost:
-  #   URL: "https://github.com/serenevoid/serenevoid.github.io/issues"
-  #   Text: "Suggest Changes" # edit text
-  #   appendFilePath: false # to append file path to Edit link
-
   # for search
   # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+  outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON # is necessary
+
 menu:
   main:
+    - identifier: search
+      name:  "Search \U0001F002"
+      url: /search
+      weight: 10
     - identifier: about
       name: About
       url: /about
@@ -121,11 +123,7 @@ menu:
       name: Contact Me
       url: /contact
       weight: 10
-    - identifier: contact
-      name: Contact Me
-      url: /contact
-      weight: 10
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+
 pygmentsUseClasses: true
 markup:
   highlight:
@@ -135,3 +133,4 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
