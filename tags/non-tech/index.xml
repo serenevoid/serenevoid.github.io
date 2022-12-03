@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Non-Tech on Voice of the Void</title>
-    <link>https://serenevoid.github.io/tags/non-tech/</link>
-    <description>Recent content in Non-Tech on Voice of the Void</description>
-    <image>
-      <url>https://serenevoid.github.io/cover.png</url>
-      <link>https://serenevoid.github.io/cover.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Oct 2022 09:12:26 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/non-tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Sometimes, Becoming the Jack of All Trades is Better</title>
-      <link>https://serenevoid.github.io/post/broadening_knowledge/</link>
-      <pubDate>Sun, 09 Oct 2022 09:12:26 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/broadening_knowledge/</guid>
-      <description>In order to make life easier, your knowledge range shoud be broad.</description>
-      <content:encoded><![CDATA[<p>I was back in high school when I came across this quote.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Non-Tech on Voice of the Void</title><link>https://serenevoid.github.io/tags/non-tech/</link><description>Recent content in Non-Tech on Voice of the Void</description><image><url>https://serenevoid.github.io/cover.png</url><link>https://serenevoid.github.io/cover.png</link></image><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 09 Oct 2022 09:12:26 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/non-tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Sometimes, Becoming the Jack of All Trades is Better</title><link>https://serenevoid.github.io/post/broadening_knowledge/</link><pubDate>Sun, 09 Oct 2022 09:12:26 +0530</pubDate><guid>https://serenevoid.github.io/post/broadening_knowledge/</guid><description>In order to make life easier, your knowledge range shoud be broad.</description><content:encoded><![CDATA[<p>I was back in high school when I came across this quote.</p>
 <blockquote>
 <p>Jack of All Trades. Master of none.</p>
 </blockquote>
@@ -44,17 +25,7 @@ help you grow as an individual.</p>
 <p>Keep Digging.</p>
 <p>Stay Curious.</p>
 <p>And always have fun.</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>I Broke My Computer Apart After Taking a Training: Here’s What I Learned.</title>
-      <link>https://serenevoid.github.io/post/the_beginning/</link>
-      <pubDate>Sun, 24 Jul 2022 23:41:24 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/the_beginning/</guid>
-      <description>The story of how I built a project in 2 weeks without any previous technical knowledge.</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="https://storables.com/wp-content/uploads/2020/05/connecting-thumb-drive-to-computer-1200x800.jpeg#center" alt="raspberrypi"  />
+]]></content:encoded></item><item><title>I Broke My Computer Apart After Taking a Training: Here’s What I Learned.</title><link>https://serenevoid.github.io/post/the_beginning/</link><pubDate>Sun, 24 Jul 2022 23:41:24 +0530</pubDate><guid>https://serenevoid.github.io/post/the_beginning/</guid><description>The story of how I built a project in 2 weeks without any previous technical knowledge.</description><content:encoded><![CDATA[<p><img loading="lazy" src="https://storables.com/wp-content/uploads/2020/05/connecting-thumb-drive-to-computer-1200x800.jpeg#center" alt="raspberrypi"  />
 </p>
 <p>When I walked into the training company I had signed up a month for, I wasn’t
 expecting much of an internship experience. When you think about it, most
@@ -101,8 +72,4 @@ people with their image processing projects. After college, I also worked at the
 training company as a trainer for about three weeks, passing on my learning to my peers.</p>
 <p>Learning is the single most essential food for growth. No matter where you are
 — in college, in a job, 20 years from now, that bit still stays relevant.</p>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>

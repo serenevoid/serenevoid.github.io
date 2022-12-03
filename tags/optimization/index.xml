@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Optimization on Voice of the Void</title>
-    <link>https://serenevoid.github.io/tags/optimization/</link>
-    <description>Recent content in Optimization on Voice of the Void</description>
-    <image>
-      <url>https://serenevoid.github.io/cover.png</url>
-      <link>https://serenevoid.github.io/cover.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 25 Sep 2022 16:50:00 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Should you compress media when uploading them online? - Part 2</title>
-      <link>https://serenevoid.github.io/post/media_compression_2/</link>
-      <pubDate>Sun, 25 Sep 2022 16:50:00 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/media_compression_2/</guid>
-      <description>Compressing audio and video files.</description>
-      <content:encoded><![CDATA[<p>In this post, I will be going through the compression of Audio and Video files.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Optimization on Voice of the Void</title><link>https://serenevoid.github.io/tags/optimization/</link><description>Recent content in Optimization on Voice of the Void</description><image><url>https://serenevoid.github.io/cover.png</url><link>https://serenevoid.github.io/cover.png</link></image><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 25 Sep 2022 16:50:00 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/optimization/index.xml" rel="self" type="application/rss+xml"/><item><title>Should you compress media when uploading them online? - Part 2</title><link>https://serenevoid.github.io/post/media_compression_2/</link><pubDate>Sun, 25 Sep 2022 16:50:00 +0000</pubDate><guid>https://serenevoid.github.io/post/media_compression_2/</guid><description>Compressing audio and video files.</description><content:encoded><![CDATA[<p>In this post, I will be going through the compression of Audio and Video files.
 Audio and Video files are fairly used by many but not as much as images. Even if
 the amount of video or audio sent is lower, each file is much bigger than a simple
 image.</p>
@@ -122,17 +103,7 @@ transcoding the video to other formats.</li>
 <li><a href="https://handbrake.fr/">Handbrake</a> is another tool with a GUI for transcoding
 video files.</li>
 </ol>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Should you compress media when uploading them online? - Part 1</title>
-      <link>https://serenevoid.github.io/post/media_compression_1/</link>
-      <pubDate>Sun, 11 Sep 2022 12:50:00 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/media_compression_1/</guid>
-      <description>Here is how you can compress your media with CLI tools or websites.</description>
-      <content:encoded><![CDATA[<p>Have you ever thought of doing optimization algorithms on the media that you
+]]></content:encoded></item><item><title>Should you compress media when uploading them online? - Part 1</title><link>https://serenevoid.github.io/post/media_compression_1/</link><pubDate>Sun, 11 Sep 2022 12:50:00 +0000</pubDate><guid>https://serenevoid.github.io/post/media_compression_1/</guid><description>Here is how you can compress your media with CLI tools or websites.</description><content:encoded><![CDATA[<p>Have you ever thought of doing optimization algorithms on the media that you
 send online to reduce bandwidth usage or cloud storage space? What if I tell you
 that the images you send online can be compressed without losing quality?</p>
 <p>No, I am not talking about archiving the media into a zip file. I am talking about
@@ -216,8 +187,4 @@ lossy compression of PNG images. It turns PNG-24 into PNG-8.</li>
 <li><a href="https://tinypng.com/">TinyPNG</a> is a free online tool that can compress images
 on the fly.</li>
 </ol>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>

@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Neovim on Voice of the Void</title>
-    <link>https://serenevoid.github.io/tags/neovim/</link>
-    <description>Recent content in Neovim on Voice of the Void</description>
-    <image>
-      <url>https://serenevoid.github.io/cover.png</url>
-      <link>https://serenevoid.github.io/cover.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 23 Oct 2022 23:59:02 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Scripting Workflows for Neovim</title>
-      <link>https://serenevoid.github.io/post/writing_lua_plugin_for_neovim/</link>
-      <pubDate>Sun, 23 Oct 2022 23:59:02 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/writing_lua_plugin_for_neovim/</guid>
-      <description>How I wrote my first custom script for my note taking workflow</description>
-      <content:encoded><![CDATA[<p>The extensibility of Neovim is loved by many because once you get to understand
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Neovim on Voice of the Void</title><link>https://serenevoid.github.io/tags/neovim/</link><description>Recent content in Neovim on Voice of the Void</description><image><url>https://serenevoid.github.io/cover.png</url><link>https://serenevoid.github.io/cover.png</link></image><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 23 Oct 2022 23:59:02 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/neovim/index.xml" rel="self" type="application/rss+xml"/><item><title>Scripting Workflows for Neovim</title><link>https://serenevoid.github.io/post/writing_lua_plugin_for_neovim/</link><pubDate>Sun, 23 Oct 2022 23:59:02 +0000</pubDate><guid>https://serenevoid.github.io/post/writing_lua_plugin_for_neovim/</guid><description>How I wrote my first custom script for my note taking workflow</description><content:encoded><![CDATA[<p>The extensibility of Neovim is loved by many because once you get to understand
 the basics of scripting, you can jump right in to start developing scripts and
 plugins to create a workflow according to your needs. All this is possible only
 because of the decision to choose lua as Neovim&rsquo;s scripting language.</p>
@@ -196,17 +177,7 @@ start doing something new after reading my blog, it&rsquo;s worth it for me.</p>
 <li><a href="https://youtu.be/IP3J56sKtn0">Why is Lua a good fit for Neovim</a></li>
 <li><a href="https://youtu.be/x2QJYq4IX6M">Your first vimrc</a></li>
 </ol>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Setting up Neovim with Lua</title>
-      <link>https://serenevoid.github.io/post/setting_up_neovim/</link>
-      <pubDate>Sun, 21 Aug 2022 00:09:28 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/setting_up_neovim/</guid>
-      <description>An easy guide to get started with your first neovim setup</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/neovim.webp" alt="nvim_screenshot"  />
+]]></content:encoded></item><item><title>Setting up Neovim with Lua</title><link>https://serenevoid.github.io/post/setting_up_neovim/</link><pubDate>Sun, 21 Aug 2022 00:09:28 +0530</pubDate><guid>https://serenevoid.github.io/post/setting_up_neovim/</guid><description>An easy guide to get started with your first neovim setup</description><content:encoded><![CDATA[<p><img loading="lazy" src="/neovim.webp" alt="nvim_screenshot"  />
 </p>
 <h2 id="introduction">Introduction:</h2>
 <p>Setting up your text editor to make it suitable for programming is the most
@@ -306,17 +277,7 @@ that provides the dev icons.</li>
 <li><a href="https://github.com/rockerBOO/awesome-neovim/blob/main/README.md">Awesome Neovim Plugins list</a></li>
 <li><a href="https://youtu.be/m62UCkdQ8Ck">Distrotube&rsquo;s guide to setup Neovim with lua</a></li>
 </ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Vim? Even in this era of advanced IDEs?</title>
-      <link>https://serenevoid.github.io/post/why_vim/</link>
-      <pubDate>Sun, 07 Aug 2022 09:12:26 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/why_vim/</guid>
-      <description>How I became a tinkerer by learning Vim</description>
-      <content:encoded><![CDATA[<p>When I started my career as a developer, I was asked to install VSCode and start
+]]></content:encoded></item><item><title>Vim? Even in this era of advanced IDEs?</title><link>https://serenevoid.github.io/post/why_vim/</link><pubDate>Sun, 07 Aug 2022 09:12:26 +0530</pubDate><guid>https://serenevoid.github.io/post/why_vim/</guid><description>How I became a tinkerer by learning Vim</description><content:encoded><![CDATA[<p>When I started my career as a developer, I was asked to install VSCode and start
 learning the concepts of programming. I was happy with it. It was the perfect
 text editor for anyone who was a beginner.</p>
 <blockquote>
@@ -381,8 +342,4 @@ new things, and building personalized tools, then I recommend VIM.</p>
 <li><a href="https://youtu.be/XA2WjJbmmoM">More advanced Vim Tricks</a></li>
 <li><a href="https://thevaluable.dev/vim-commands-beginner/">Vim Journey: From Beginner to Expert</a></li>
 </ul>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>

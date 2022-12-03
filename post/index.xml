@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on Voice of the Void</title>
-    <link>https://serenevoid.github.io/post/</link>
-    <description>Recent content in Posts on Voice of the Void</description>
-    <image>
-      <url>https://serenevoid.github.io/cover.png</url>
-      <link>https://serenevoid.github.io/cover.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Nov 2022 12:59:02 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Best way to get good in tech? Install Linux.</title>
-      <link>https://serenevoid.github.io/post/distrohopping/</link>
-      <pubDate>Sun, 27 Nov 2022 12:59:02 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/distrohopping/</guid>
-      <description>The story of my linux journey.</description>
-      <content:encoded><![CDATA[<p>Linux, the hobby project of a college student, is responsible for moving the whole
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Voice of the Void</title><link>https://serenevoid.github.io/post/</link><description>Recent content in Posts on Voice of the Void</description><image><url>https://serenevoid.github.io/cover.png</url><link>https://serenevoid.github.io/cover.png</link></image><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 27 Nov 2022 12:59:02 +0000</lastBuildDate><atom:link href="https://serenevoid.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Best way to get good in tech? Install Linux.</title><link>https://serenevoid.github.io/post/distrohopping/</link><pubDate>Sun, 27 Nov 2022 12:59:02 +0000</pubDate><guid>https://serenevoid.github.io/post/distrohopping/</guid><description>The story of my linux journey.</description><content:encoded><![CDATA[<p>Linux, the hobby project of a college student, is responsible for moving the whole
 world forward. The Linux operating system is everywhere around you.
 In your smartphones, smart cars, internet servers, smart home appliances and so
 on. It also runs most of the internet and the top 500 supercomputers in the world.</p>
@@ -71,17 +52,7 @@ things, you&rsquo;ll love linux and it&rsquo;s freedom. It&rsquo;s a never-endin
 discover new software and tools which make life easier.</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>My second serious side project worth showing people</title>
-      <link>https://serenevoid.github.io/post/boarder/</link>
-      <pubDate>Sun, 06 Nov 2022 10:59:02 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/boarder/</guid>
-      <description>A cli tool I built as a side project</description>
-      <content:encoded><![CDATA[<h2 id="boarderhttpsgithubcomserenevoidboarder"><a href="https://github.com/serenevoid/boarder/">Boarder</a></h2>
+]]></content:encoded></item><item><title>My second serious side project worth showing people</title><link>https://serenevoid.github.io/post/boarder/</link><pubDate>Sun, 06 Nov 2022 10:59:02 +0000</pubDate><guid>https://serenevoid.github.io/post/boarder/</guid><description>A cli tool I built as a side project</description><content:encoded><![CDATA[<h2 id="boarderhttpsgithubcomserenevoidboarder"><a href="https://github.com/serenevoid/boarder/">Boarder</a></h2>
 <p>Boarder is a minimal 4chan board hoarding client which fetches post data through
 open APIs from 4chan and then downloads all it&rsquo;s contents as well as embedded images.</p>
 <h4 id="what-is-4chan">What is 4chan?</h4>
@@ -146,17 +117,7 @@ The format to add a thread is <code>(board ID)_(thread No.)</code>.</p>
 </li>
 </ul>
 <h3 id="downloadhttpsgithubcomserenevoidboarderreleaseslatest"><a href="https://github.com/serenevoid/boarder/releases/latest/">Download</a></h3>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Scripting Workflows for Neovim</title>
-      <link>https://serenevoid.github.io/post/writing_lua_plugin_for_neovim/</link>
-      <pubDate>Sun, 23 Oct 2022 23:59:02 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/writing_lua_plugin_for_neovim/</guid>
-      <description>How I wrote my first custom script for my note taking workflow</description>
-      <content:encoded><![CDATA[<p>The extensibility of Neovim is loved by many because once you get to understand
+]]></content:encoded></item><item><title>Scripting Workflows for Neovim</title><link>https://serenevoid.github.io/post/writing_lua_plugin_for_neovim/</link><pubDate>Sun, 23 Oct 2022 23:59:02 +0000</pubDate><guid>https://serenevoid.github.io/post/writing_lua_plugin_for_neovim/</guid><description>How I wrote my first custom script for my note taking workflow</description><content:encoded><![CDATA[<p>The extensibility of Neovim is loved by many because once you get to understand
 the basics of scripting, you can jump right in to start developing scripts and
 plugins to create a workflow according to your needs. All this is possible only
 because of the decision to choose lua as Neovim&rsquo;s scripting language.</p>
@@ -335,17 +296,7 @@ start doing something new after reading my blog, it&rsquo;s worth it for me.</p>
 <li><a href="https://youtu.be/IP3J56sKtn0">Why is Lua a good fit for Neovim</a></li>
 <li><a href="https://youtu.be/x2QJYq4IX6M">Your first vimrc</a></li>
 </ol>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Sometimes, Becoming the Jack of All Trades is Better</title>
-      <link>https://serenevoid.github.io/post/broadening_knowledge/</link>
-      <pubDate>Sun, 09 Oct 2022 09:12:26 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/broadening_knowledge/</guid>
-      <description>In order to make life easier, your knowledge range shoud be broad.</description>
-      <content:encoded><![CDATA[<p>I was back in high school when I came across this quote.</p>
+]]></content:encoded></item><item><title>Sometimes, Becoming the Jack of All Trades is Better</title><link>https://serenevoid.github.io/post/broadening_knowledge/</link><pubDate>Sun, 09 Oct 2022 09:12:26 +0530</pubDate><guid>https://serenevoid.github.io/post/broadening_knowledge/</guid><description>In order to make life easier, your knowledge range shoud be broad.</description><content:encoded><![CDATA[<p>I was back in high school when I came across this quote.</p>
 <blockquote>
 <p>Jack of All Trades. Master of none.</p>
 </blockquote>
@@ -372,17 +323,7 @@ help you grow as an individual.</p>
 <p>Keep Digging.</p>
 <p>Stay Curious.</p>
 <p>And always have fun.</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Should you compress media when uploading them online? - Part 2</title>
-      <link>https://serenevoid.github.io/post/media_compression_2/</link>
-      <pubDate>Sun, 25 Sep 2022 16:50:00 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/media_compression_2/</guid>
-      <description>Compressing audio and video files.</description>
-      <content:encoded><![CDATA[<p>In this post, I will be going through the compression of Audio and Video files.
+]]></content:encoded></item><item><title>Should you compress media when uploading them online? - Part 2</title><link>https://serenevoid.github.io/post/media_compression_2/</link><pubDate>Sun, 25 Sep 2022 16:50:00 +0000</pubDate><guid>https://serenevoid.github.io/post/media_compression_2/</guid><description>Compressing audio and video files.</description><content:encoded><![CDATA[<p>In this post, I will be going through the compression of Audio and Video files.
 Audio and Video files are fairly used by many but not as much as images. Even if
 the amount of video or audio sent is lower, each file is much bigger than a simple
 image.</p>
@@ -487,17 +428,7 @@ transcoding the video to other formats.</li>
 <li><a href="https://handbrake.fr/">Handbrake</a> is another tool with a GUI for transcoding
 video files.</li>
 </ol>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Should you compress media when uploading them online? - Part 1</title>
-      <link>https://serenevoid.github.io/post/media_compression_1/</link>
-      <pubDate>Sun, 11 Sep 2022 12:50:00 +0000</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/media_compression_1/</guid>
-      <description>Here is how you can compress your media with CLI tools or websites.</description>
-      <content:encoded><![CDATA[<p>Have you ever thought of doing optimization algorithms on the media that you
+]]></content:encoded></item><item><title>Should you compress media when uploading them online? - Part 1</title><link>https://serenevoid.github.io/post/media_compression_1/</link><pubDate>Sun, 11 Sep 2022 12:50:00 +0000</pubDate><guid>https://serenevoid.github.io/post/media_compression_1/</guid><description>Here is how you can compress your media with CLI tools or websites.</description><content:encoded><![CDATA[<p>Have you ever thought of doing optimization algorithms on the media that you
 send online to reduce bandwidth usage or cloud storage space? What if I tell you
 that the images you send online can be compressed without losing quality?</p>
 <p>No, I am not talking about archiving the media into a zip file. I am talking about
@@ -581,17 +512,7 @@ lossy compression of PNG images. It turns PNG-24 into PNG-8.</li>
 <li><a href="https://tinypng.com/">TinyPNG</a> is a free online tool that can compress images
 on the fly.</li>
 </ol>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Setting up a Personal Blog - So Simple Even Kids Do It</title>
-      <link>https://serenevoid.github.io/post/why_hugo/</link>
-      <pubDate>Sun, 28 Aug 2022 09:12:26 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/why_hugo/</guid>
-      <description>A guide to create your own personal blog and host it for free</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="https://www.iwriter.com/blog/wp-content/uploads/2019/01/writing-blogs-748x335.jpeg#center" alt="blog-writing"  />
+]]></content:encoded></item><item><title>Setting up a Personal Blog - So Simple Even Kids Do It</title><link>https://serenevoid.github.io/post/why_hugo/</link><pubDate>Sun, 28 Aug 2022 09:12:26 +0530</pubDate><guid>https://serenevoid.github.io/post/why_hugo/</guid><description>A guide to create your own personal blog and host it for free</description><content:encoded><![CDATA[<p><img loading="lazy" src="https://www.iwriter.com/blog/wp-content/uploads/2019/01/writing-blogs-748x335.jpeg#center" alt="blog-writing"  />
 </p>
 <p>Yes, you read it correctly. This post is not a tutorial to help you write a blog
 post but to build a blog site.</p>
@@ -666,17 +587,7 @@ what will. I hope you all try Hugo once and start writing more. Contact me throu
 Discord if you need help setting up your blog site.</p>
 </blockquote>
 <p>Stay safe. Enjoy life.</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Setting up Neovim with Lua</title>
-      <link>https://serenevoid.github.io/post/setting_up_neovim/</link>
-      <pubDate>Sun, 21 Aug 2022 00:09:28 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/setting_up_neovim/</guid>
-      <description>An easy guide to get started with your first neovim setup</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/neovim.webp" alt="nvim_screenshot"  />
+]]></content:encoded></item><item><title>Setting up Neovim with Lua</title><link>https://serenevoid.github.io/post/setting_up_neovim/</link><pubDate>Sun, 21 Aug 2022 00:09:28 +0530</pubDate><guid>https://serenevoid.github.io/post/setting_up_neovim/</guid><description>An easy guide to get started with your first neovim setup</description><content:encoded><![CDATA[<p><img loading="lazy" src="/neovim.webp" alt="nvim_screenshot"  />
 </p>
 <h2 id="introduction">Introduction:</h2>
 <p>Setting up your text editor to make it suitable for programming is the most
@@ -776,17 +687,7 @@ that provides the dev icons.</li>
 <li><a href="https://github.com/rockerBOO/awesome-neovim/blob/main/README.md">Awesome Neovim Plugins list</a></li>
 <li><a href="https://youtu.be/m62UCkdQ8Ck">Distrotube&rsquo;s guide to setup Neovim with lua</a></li>
 </ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Vim? Even in this era of advanced IDEs?</title>
-      <link>https://serenevoid.github.io/post/why_vim/</link>
-      <pubDate>Sun, 07 Aug 2022 09:12:26 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/why_vim/</guid>
-      <description>How I became a tinkerer by learning Vim</description>
-      <content:encoded><![CDATA[<p>When I started my career as a developer, I was asked to install VSCode and start
+]]></content:encoded></item><item><title>Vim? Even in this era of advanced IDEs?</title><link>https://serenevoid.github.io/post/why_vim/</link><pubDate>Sun, 07 Aug 2022 09:12:26 +0530</pubDate><guid>https://serenevoid.github.io/post/why_vim/</guid><description>How I became a tinkerer by learning Vim</description><content:encoded><![CDATA[<p>When I started my career as a developer, I was asked to install VSCode and start
 learning the concepts of programming. I was happy with it. It was the perfect
 text editor for anyone who was a beginner.</p>
 <blockquote>
@@ -851,17 +752,7 @@ new things, and building personalized tools, then I recommend VIM.</p>
 <li><a href="https://youtu.be/XA2WjJbmmoM">More advanced Vim Tricks</a></li>
 <li><a href="https://thevaluable.dev/vim-commands-beginner/">Vim Journey: From Beginner to Expert</a></li>
 </ul>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>I Broke My Computer Apart After Taking a Training: Here’s What I Learned.</title>
-      <link>https://serenevoid.github.io/post/the_beginning/</link>
-      <pubDate>Sun, 24 Jul 2022 23:41:24 +0530</pubDate>
-      
-      <guid>https://serenevoid.github.io/post/the_beginning/</guid>
-      <description>The story of how I built a project in 2 weeks without any previous technical knowledge.</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="https://storables.com/wp-content/uploads/2020/05/connecting-thumb-drive-to-computer-1200x800.jpeg#center" alt="raspberrypi"  />
+]]></content:encoded></item><item><title>I Broke My Computer Apart After Taking a Training: Here’s What I Learned.</title><link>https://serenevoid.github.io/post/the_beginning/</link><pubDate>Sun, 24 Jul 2022 23:41:24 +0530</pubDate><guid>https://serenevoid.github.io/post/the_beginning/</guid><description>The story of how I built a project in 2 weeks without any previous technical knowledge.</description><content:encoded><![CDATA[<p><img loading="lazy" src="https://storables.com/wp-content/uploads/2020/05/connecting-thumb-drive-to-computer-1200x800.jpeg#center" alt="raspberrypi"  />
 </p>
 <p>When I walked into the training company I had signed up a month for, I wasn’t
 expecting much of an internship experience. When you think about it, most
@@ -908,8 +799,4 @@ people with their image processing projects. After college, I also worked at the
 training company as a trainer for about three weeks, passing on my learning to my peers.</p>
 <p>Learning is the single most essential food for growth. No matter where you are
 — in college, in a job, 20 years from now, that bit still stays relevant.</p>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>
