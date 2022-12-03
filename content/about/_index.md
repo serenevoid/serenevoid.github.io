@@ -6,6 +6,8 @@ draft: false
 hideMeta: true
 ---
 
+{{<image src="../profile.webp" alt="profile" height="200px">}}
+
 Hi! My name is Aju. I am a Software Engineer and has worked on tech 
 domains like web development, game development, workflow automations, CLI tool 
 building, image processing and more.

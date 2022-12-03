@@ -1,6 +1,6 @@
 baseURL: "https://serenevoid.github.io/"
 title: Voice of the Void
-paginate: 8
+paginate: 5
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -59,7 +59,7 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: false # needs to be explicitly set
     title: Voice of the Void
     subtitle: "A personal blog site and nothing more"
     imageUrl: "profile.webp"
@@ -74,14 +74,12 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Voice of the Void"
+    Content: A simple blog and nothing more.
 
   socialIcons:
     - name: github
       url: "https://github.com/serenevoid"
-    - name: discord
-      url: "https://discord.com/users/691560965308809237"
     - name: Rss
       url: "index.xml"
 

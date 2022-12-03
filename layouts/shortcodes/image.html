@@ -1,0 +1,18 @@
+<div class="image-container">
+    <img id="{{ .Get "id" }}" src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" height="{{ .Get "height" }}">
+</div>
+
+<style>
+    .image-container {
+        padding: 1em 0em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    {{ .Get "id" }} {
+        border-radius: {{ .Get "radius" }};
+    }
+</style>
