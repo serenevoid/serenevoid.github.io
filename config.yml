@@ -22,7 +22,7 @@ outputs:
 params:
   env: production
   title: Voice of the Void
-  description: A personal Blog site and nothing more
+  description: A simple blog site and nothing more
   keywords: [Blog, Portfolio]
   author: Void
   images:
