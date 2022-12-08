@@ -104,4 +104,9 @@ of a function call.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">console.trace
 </span></span></span><span class="line"><span class="cl"><span class="go">call_void
 </span></span></span><span class="line"><span class="cl"><span class="go">call_call_void
-</span></span></span></code></pre></div>]]></content:encoded></item></channel></rss>
+</span></span></span></code></pre></div><p>You can read more about these and also see some examples at:</p>
+<ol>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console#examples">MDN web docs</a></li>
+<li><a href="https://www.w3schools.com/jsref/obj_console.asp">w3schools</a></li>
+</ol>
+]]></content:encoded></item></channel></rss>
