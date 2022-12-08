@@ -163,3 +163,7 @@ console.trace
 call_void
 call_call_void
  ```
+
+ You can read more about these and also see some examples at:
+ 1. [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/console#examples)
+ 2. [w3schools](https://www.w3schools.com/jsref/obj_console.asp)
