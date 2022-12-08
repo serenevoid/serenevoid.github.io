@@ -2,7 +2,7 @@
 title: "Should you compress media when uploading them online? - Part 1"
 description: "Here is how you can compress your media with CLI tools or websites."
 date: 2022-09-11T12:50:00Z
-tags: ["Tech", "Optimization", "Tool"]
+tags: ["Optimization", "Tool"]
 draft: false
 ShowTOC: true
 ---
@@ -75,10 +75,12 @@ There are many tools out there that can compress images to reduce size. Here I
 am listing three of the unique ones I use.
 1. [Adobe Photoshop](https://www.photoshop.com/) is one of the most popular and 
 well-known photo- and graphics-editing software applications.
-1. [ImageMagick](https://imagemagick.org/) is a free and open-source cross-platform 
+2. [Photopea](https://www.photopea.com/) is a free clone of photoshop available
+as a web app.
+3. [ImageMagick](https://imagemagick.org/) is a free and open-source cross-platform 
 software suite for displaying, creating, converting, modifying, and editing 
 raster images.
-2. [PNGquant](https://pngquant.org/) is a command-line utility and a library for 
+4. [PNGquant](https://pngquant.org/) is a command-line utility and a library for 
 lossy compression of PNG images. It turns PNG-24 into PNG-8.
-3. [TinyPNG](https://tinypng.com/) is a free online tool that can compress images 
+5. [TinyPNG](https://tinypng.com/) is a free online tool that can compress images 
 on the fly.

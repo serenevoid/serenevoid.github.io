@@ -2,7 +2,7 @@
 title: "Setting up Neovim with Lua"
 description: "An easy guide to get started with your first neovim setup"
 date: 2022-08-21T00:09:28+05:30
-tags: ["Tech", "Neovim"]
+tags: ["Neovim", "Lua"]
 draft: false
 ---
 ![nvim_screenshot](/neovim.webp)

@@ -2,7 +2,7 @@
 title: "Should you compress media when uploading them online? - Part 2"
 description: "Compressing audio and video files."
 date: 2022-09-25T16:50:00Z
-tags: ["Tech", "Optimization", "Tool"]
+tags: ["Optimization", "Tool"]
 draft: false
 ShowTOC: true
 ---

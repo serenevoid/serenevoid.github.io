@@ -2,7 +2,7 @@
 title: "Scripting Workflows for Neovim"
 description: "How I wrote my first custom script for my note taking workflow"
 date: 2022-10-23T23:59:02Z
-tags: ["Tech", "Neovim"]
+tags: ["Neovim", "Lua"]
 draft: false
 ---
 The extensibility of Neovim is loved by many because once you get to understand 

@@ -2,7 +2,7 @@
 title: "Vim? Even in this era of advanced IDEs?"
 description: "How I became a tinkerer by learning Vim"
 date: 2022-08-07T09:12:26+05:30
-tags: ["Tech", "Neovim"]
+tags: ["Neovim"]
 draft: false
 ---
 When I started my career as a developer, I was asked to install VSCode and start

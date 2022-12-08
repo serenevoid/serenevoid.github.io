@@ -2,7 +2,7 @@
 title: "Best way to get good in tech? Install Linux."
 description: "The story of my linux journey."
 date: 2022-11-27T12:59:02Z
-tags: ["Tech", "Linux"]
+tags: ["Linux"]
 ShowTOC: true
 draft: false
 ---
