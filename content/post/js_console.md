@@ -12,8 +12,8 @@ showToc: true
 draft: false
 ---
 ![console](https://fireship.io/courses/javascript/img/console-hello-world.png)
-Probably the first thing every JS developer learns first is the console.log() 
-method. Even the first Hello world program is written using this function in most 
+Probably the first thing every JS developer learns is the console.log() method. 
+Even the first Hello world program is written using this method in most 
 tutorials. But isn't it strange that most of us never dug deep into the console 
 object or it's other methods.
 
@@ -45,6 +45,9 @@ Supports additional arguments and also supports string substitutions.
 Outputs an error message. Can be used with string substitutions and additional 
 arguments just like `console.log()`.
 
+### console.clear()
+Clears the console.
+
 ### console.assert()
 Log a message and stack trace to console if the first argument is `false`.
 
@@ -64,9 +67,6 @@ The output will look like this:
 ```console
 Assertion failed: Expected 2. Received 3
 ```
-
-### console.clear()
-Clears the console.
 
 ### console.count()
 Logs the number of times this particular function has been called. It normally 
