@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Logging on Voice of the Void</title><link>https://serenevoid.github.io/tags/logging/</link><description>Recent content in Logging on Voice of the Void</description><image><url>https://serenevoid.github.io/cover.gif</url><link>https://serenevoid.github.io/cover.gif</link></image><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 08 Dec 2022 09:07:11 +0530</lastBuildDate><atom:link href="https://serenevoid.github.io/tags/logging/index.xml" rel="self" type="application/rss+xml"/><item><title>Still using console.log() for logging in JS? You can do better.</title><link>https://serenevoid.github.io/post/js_console/</link><pubDate>Thu, 08 Dec 2022 09:07:11 +0530</pubDate><guid>https://serenevoid.github.io/post/js_console/</guid><description>A simple guide to the console object and its methods in JS.</description><content:encoded><![CDATA[<p><img loading="lazy" src="https://fireship.io/courses/javascript/img/console-hello-world.png" alt="console"  />
 
-Probably the first thing every JS developer learns first is the console.log()
-method. Even the first Hello world program is written using this function in most
+Probably the first thing every JS developer learns is the console.log() method.
+Even the first Hello world program is written using this method in most
 tutorials. But isn&rsquo;t it strange that most of us never dug deep into the console
 object or it&rsquo;s other methods.</p>
 <p>So I will take you through the console object and its methods in this blog.</p>
@@ -21,6 +21,8 @@ Supports additional arguments and also supports string substitutions.</p>
 <h3 id="consoleerror">console.error()</h3>
 <p>Outputs an error message. Can be used with string substitutions and additional
 arguments just like <code>console.log()</code>.</p>
+<h3 id="consoleclear">console.clear()</h3>
+<p>Clears the console.</p>
 <h3 id="consoleassert">console.assert()</h3>
 <p>Log a message and stack trace to console if the first argument is <code>false</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">min</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
@@ -35,9 +37,7 @@ arguments just like <code>console.log()</code>.</p>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">assert</span><span class="p">(</span><span class="nx">result</span> <span class="o">===</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;Expected 2. Received 3&#39;</span><span class="p">);</span>
 </span></span></code></pre></div><p>The output will look like this:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">Assertion failed: Expected 2. Received 3
-</span></span></span></code></pre></div><h3 id="consoleclear">console.clear()</h3>
-<p>Clears the console.</p>
-<h3 id="consolecount">console.count()</h3>
+</span></span></span></code></pre></div><h3 id="consolecount">console.count()</h3>
 <p>Logs the number of times this particular function has been called. It normally
 stores the count under <code>default</code> key. But if we pass a string as an input, the
 string will be used as the key for the counter. This can be used to set up
