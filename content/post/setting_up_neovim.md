@@ -5,7 +5,7 @@ date: 2022-08-21T00:09:28+05:30
 tags: ["Neovim", "Lua"]
 draft: false
 ---
-![nvim_screenshot](/neovim.webp)
+![neovim](https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gOOgmtOFiHJqr8xNWIg8xQvv7IkrY-izyyL6meZpRghXsX4CJ7ILRgizchU692QNdeiWhp1dGlGzk1bbLaxvuSTc0lKQw=w1366-h674)
 ## Introduction:
 
 Setting up your text editor to make it suitable for programming is the most 
