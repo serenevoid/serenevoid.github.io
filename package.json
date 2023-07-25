@@ -13,5 +13,10 @@
     "@astrojs/rss": "^2.4.3",
     "@astrojs/sitemap": "^2.0.1",
     "astro": "^2.9.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-astro": "^0.27.2"
   }
 }
