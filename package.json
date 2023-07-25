@@ -1,7 +1,7 @@
 {
-  "name": "serenevoid.github.io",
+  "name": "The Serene Void",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,7 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
     "@astrojs/rss": "^2.4.3",
     "@astrojs/sitemap": "^2.0.1",
     "astro": "^2.9.2"
