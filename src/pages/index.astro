@@ -6,6 +6,11 @@ import Body from '../components/Body.astro';
 import Content from '../components/Content.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const blogs = (await Astro.glob('../content/blog/*.md')).sort(
+  (a: any, b: any) => 
+    new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+)
 ---
 
 <!DOCTYPE html>
@@ -25,6 +30,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             appreciate it. I am a curious kid like you too. I hope you find some valuable
             gems in here which will help you in your journey to become a good developer.
           </p>
+        </section>
+        <section>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {
+              blogs.map((blog: any) => (
+                <li class="text-center mb-4">
+                  <a>
+                    <div class="mt-3 text-xl">{blog.frontmatter.title}</div>
+                    <div class="opacity-70">{blog.frontmatter.description}</div>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
         </section>
       </Content>
 		</main>
