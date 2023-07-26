@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import MastHead from '../components/MastHead.astro';
 import Body from '../components/Body.astro';
 import Content from '../components/Content.astro';
 import Footer from '../components/Footer.astro';
@@ -15,7 +16,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<Body>
 		<Header title={SITE_TITLE} />
 		<main class="pt-[56px]">
-      <h1 class="font-mplus text-center">The Serene Void</h1>
+      <MastHead />
       <Content>
         <section>
           <p class="mb-8 indent-4">
