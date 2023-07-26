@@ -1,14 +1,15 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import ThemeToggle from './ThemeToggleButton';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header class="fixed w-full pq2 z-20 backdrop-blur-md">
+<header class="fixed w-full p-2 z-20 backdrop-blur-md">
   <div class="mx-auto max-w-3xl">
     <nav class="flex items-center gap-3 text-base">
       <a href="/" class="group">
       <h2 class="flex items-center font-semibold p-2 font-mplus text-lg">
-        <img class="w-10 p-1" src="./public/apple-touch-icon.png" />
+        <img class="w-10 p-1" src="./apple-touch-icon.png" />
         <span class="p-2">{SITE_TITLE}</span>
       </h2>
       </a>
@@ -18,6 +19,7 @@ import { SITE_TITLE } from '../consts';
         <HeaderLink href="/about">About</HeaderLink>
       </div>
       <div class="flex-1">
+        <ThemeToggle client:load />
       </div>
     </nav>
   </div>
