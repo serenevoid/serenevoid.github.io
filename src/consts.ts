@@ -3,4 +3,3 @@
 
 export const SITE_TITLE = 'The Serene Void';
 export const SITE_DESCRIPTION = 'A humble developer\'s knowledge vault';
-export const HOMEPAGE_URL = "https://serenevoid.github.io/"
