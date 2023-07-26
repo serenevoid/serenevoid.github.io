@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://pagedart.com/sitemap.xml
+Disallow: /dashboard/
