@@ -26,10 +26,11 @@ const blogs = (await getCollection('blog')).sort(
       <Content>
         <section>
           <p class="mb-8 indent-4">
-            Hello my curious friend. I am pretty sure you reached this home page of
-            my personal blog for checking out my posts or my projects and I really
-            appreciate it. I am a curious kid like you too. I hope you find some valuable
-            gems in here which will help you in your journey to become a good developer.
+            Hello my curious friend. I am pretty sure you reached this home page 
+            for checking out my posts or my projects and I really appreciate 
+            it. I am a curious kid like you too. I hope you find some valuable
+            gems in here which will help you in your journey to become a good 
+            developer.
           </p>
         </section>
         <h2 class="text-xl font-semibold">Recent blog posts</h3>
@@ -39,7 +40,7 @@ const blogs = (await getCollection('blog')).sort(
             {
               blogs.map((blog: any) => (
                 <li class="text-center mb-4">
-                  <img class="border border-slate-300 dark:border-zinc-700 rounded-xl" src={blog.data.heroImage} width={720*2} aspectRatio={2.0} alt="Thumbnail"/>
+                  <img class="border border-slate-300 dark:border-zinc-700 rounded-xl object-fill" src={blog.data.heroImage} alt="Thumbnail"/>
                   <a href=`/blog/${blog.slug}`>
                     <div class="mt-3 text-xl">{blog.data.title}</div>
                     <div class="opacity-70">{blog.data.description}</div>

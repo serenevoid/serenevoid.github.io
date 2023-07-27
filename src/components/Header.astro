@@ -1,6 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import ThemeToggle from './ThemeToggleButton';
+import DropDownMenu from './DropDownMenu';
 import { SITE_TITLE } from '../consts';
 ---
 
@@ -19,7 +20,10 @@ import { SITE_TITLE } from '../consts';
         <HeaderLink href="/about">About</HeaderLink>
       </div>
       <div class="flex-1"></div>
-      <ThemeToggle client:load />
+      <ThemeToggle client:visible />
+      <div class="flex md:hidden">
+        <DropDownMenu client:visible />
+      </div>
     </nav>
   </div>
 </header>

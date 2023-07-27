@@ -36,7 +36,7 @@ const blogs = (await getCollection('blog')).sort(
                     <FormattedDate className="text-sm opacity-70 mb-2" date={blog.data.pubDate} />
                     <a href=`/blog/${blog.slug}`>
                       <div class="flex flex-row gap-4">
-                        <img class="border border-slate-300 dark:border-zinc-700 rounded-xl" src={blog.data.heroImage} width={60*2} aspectRatio={1.0} alt="Thumbnail"/>
+                        <img class="border border-slate-300 dark:border-zinc-700 rounded-xl object-fill" src={blog.data.heroImage} width={60*2} aspectRatio={1.0} alt="Thumbnail"/>
                         <div>
                           <div class="mb-1 text-xl">{blog.data.title}</div>
                           <div class="opacity-70">{blog.data.description}</div>
