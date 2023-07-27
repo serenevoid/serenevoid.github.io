@@ -27,8 +27,8 @@ const blogs = (await getCollection('blog')).sort(
             {
               blogs.map((blog: any) => (
                 <li class="relative flex gap-6 text-left pb-4">
-                  <div class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-gray-400" viewBox="0 0 16 16">
+                  <div class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-zinc-900 before:dark:bg-zinc-300 transition-colors duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-zinc-900 dark:fill-zinc-300 transition-colors duration-500" viewBox="0 0 16 16">
                       <circle cx="8" cy="8" r="8" />
                     </svg>
                   </div>
@@ -36,7 +36,6 @@ const blogs = (await getCollection('blog')).sort(
                     <FormattedDate className="text-sm opacity-70 mb-2" date={blog.data.pubDate} />
                     <a href=`/blog/${blog.slug}`>
                       <div class="flex flex-row gap-4">
-                        <img class="border border-slate-300 dark:border-zinc-700 rounded-xl object-fill" src={blog.data.heroImage} width={60*2} aspectRatio={1.0} alt="Thumbnail"/>
                         <div>
                           <div class="mb-1 text-xl">{blog.data.title}</div>
                           <div class="opacity-70">{blog.data.description}</div>
