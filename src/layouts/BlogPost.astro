@@ -20,16 +20,16 @@ const { title, description, pubDate, heroImage } = Astro.props;
 	<Body>
 		<Header />
 		<main class="pt-[56px]">
-      <Content className="mb-6">
+      <Content className="pt-6">
         <div class="mb-8">
           {heroImage && <img class="border border-slate-300 dark:border-zinc-700 rounded-xl" width={720} height={360} src={heroImage} alt="" />}
+          <h1 class="text-3xl my-1 font-mplus">{title}</h1>
+          <div>{description}</div>
+          <FormattedDate className="opacity-70" date={pubDate} />
+          <hr class="border-top border-zinc-400 my-4"/>
+          <slot />
+          <span class="underline underline-offset-2 hover:text-orange-500 decoration-orange-500"></span>
         </div>
-        <h1 class="text-3xl my-1 font-mplus">{title}</h1>
-        <div>{description}</div>
-        <FormattedDate date={pubDate} />
-        <hr class="border-top border-zinc-400 my-4"/>
-        <slot />
-        <span class="underline underline-offset-2 hover:text-orange-500 decoration-orange-500"></span>
       </Content>
     </main>
     <Footer />

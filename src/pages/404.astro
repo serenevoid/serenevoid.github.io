@@ -1,0 +1,35 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Body from '../components/Body.astro';
+import Content from '../components/Content.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<Body>
+		<Header />
+		<main class="pt-[64px]">
+      <Content className="mb-6">
+        <section>
+          <div>
+            <div class="border-2 border-black dark:border-white rounded-xl m-8 p-8">
+              <h1 class="text-6xl text-center font-mplus text-orange-400">404</h1>
+              <h1 class="text-4xl text-center font-mplus mt-8">not found</h1>
+            <div>
+          <div>
+          <h4 class="text-center text-xl font-mplus opacity-70 mt-10">
+            <a href="/">Go home</a>
+          </h4>
+        </section>
+      </Content>
+		</main>
+		<Footer />
+	</Body>
+</html>

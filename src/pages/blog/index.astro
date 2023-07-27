@@ -1,13 +1,15 @@
 ---
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
+import Body from '../../components/Body.astro';
+import Content from '../../components/Content.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
+import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+const blogs = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
@@ -15,40 +17,40 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			ul {
-				list-style-type: none;
-				padding: unset;
-			}
-			ul li {
-				display: flex;
-			}
-			ul li :global(time) {
-				flex: 0 0 130px;
-				font-style: italic;
-				color: #595959;
-			}
-			ul li a:visited {
-				color: #8e32dc;
-			}
-		</style>
 	</head>
-	<body>
+	<Body>
 		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<FormattedDate date={post.data.pubDate} />
-								<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
+		<main class="pt-[64px]">
+      <Content className="mb-6">
+        <section>
+          <ul class="grid grid-cols-1">
+            {
+              blogs.map((blog: any) => (
+                <li class="relative flex gap-6 text-left pb-4">
+                  <div class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-gray-400" viewBox="0 0 16 16">
+                      <circle cx="8" cy="8" r="8" />
+                    </svg>
+                  </div>
+                  <div class="flex flex-col">
+                    <FormattedDate className="text-sm opacity-70 mb-2" date={blog.data.pubDate} />
+                    <a href=`/blog/${blog.slug}`>
+                      <div class="flex flex-row gap-4">
+                        <img class="border border-slate-300 dark:border-zinc-700 rounded-xl" src={blog.data.heroImage} width={60*2} aspectRatio={1.0} alt="Thumbnail"/>
+                        <div>
+                          <div class="mb-1 text-xl">{blog.data.title}</div>
+                          <div class="opacity-70">{blog.data.description}</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </Content>
 		</main>
 		<Footer />
-	</body>
+	</Body>
 </html>
