@@ -7,6 +7,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
+import { IoLogoRss } from 'react-icons/io5';
 
 const blogs = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -23,6 +24,13 @@ const blogs = (await getCollection('blog')).sort(
 		<main class="pt-[64px]">
       <Content className="mb-6">
         <section>
+          <div class="flex items-center gap-2">
+            <h2 class="text-xl font-semibold">Recent blog posts</h2>
+            <a href="/rss.xml">
+              <IoLogoRss />
+            </a>
+          </div>
+          <hr class="border-top border-zinc-400 my-4"/>
           <ul class="grid grid-cols-1">
             {
               blogs.map((blog: any) => (

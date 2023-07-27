@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { IoSunny, IoMoon } from 'react-icons/io5/index'
+import { IoSunny, IoMoon } from 'react-icons/io5';
 
 const themes = ['light', 'dark']
 
