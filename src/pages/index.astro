@@ -6,7 +6,6 @@ import Body from '../components/Body.astro';
 import Content from '../components/Content.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { IoLogoRss } from 'react-icons/io5';
 
 import { getCollection } from 'astro:content';
 
@@ -36,9 +35,6 @@ const blogs = (await getCollection('blog')).sort(
         </section>
         <div class="flex items-center gap-2">
           <h2 class="text-xl font-semibold">Recent blog posts</h2>
-          <a href="/rss.xml">
-            <IoLogoRss />
-          </a>
         </div>
         <hr class="border-top border-zinc-400 my-4"/>
         <section>

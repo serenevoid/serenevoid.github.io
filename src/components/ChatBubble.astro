@@ -1,0 +1,9 @@
+---
+const { isLeft } = Astro.props
+---
+
+<li class={`w-full flex ${ (isLeft == "true") ? 'justify-start' : 'justify-end'}`}>
+  <div class={`${ (isLeft == "true") ? 'bg-orange-200 dark:bg-zinc-800' : 'bg-orange-300 dark:bg-zinc-700'} px-3 py-2 rounded-xl transition-colors duration-100`}>
+    <slot />
+  </div>
+</li>

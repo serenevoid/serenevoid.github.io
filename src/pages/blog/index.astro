@@ -25,8 +25,8 @@ const blogs = (await getCollection('blog')).sort(
       <Content className="mb-6">
         <section>
           <div class="flex items-center gap-2">
-            <h2 class="text-xl font-semibold">Recent blog posts</h2>
-            <a href="/rss.xml">
+            <h2 class="text-3xl font-semibold">All blog posts</h2>
+            <a class="hover:text-orange-500 p-1 border-2 border-zinc-700 rounded-md" href="/blog/rss.xml">
               <IoLogoRss />
             </a>
           </div>
@@ -36,8 +36,8 @@ const blogs = (await getCollection('blog')).sort(
               blogs.map((blog: any) => (
                 <li class="relative flex gap-6 text-left pb-4">
                   <div class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-zinc-900 before:dark:bg-zinc-300 transition-colors duration-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-zinc-900 dark:fill-zinc-300 transition-colors duration-500" viewBox="0 0 16 16">
-                      <circle cx="8" cy="8" r="8" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-zinc-900 dark:fill-zinc-300 transition-colors duration-500" viewBox="0 0 18 18">
+                      <circle cx="9" cy="9" r="9" />
                     </svg>
                   </div>
                   <div class="flex flex-col">
