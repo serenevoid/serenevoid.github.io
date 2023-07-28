@@ -52,7 +52,7 @@ const blogs = (await getCollection('blog')).sort(
                     <div class="mb-1 text-lg flex gap-2">{
                       blog.data.tags.map((tag: string) => (
                         <a href=`/tags/${tag}`>
-                          <div class="px-2 py-1 rounded-md text-sm bg-orange-300 dark:bg-zinc-600">#{tag}</div>
+                          <div class="px-2 py-1 rounded-md font-mplus text-sm bg-orange-300 dark:bg-zinc-600"><code>#{tag}</code></div>
                         </a>
                       ))
                     }</div>
