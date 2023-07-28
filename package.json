@@ -26,7 +26,6 @@
     "@types/react": "^18.2.16",
     "@typescript-eslint/parser": "^6.2.0",
     "eslint": "^8.45.0",
-    "eslint-plugin-astro": "^0.27.2",
-    "rehype-add-classes": "^1.0.0"
+    "eslint-plugin-astro": "^0.27.2"
   }
 }

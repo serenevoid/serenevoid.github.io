@@ -9,9 +9,21 @@ import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
 import { IoLogoRss } from 'react-icons/io5';
 
-const blogs = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const uniqueTags = [...new Set(posts.map((post) => post.data.tags).flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -25,7 +37,7 @@ const blogs = (await getCollection('blog')).sort(
       <Content className="mb-6">
         <section>
           <div class="flex items-center gap-2">
-            <h2 class="text-3xl font-semibold">All blog posts</h2>
+            <h2 class="text-3xl font-semibold">Posts with #{tag}</h2>
             <a class="hover:text-orange-500 p-1 border-2 border-zinc-700 rounded-md" href="/blog/rss.xml">
               <IoLogoRss />
             </a>
@@ -33,7 +45,7 @@ const blogs = (await getCollection('blog')).sort(
           <hr class="border-top border-zinc-400 my-4"/>
           <ul class="grid grid-cols-1">
             {
-              blogs.map((blog: any) => (
+              posts.map((blog: any) => (
                 <li class="relative flex gap-6 text-left pb-4">
                   <div class="before:absolute before:left-[5.5px] before:top-[5px] before:h-full before:w-0.5 before:bg-orange-300 before:dark:bg-zinc-600">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" class="bi bi-circle-fill fill-orange-300 dark:fill-zinc-600" viewBox="0 0 30 30">
