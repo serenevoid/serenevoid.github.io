@@ -10,7 +10,9 @@ import { getCollection } from 'astro:content';
 import { IoLogoRss } from 'react-icons/io5';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
   const uniqueTags = [...new Set(posts.map((post) => post.data.tags).flat())];
 
   return uniqueTags.map((tag) => {
@@ -37,7 +39,7 @@ const { posts } = Astro.props;
       <Content className="mb-6">
         <section>
           <div class="flex items-center gap-2">
-            <h2 class="text-3xl font-semibold">Posts with #{tag}</h2>
+            <h2 class="text-3xl font-semibold">Posts with <code>#{tag}</code></h2>
             <a class="hover:text-orange-500 p-1 border-2 border-zinc-700 rounded-md" href="/blog/rss.xml">
               <IoLogoRss />
             </a>
@@ -64,7 +66,9 @@ const { posts } = Astro.props;
                     <div class="mb-1 text-lg flex gap-2">{
                       blog.data.tags.map((tag: string) => (
                         <a href=`/tags/${tag}`>
-                          <div class="px-2 py-1 rounded-md text-sm bg-orange-300 dark:bg-zinc-600">#{tag}</div>
+                          <div class="px-2 py-1 rounded-md text-sm bg-orange-300 dark:bg-zinc-600">
+                            #{tag}
+                          </div>
                         </a>
                       ))
                     }</div>
