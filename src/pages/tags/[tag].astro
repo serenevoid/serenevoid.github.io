@@ -7,7 +7,6 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
-import { IoLogoRss } from 'react-icons/io5';
 
 export async function getStaticPaths() {
   const posts = (await getCollection('blog')).sort(
@@ -40,9 +39,6 @@ const { posts } = Astro.props;
         <section>
           <div class="flex items-center gap-2">
             <h2 class="text-3xl font-semibold">Posts with <code>#{tag}</code></h2>
-            <a class="hover:text-orange-500 p-1 border-2 border-zinc-700 rounded-md" href="/blog/rss.xml">
-              <IoLogoRss />
-            </a>
           </div>
           <hr class="border-top border-zinc-400 my-4"/>
           <ul class="grid grid-cols-1">

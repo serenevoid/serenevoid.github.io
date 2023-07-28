@@ -7,7 +7,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
-import { IoLogoRss } from 'react-icons/io5';
+import { IoLogoRss } from 'react-icons/io5/index';
 
 const blogs = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()

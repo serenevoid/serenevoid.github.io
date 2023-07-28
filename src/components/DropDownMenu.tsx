@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { IoMenu } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5/index";
 
 export default function DropDownMenu() {
   return (
