@@ -27,7 +27,9 @@ const { title, description, pubDate, heroImage } = Astro.props;
           <div>{description}</div>
           <FormattedDate className="opacity-70" date={pubDate} />
           <hr class="border-top border-zinc-400 my-4"/>
-          <slot />
+          <div class="prose porse-zinc dark:prose-invert md:prose-lg max-w-none prose-img:rounded-xl">
+            <slot />
+          </div>
         </div>
       </Content>
     </main>
