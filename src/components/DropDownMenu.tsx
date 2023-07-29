@@ -22,17 +22,17 @@ export default function DropDownMenu() {
         <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md border border-zinc-400 dark:border-zinc-700 bg-orange-50 dark:bg-zinc-800 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none divide-zinc-400 dark:divide-zinc-700">
           <div className="flex flex-col">
             <Menu.Item>
-              <a className="p-2 hover:bg-orange-50 dark:hover:bg-zinc-700 rounded-t-md" href="/projects">
+              <a className="p-4 hover:bg-orange-50 dark:hover:bg-zinc-700 rounded-t-md" href="/projects">
                 Projects
               </a>
             </Menu.Item>
             <Menu.Item>
-              <a className="p-2 hover:bg-orange-50 dark:hover:bg-zinc-700" href="/blog">
+              <a className="p-4 hover:bg-orange-50 dark:hover:bg-zinc-700" href="/blog">
                 Blog
               </a>
             </Menu.Item>
             <Menu.Item>
-              <a className="p-2 hover:bg-orange-50 dark:hover:bg-zinc-700 rounded-b-md" href="/about">
+              <a className="p-4 hover:bg-orange-50 dark:hover:bg-zinc-700 rounded-b-md" href="/about">
                 About
               </a>
             </Menu.Item>
