@@ -61,26 +61,18 @@ const { title, description, image = 'https://drive.google.com/uc?export=view&id=
 </script>
 
 <script is:inline>
+  function close_analytics(e) {
+    e.preventDefault()
+    document.getElementById("analytics").remove();
+  }
   function send_data() {
     var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
     var path = window.location.pathname;
     document.getElementById("form_URL").value = path;
     document.getElementById("form_timezone").value = timezone;
-    if (window.location.hostname != "localhost")
-      document.getElementById("form_submit").click();
+    document.getElementById("form_submit").click();
+    document.getElementById("analytics_form").addEventListener('submit', close_analytics);
   }
-  function close_analytics() {
-    document.getElementById("form_hidden").remove();
-    document.getElementById("iframe_hidden").remove();
-  }
-  setTimeout(send_data, 2);
-  setTimeout(close_analytics, 4);
+  if (window.location.hostname != 'localhost')
+    window.onload = send_data;
 </script>
-
-<form id="form_hidden" target="iframe" class="hidden" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSfQLW-njs_qiQTSVafurO1j5MVtFpmK2TjhWcrXtxMkkoqefw/formResponse">
-  <input id="form_timezone" name="entry.417282401" />
-  <input id="form_URL" name="entry.291024926" />
-  <button id="form_submit" name="submit" type="submit"></button>
-</form>
-
-<iframe id="iframe_hidden" class="hidden" name="iframe"></iframe>
