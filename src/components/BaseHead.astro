@@ -77,7 +77,7 @@ const { title, description, image = 'https://drive.google.com/uc?export=view&id=
     document.getElementById("form_URL").value = path;
     document.getElementById("form_timezone").value = timezone;
     document.getElementById("form_submit").click();
-    document.getElementById("analytics_form").addEventListener('submit', close_analytics);
+    document.getElementById("analytics").addEventListener('submit', close_analytics);
   }
   if (window.location.hostname != 'localhost')
     window.onload = send_data;
