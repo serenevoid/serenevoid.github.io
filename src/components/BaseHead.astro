@@ -67,7 +67,7 @@ const { title, description, image = 'https://i.imgur.com/NDz3mZP.jpg' } = Astro.
 
 <script is:inline>
   function close_analytics(e) {
-    document.getElementById("analytics").remove();
+    setTimeout(document.getElementById("analytics").remove, 1000);
     e.preventDefault()
   }
   function send_data() {
