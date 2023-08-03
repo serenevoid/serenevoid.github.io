@@ -1,9 +1,9 @@
 ---
-title: "I switched to Astro to rebuild my personal blog"
+title: "I switched to Astro to rebuild my blog"
 description: "A short post on why Astro caught my eye and convinced me to switch over from Hugo."
 pubDate: 2023-02-09
 tags: ["web"]
-heroImage: "https://drive.google.com/uc?export=view&id=1knxmrE3_wuEa6nIbVz2cwv2Xbdul_ye9"
+heroImage: "https://drive.google.com/uc?export=view&id=1wXaYiBJiRWj89McW6t_P4aojFQ6wcJl5"
 ---
 [Hugo](https://gohugo.io/), as mentioned in their website, is a fast and modern 
 static site generator written in Go, and designed to make website creation fun again.
@@ -15,7 +15,6 @@ It avoids complicated runtimes, dependencies and databases which helps in boosti
 time by an astronomical factor. According to the data presented in [this](https://youtu.be/CdiDYZ51a2o) 
 video, hugo can build a website which contains 5000 posts at around 6-7 seconds which is 
 just insanely fast when compared to all other Static Site Generators(SSGs).
-![Hugo](https://drive.google.com/uc?export=view&id=17weOp4ARqRvRqPbLKEvjwRwUsb4Y36hz)
 
 ### Pros
 - Setup once and forget about the settings to focus on content more
@@ -35,7 +34,6 @@ for hugo requires you to write the go specific phrases inside your template html
 which is not a generic language like Javascript or Typescript for website building.
 
 ## [Astro](https://astro.build/)
-![Astro](https://drive.google.com/uc?export=view&id=1JJsKVuyaVbRU3zFHOHeAeXXI-_RIBNut)
 Astro is an all-in-one web framework for building fast and content focused website.
 It is very easy to build a website with just the basic HTML, CSS, JS knowledge.
 Astro was designed to build big content-rich websites.

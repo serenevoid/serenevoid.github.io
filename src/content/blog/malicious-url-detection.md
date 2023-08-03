@@ -2,9 +2,8 @@
 title: "Malicious URL detection"
 description: "A data science topic which I learned after failing an interview."
 pubDate: 2023-02-24
-featured: true
 tags: ["python"]
-heroImage: "https://drive.google.com/uc?export=view&id=1wMum5E85TIX8qZbg1RBg1FcGYg7Nl2dZ"
+heroImage: "https://drive.google.com/uc?export=view&id=1rRF-cRluOWoBa8BN633RehKKZRAH59QS"
 ---
 Recently I had an interview in which the task I had to complete was to find a solution to the question below.
 
@@ -44,7 +43,6 @@ me to [this blog](https://towardsdatascience.com/predicting-the-maliciousness-of
 So I'd like to summarize the procedure with this blog post for whoever faces this 
 same question in interviews.
 
-![url_fingerprinting](https://drive.google.com/uc?export=view&id=1DEzffp6RHWu3Tf_xhJNPYgv1FCs2yN3B)
 ## URL Fingerprinting
 Here we extract meaningful data from URLs to feed it to the classifier. This process targets three types of URL features.
 1. **URL string** characteristics: Features derived from the URL string.
@@ -75,7 +73,6 @@ correlation grid and decide which all features contribute less to the data set a
 remove those to reduce the size of the collected data. This process finalizes the data
  to train the classification model.
 
-![machine_learning](https://drive.google.com/uc?export=view&id=12e9WCsrBSF_OYHMgl1O4qLeHOwmaLN7b)
 ## Classifier training and testing
 The classifier uses this data to train and test its capabilities.
 The blog uses a Decision tree as its classification algorithm. But it would be wiser to go with SVM (State Vector Machine) algorithm for better accuracy.

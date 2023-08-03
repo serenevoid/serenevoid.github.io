@@ -1,10 +1,9 @@
 ---
-title: "Rate Limiting an API endpoint"
+title: "Rate Limiting an API"
 description: "A small post about how API endpoints are protected against huge traffic."
 pubDate: 2023-03-20
-featured: true
 tags: ["web"]
-heroImage: "https://drive.google.com/uc?export=view&id=1dqeOn6INtgvJ6z9_yHXn4zM7vrqIV5RT"
+heroImage: "https://drive.google.com/uc?export=view&id=1Gp9apGNozC0a42UzJY5eaki1vstIB_Vu"
 ---
 > What is meant by API Rate Limiting? How can we implement this?
 

@@ -1,10 +1,10 @@
 ---
-title: "Jumping folders in inside terminal is easy with fzf"
+title: "Teleporting inside a terminal with fzf"
 description: "Traversing folders with the help of shell scripts and fzf"
 pubDate: 2023-07-31
 draft: true
 tags: ["terminal"]
-heroImage: "https://www.contentviewspro.com/wp-content/uploads/2017/07/default_image.png"
+heroImage: "https://drive.google.com/uc?export=view&id=1vRh8Gw3jpJQV67a8lLc1vpvS9EeLf6G_"
 ---
 If you are a person who uses terminal or commandline a lot, you might be knowing 
 how difficult it is to jump between directoies. The default way of moving in and out 

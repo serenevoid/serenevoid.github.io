@@ -3,7 +3,7 @@ title: "Scripting Workflows for Neovim"
 description: "How I wrote my first custom script for my note taking workflow"
 pubDate: 2022-10-23
 tags: ["neovim", "lua"]
-heroImage: "https://drive.google.com/uc?export=view&id=1ooukjVAK2IOiuveM8k3aNmGuxehzVNzR"
+heroImage: "https://drive.google.com/uc?export=view&id=1iLYun2IbppP3joFv4JNPRShqv9BmJrl-"
 ---
 The extensibility of Neovim is loved by many because once you get to understand 
 the basics of scripting, you can jump right in to start developing scripts and 
@@ -25,9 +25,9 @@ documentation is good enough to learn the complete language. On top of that, you
 should slowly familiarize yourself with the Nvim API which can be called through lua to 
 write scripts that interact with the editor.
 
-[Lua Documentation](https://www.lua.org/pil/)
-
-[Nvim Lua Guide](https://github.com/nanotee/nvim-lua-guide)
+Useful Reference Materials
+- [Lua Documentation](https://www.lua.org/pil/)
+- [Nvim Lua Guide](https://github.com/nanotee/nvim-lua-guide)
 
 ----
 
@@ -202,8 +202,6 @@ I also used regex to jump between all the wiki entry links present.
 ```
 
 The final script can be seen in this link.
-
-[Wiki.lua](https://github.com/serenevoid/neovim-config-revamp/blob/master/lua/void/wiki.lua)
 
 I have a few more features in my mind that I would like to add to this. Maybe when 
 it is ready, I'll think about moving this from my config to a separate plugin to 

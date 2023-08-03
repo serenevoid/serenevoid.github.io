@@ -2,9 +2,8 @@
 title: "Making a discord bot in Go?" 
 description: "My experience building a discord bot using the Go library, Discordgo."
 pubDate: 2023-04-30
-featured: true
 tags: ["web", "go"]
-heroImage: "https://drive.google.com/uc?export=view&id=1eGpVL-JsTUj5VWxRa94kLOYpo9bPeYUO"
+heroImage: "https://drive.google.com/uc?export=view&id=1dzvpWlyE_M2_eceq0nMcbzVe36jtvzKF"
 ---
 Bot Development is a really handy skill to have. May it be for work automation, 
 personal project or even for silly entertainment, bots are really useful and fun 
@@ -29,7 +28,6 @@ came across when I searched about creating discord bots with go. The README of
 the repository got me convinced to use this instead of the other projects. And 
 the example code was easier to understand as well. With this, the initial steps 
 for creating the bot was complete.
-![Discordgo](https://raw.githubusercontent.com/bwmarrin/discordgo/master/docs/img/discordgo.svg)
 
 ## Implementation Details
 The working of the bot was designed as follows:
@@ -65,7 +63,6 @@ But this was the best option I could afford at this point of time for a side pro
 bot. I used [Termux](https://termux.dev/en/) to get a working linux environment 
 and then compiled the project for the android architecture. And I'm happy to say 
 that it works really well.
-![Termux](https://wallpapercave.com/wp/wp8899997.jpg)
 
 ## Conclusion
 Bot Development is a really good learning experience. When you realise how easy 

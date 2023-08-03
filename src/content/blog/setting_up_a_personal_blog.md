@@ -3,7 +3,7 @@ title: "Setting up a Personal Blog - So Simple Even Kids Do It"
 description: "A guide to create your own personal blog and host it for free"
 pubDate: 2022-08-28
 tags: ["web"]
-heroImage: "https://drive.google.com/uc?export=view&id=1V2mK28hOe3nNmntdNMTGWXYyG2CK9zEs"
+heroImage: "https://drive.google.com/uc?export=view&id=1VmFdYkpxD5Q7d6m-i2agjAPu67Dzvx5A"
 ---
 Yes, you read it correctly. This post is not a tutorial to help you write a blog 
 post but to build a blog site.
@@ -33,8 +33,6 @@ Setting up a barebone site was very easy with tutorials like
 You can set up a site template and forget about it. You can focus on the content. 
 All the other website-related work will be automatically handled by Hugo very 
 effectively.
-
-![papermod](https://drive.google.com/uc?export=view&id=1F01BNYUktAsHSAcmDdLxWJbwuCZf8dWw)
 
 The first post I wanted to add was simple. I just copied the whole blog post I 
 had on Medium and reformatted it to markdown to use in this new Hugo template. 

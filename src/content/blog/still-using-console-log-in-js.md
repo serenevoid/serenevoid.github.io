@@ -3,7 +3,7 @@ title: "Still using console.log() for logging in JS? You can do better."
 description: "A simple guide to the console object and its methods in JS."
 pubDate: 2022-12-08
 tags: ["js"]
-heroImage: "https://drive.google.com/uc?export=view&id=1GMDf7xgJ732e4fEy5hRNZ2lnDCVIPOyx"
+heroImage: "https://drive.google.com/uc?export=view&id=1tuphgzfgbkxt6O30IkyGJHZxr_z1-BIa"
 ---
 Probably the first thing every JS developer learns is the console.log() method. 
 Even the first Hello world program is written using this method in most 
@@ -15,8 +15,6 @@ So I will take you through the console object and its methods in this blog.
 ## Console
 The `console` object gives you access to the browser's debugging console. It can 
 be accessed from any global object.
-
-![console](https://drive.google.com/uc?export=view&id=1FyHekwS9EHmbiLZU0wKENN_QPOfVBPPg)
 
 ## Instance methods of console
 

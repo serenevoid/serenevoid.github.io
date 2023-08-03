@@ -1,9 +1,9 @@
 ---
-title: "My second serious side project worth showing people"
+title: "Boarder: A 4chan hoarding utility"
 description: "A cli tool I built as a side project"
 pubDate: 2022-11-06
 tags: ["go", "terminal"]
-heroImage: "https://drive.google.com/uc?export=view&id=169FYPNFX3LONSsGGr1bD3dznHjYCtqQc"
+heroImage: "https://drive.google.com/uc?export=view&id=1RC6g2UxgHD93dRwXxEKf4OePff2i93J_"
 ---
 [Boarder](https://github.com/serenevoid/boarder/) is a minimal 4chan board hoarding client which fetches post data through 
 open APIs from 4chan and then downloads all it's contents as well as embedded images.
@@ -59,12 +59,4 @@ wg_7934675
 wg_7920373
 ```
 
-### Screenshots
-- Terminal View
-![Terminal](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/terminal.webp "Terminal")
-- Normal View
-![Normal Mode](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/normal_mode.webp "Normal Mode")
-- Preview Mode
-![Preview Mode](https://raw.githubusercontent.com/serenevoid/boarder/master/screenshots/preview_mode.webp "Preview Mode")
-
-### [Download](https://github.com/serenevoid/boarder/releases/latest/)
+Check out the program here - [Download](https://github.com/serenevoid/boarder/releases/latest/)

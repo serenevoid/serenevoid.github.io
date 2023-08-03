@@ -3,7 +3,7 @@ title: "Setting up Neovim with Lua"
 description: "An easy guide to get started with your first neovim setup"
 pubDate: 2022-08-21
 tags: ["neovim", "lua"]
-heroImage: "https://drive.google.com/uc?export=view&id=1ooukjVAK2IOiuveM8k3aNmGuxehzVNzR"
+heroImage: "https://drive.google.com/uc?export=view&id=1iLYun2IbppP3joFv4JNPRShqv9BmJrl-"
 ---
 Setting up your text editor to make it suitable for programming is the most 
 interesting and never-ending part of using Vim or Neovim. You'll constantly see 
@@ -18,8 +18,6 @@ language. It is very lightweight and also very performant which makes it suitabl
 for embedded system programming and also game development. It is way simpler than 
 Vimscript and therefore I feel using Neovim is much simpler than using Vim.
 
-![vim_nvim](https://drive.google.com/uc?export=view&id=1ud_opoVbdx7biWyA3Wr4CGuYp7YZwfjL)
-
 ## That's all good but where should I start?
 
 The very first thing to know is that every time Neovim starts, it reads through 
@@ -29,9 +27,9 @@ lot of neovim config tutorial videos on youtube and also I'll link some good con
 which you can refer to while creating your own.
 
 > It is always better to create your configs even if you are referring to others'
-> config files. This helps to understand better about writing a lua script and makes 
-> it easier when you'll write Lua plugins later if you ever need to make one for work 
-> or as a hobby.
+config files. This helps to understand better about writing a lua script and makes 
+it easier when you'll write Lua plugins later if you ever need to make one for work 
+or as a hobby.
 
 The best resource I can recommend is [the nvim-lua-guide](https://github.com/nanotee/nvim-lua-guide/blob/master/doc/nvim-lua-guide.txt)
 by nanotree in GitHub. It explains everything from scratch and also helps you 
@@ -50,59 +48,56 @@ The other way is to use a proper plugin manager. I prefer using a plugin manager
 because that's easier to manage and track all the plugins all at once. 
 
 There are a few very popular ones:
-1. [tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
-2. [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
-3. [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
+1. [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+2. [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
+2. [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 
-Out of these, I use packer because it is written in lua and also its UI is better 
-than the others in my opinion.
+Out of these, I use packer because it is written in lua and also its simple to set up.
 
 And now let us talk about choosing the right plugins. Note that all the plugins available
 are cool but you can choose the best one that suits your need.
 
 This is the list of plugins I use and a short description of them.
-1. [TimUntersberger/neogit](https://github.com/TimUntersberger/neogit) - A git 
-client for neovim.
-2. [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - A super
+1. [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - A super
 fast git decoration plugin.
-3. [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - A library 
+2. [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - A library 
 plugin used by most other plugins out there.
-4. [nvim-lua/popup.nvim](https://github.com/nvim-lua/popup.nvim) - A plugin that 
+3. [nvim-lua/popup.nvim](https://github.com/nvim-lua/popup.nvim) - A plugin that 
 implements the popup API as implemented in VIM.
-5. [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - This plugin
+4. [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - This plugin
 consists of the config files used for enabling the built-in lsp client.
-6. [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A plugin that 
+5. [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A plugin that 
 provides LSP code completion.
-7. [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - A plugin that
+6. [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - A plugin that
 provides LSP client recommendations in the completion plugin.
-8. [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path) - A plugin that provides
+7. [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path) - A plugin that provides
 local path suggestions in the completion plugin.
-9. [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - A plugin that 
+8. [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - A plugin that 
 provides completion options from the open buffer.
-10. [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua) - A plugin 
+9. [hrsh7th/cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua) - A plugin 
 that provides completion options with respect to neovim lua config.
-11. [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim) - VSCode like 
+10. [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim) - VSCode like 
 pictograms to nvim built-in lsp.
-12. [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim) - A better UI 
+11. [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim) - A better UI 
 for the built-in LSP Client.
-13. [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) - A snippet engine 
+12. [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) - A snippet engine 
 written in lua.
-14. [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip) - A plugin
+13. [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip) - A plugin
 that provides completion options from the snippet engine.
-15. [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A plugin 
+14. [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) - A plugin 
 that provides pairing of brackets and parentheses that is essential for a code 
 editor.
-16. [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - A plugin 
+15. [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) - A plugin 
 that has intelligent code commenting functionality.
-17. [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - 
+16. [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - 
 A plugin that provides a simple and easy way to interact with the treesitter inside neovim.
 Treesitter is an incremental parsing system for programming tools.
-18. [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - 
+17. [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - 
 An advanced fuzzy finder tool with many other features.
-19. [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) - A simple 
+18. [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon) - A simple 
 plugin that makes file navigation inside a project easier and faster.
-20. [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) - A color scheme plugin.
-21. [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A plugin
+19. [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) - A color scheme plugin.
+20. [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) - A plugin
 that provides the dev icons.
 
 Have fun hacking!

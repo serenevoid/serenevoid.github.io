@@ -14,7 +14,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={heroImage} />
 	</head>
 
 	<Body>
@@ -22,7 +22,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
 		<main class="pt-[56px]">
       <Content className="pt-6">
         <div class="mb-8">
-          {heroImage && <img class="border border-slate-300 dark:border-zinc-700 rounded-xl" width={720} height={360} src={heroImage} alt="" />}
+          {heroImage && <img class="border border-slate-300 dark:border-zinc-700 rounded-xl" width={1410} height={600} src={heroImage} alt="" />}
           <h1 class="text-3xl my-1 font-mplus">{title}</h1>
           <div>{description}</div>
           <FormattedDate className="opacity-70" date={pubDate} />

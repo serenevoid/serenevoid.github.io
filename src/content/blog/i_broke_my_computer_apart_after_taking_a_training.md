@@ -3,7 +3,7 @@ title: "I Broke My Computer Apart After Taking a Training: Here's What I Learned
 description: "The story of how I built a project in 2 weeks without any previous technical knowledge."
 pubDate: 2022-07-24
 tags: ["non-tech"]
-heroImage: "https://drive.google.com/uc?export=view&id=1CzGJ_vdtDmbx15IBzaY3cYoyGQDl8oNh"
+heroImage: "https://drive.google.com/uc?export=view&id=170wvos4-AUr6pUsrndZ8Ukl4913bFR57"
 ---
 When I walked into the training company I had signed up a month for, I wasn't 
 expecting much of an internship experience. When you think about it, most 
@@ -37,8 +37,6 @@ contemplating for some time. A Document Scanner based on Python that scans notes
 using the camera on a laptop. It was a fairly good project, one that had happened 
 entirely because I had decided to learn something new.
 
-![scanner](https://drive.google.com/uc?export=view&id=1pWo_imIk-BIxidzkQr73nSsFBo2Z5rs1)
-
 I have to say, I did not learn everything completely from the institution that 
 I went to, or the trainers I listened to. A lot of it was self-taught, and the 
 training was an enabler; one that put me in an environment that was all about 
@@ -49,7 +47,7 @@ impact. I wouldn't have had the courage to openly ask simple questions to
 someone who was distinguished and experienced. But here, it was different. By 
 the end of the one-month training, I was enriched in more ways than one.
 
-> So, if you did not land that prized internship offer and have to pay for 
+> If you did not land that prized internship offer and have to pay for 
 training in the summer, don't be disheartened. There are plenty of things that 
 can come out of it if you have the will to learn and build and rebuild.
 

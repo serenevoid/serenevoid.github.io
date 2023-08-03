@@ -2,6 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+import { SITE_TITLE, SITE_COLOR } from "../consts";
 
 interface Props {
 	title: string;
@@ -11,12 +12,13 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = 'https://drive.google.com/uc?export=view&id=1ZuKxvjAA7B__B4K4C0kLe5WGYaBf1oCs' } = Astro.props;
+const { title, description, image = 'https://drive.google.com/uc?export=view&id=1RQ3qEwgZ_WPcRkDEAHLqJSYUyBKjemgK' } = Astro.props;
+
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,max-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 <meta name="generator" content={Astro.generator} />
 
@@ -27,20 +29,24 @@ const { title, description, image = 'https://drive.google.com/uc?export=view&id=
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="theme-color" content={SITE_COLOR}>
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:site_name" content={SITE_TITLE}>
+<meta property="og:web:url" content={Astro.url} />
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta name="twitter:cta" content=`Read on ${Astro.url}`>
 
 <script is:inline>
   const theme = (() => {
