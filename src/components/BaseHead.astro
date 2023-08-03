@@ -68,16 +68,16 @@ const { title, description, image = 'https://drive.google.com/uc?export=view&id=
 
 <script is:inline>
   function close_analytics(e) {
-    e.preventDefault()
     document.getElementById("analytics").remove();
+    e.preventDefault()
   }
   function send_data() {
     var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
     var path = window.location.pathname;
     document.getElementById("form_URL").value = path;
     document.getElementById("form_timezone").value = timezone;
+    document.getElementById("analytics_form").addEventListener("submit", close_analytics)
     document.getElementById("form_submit").click();
-    document.getElementById("analytics").addEventListener('submit', close_analytics);
   }
   if (window.location.hostname != 'localhost')
     window.onload = send_data;
