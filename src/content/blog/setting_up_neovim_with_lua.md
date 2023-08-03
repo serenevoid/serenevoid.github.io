@@ -3,7 +3,7 @@ title: "Setting up Neovim with Lua"
 description: "An easy guide to get started with your first neovim setup"
 pubDate: 2022-08-21
 tags: ["neovim", "lua"]
-heroImage: "https://drive.google.com/uc?export=view&id=1iLYun2IbppP3joFv4JNPRShqv9BmJrl-"
+heroImage: "https://i.imgur.com/fONpsb9.jpg"
 ---
 Setting up your text editor to make it suitable for programming is the most 
 interesting and never-ending part of using Vim or Neovim. You'll constantly see 

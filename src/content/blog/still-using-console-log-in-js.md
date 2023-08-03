@@ -3,7 +3,7 @@ title: "Still using console.log() for logging in JS? You can do better."
 description: "A simple guide to the console object and its methods in JS."
 pubDate: 2022-12-08
 tags: ["js"]
-heroImage: "https://drive.google.com/uc?export=view&id=1tuphgzfgbkxt6O30IkyGJHZxr_z1-BIa"
+heroImage: "https://i.imgur.com/6fOLpau.jpg"
 ---
 Probably the first thing every JS developer learns is the console.log() method. 
 Even the first Hello world program is written using this method in most 

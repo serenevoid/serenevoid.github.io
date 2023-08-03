@@ -3,7 +3,7 @@ title: "Scripting Workflows for Neovim"
 description: "How I wrote my first custom script for my note taking workflow"
 pubDate: 2022-10-23
 tags: ["neovim", "lua"]
-heroImage: "https://drive.google.com/uc?export=view&id=1iLYun2IbppP3joFv4JNPRShqv9BmJrl-"
+heroImage: "https://i.imgur.com/fONpsb9.jpg"
 ---
 The extensibility of Neovim is loved by many because once you get to understand 
 the basics of scripting, you can jump right in to start developing scripts and 

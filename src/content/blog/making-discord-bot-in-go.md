@@ -3,7 +3,7 @@ title: "Making a discord bot in Go?"
 description: "My experience building a discord bot using the Go library, Discordgo."
 pubDate: 2023-04-30
 tags: ["web", "go"]
-heroImage: "https://drive.google.com/uc?export=view&id=1dzvpWlyE_M2_eceq0nMcbzVe36jtvzKF"
+heroImage: "https://i.imgur.com/11uQSRj.jpg"
 ---
 Bot Development is a really handy skill to have. May it be for work automation, 
 personal project or even for silly entertainment, bots are really useful and fun 

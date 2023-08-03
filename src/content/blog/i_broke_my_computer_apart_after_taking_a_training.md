@@ -3,7 +3,7 @@ title: "I Broke My Computer Apart After Taking a Training: Here's What I Learned
 description: "The story of how I built a project in 2 weeks without any previous technical knowledge."
 pubDate: 2022-07-24
 tags: ["non-tech"]
-heroImage: "https://drive.google.com/uc?export=view&id=170wvos4-AUr6pUsrndZ8Ukl4913bFR57"
+heroImage: "https://i.imgur.com/ZP7EXjh.jpg"
 ---
 When I walked into the training company I had signed up a month for, I wasn't 
 expecting much of an internship experience. When you think about it, most 

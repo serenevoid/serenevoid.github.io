@@ -4,7 +4,7 @@ description: "Traversing folders with the help of shell scripts and fzf"
 pubDate: 2023-07-31
 draft: true
 tags: ["terminal"]
-heroImage: "https://drive.google.com/uc?export=view&id=1vRh8Gw3jpJQV67a8lLc1vpvS9EeLf6G_"
+heroImage: "https://i.imgur.com/pPQgPDu.jpg"
 ---
 If you are a person who uses terminal or commandline a lot, you might be knowing 
 how difficult it is to jump between directoies. The default way of moving in and out 
