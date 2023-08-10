@@ -55,7 +55,4 @@ Since I wanted to try web development, I felt like Astro would be the perfect fi
 for my website. I can create and test custom components and features inside my own 
 site.
 
-I feel much more happier and more confident with my current site. I'm linking my 
-[old hugo site](https://serenevoid.github.io/old-site/) with 
-[PaperMod template](https://adityatelange.github.io/hugo-PaperMod/) so that you 
-can check it out if you want to see where I started.
+I feel much more happier and more confident with my current site. I hope you like it too.
