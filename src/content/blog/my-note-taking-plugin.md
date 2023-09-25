@@ -2,7 +2,7 @@
 title: "kiwi.nvim - A simple markdown note taking plugin"
 description: "If you have been using neovim for taking notes and writing journals"
 pubDate: 2023-08-14
-tags: ["neovim", lua]
+tags: ["neovim", "lua"]
 heroImage: "https://i.imgur.com/krxz9Jc.jpg"
 ---
 I have been using VimWiki for a while now. It was perfect for my usecase since 
@@ -25,7 +25,7 @@ kiwi.nvim is my first neovim plugin to handle markdown note taking with linking 
 You can also use this to create [zettlecasten](https://youtu.be/yqKspwjXu18) notes.
 
 All it does is have keybindings to open an index note file and then link other files 
-from inside this index note. This is basically how a Zettlecasten system works. 
+from inside this index note. This is basically how a Zettlekasten system works. 
 There is an journal entry feature along with note taking. You can open today's diary 
 entry and write down things you did. And there is a keybind to generate the diary 
 index which links all the diary entries to a diary index file. This diary index is 
