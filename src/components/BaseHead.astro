@@ -67,8 +67,12 @@ const { title, description, image = 'https://i.imgur.com/NDz3mZP.jpg' } = Astro.
     const url = "https://script.google.com/macros/s/AKfycbw-LIz_aqIIvDiul-95Tc32Zgm1jAL4IseZ69bEeu0WaLnwF37JWQo2SrhAiKJ78eOr/exec";
     const path = window.location.pathname.replaceAll("\/", "zzz");
     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll("\/", "zzz");
-		const rf = document.referrer.replaceAll("\/", "zzz");
-		if (rf.hostname == window.location.hostname) rf = "";
+		let rf = document.referrer;
+		if (rf.includes(window.location.hostname)) {
+			rf = "";
+		} else {
+			rf = rf.replaceAll("\/", "zzz");
+		}
 		const hook = url + "?path=" + path + "&tz=" + tz + "&rf=" + rf;
     const req = new XMLHttpRequest();
     req.open("GET", hook, true);
