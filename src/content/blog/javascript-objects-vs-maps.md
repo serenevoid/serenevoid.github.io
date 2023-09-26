@@ -31,9 +31,16 @@ a new property as shown below.
 newObj.isReal = true;
 newObj["isReal"] = true;
 ```
+The same syntax can be used to modify the value of a property as well.
+
 When you have multiple keys that you need to open, using the second case would be much easier 
 since you can store the key as a string on a variable and then access the key using that variable inside
 the square brackets.
+
+For removing a property, we can use the delete keyword on that property of the object.
+```javascript
+delete newObj.isReal;
+```
 
 ### Mutability
 > In Javascript, objects are the only _mutable_ values.
