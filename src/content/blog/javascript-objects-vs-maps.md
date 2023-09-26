@@ -9,7 +9,7 @@ heroImage: "https://i.imgur.com/OJL3QV6.png"
 An Object is a value in memory that can be referenced by an identifier like a variable.
 It acts like a dictionary in which we can store key-value pairs for our program.
 
-### Basic operations on ab object
+### Basic operations on objects
 
 #### Creation of an object
 An object can be created with the object class constructor or by literal syntax.
