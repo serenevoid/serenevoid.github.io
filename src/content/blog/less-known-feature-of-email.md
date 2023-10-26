@@ -1,5 +1,5 @@
 ---
-title: "Plus Addressing: The hack to unlimited email accounts"
+title: "Plus Addressing: The hack to unlimited email addresses"
 description: "A very useful feature of email which no one talks about"
 pubDate: 2023-10-26
 tags: ["web"]
