@@ -2,7 +2,6 @@
 title: "Teleporting inside a terminal with fzf"
 description: "Traversing folders with the help of shell scripts and fzf"
 pubDate: 2023-07-31
-draft: true
 tags: ["terminal"]
 heroImage: "https://i.imgur.com/pPQgPDu.jpg"
 ---
