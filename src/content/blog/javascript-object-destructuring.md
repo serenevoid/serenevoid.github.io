@@ -3,7 +3,7 @@ title: "Javascript Object Destructuring and places where it gets weird"
 description: "Object destructuring a really useful feature that helps you read from objects in a better way."
 pubDate: 2023-11-30
 tags: ["javascript"]
-heroImage: "https://i.imgur.com/lVCFP9O.jpg"
+heroImage: "https://i.imgur.com/BimfwSs.jpg"
 ---
 
 ## What is Object Destructuring?
