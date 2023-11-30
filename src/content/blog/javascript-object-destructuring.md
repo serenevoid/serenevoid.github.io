@@ -116,8 +116,23 @@ const user = { name: 'Alexander', age: 49 };
 const { name, age } = user;
 ```
 
+## Renaming properties with Destructuring
+Another common usecase of destructuring I have seen is renaming object properties
+by destructuring them locally.
+```javascript
+const user = { name: 'Alexander', age: 49 };
+const { name: username, age: userage } = user;
+console.log(`${username} is ${userage} years old!`);
+```
+It could be justified that this makes the syntax much more simplex for these operations.
+But in my opinion, it breaks the meaning of : operator in typescript.
+In typescript, we use : operator for specifying the type of a variable in most cases
+and for assigning values to object properties. But using the same syntax for renaming
+properties locally by destructuring brings confusion and is better to be avoided.
+This is just a personal take and it might differ with people.
+
 ## Conclusion
-Javscript Object Destructuring is a very useful feature which was introduced to
+Javscript object destructuring is a very useful feature which was introduced to
 make development a bit more easier and faster. But overusing it would take it's
 advantages away and make the code an unreadable mess. Always use it where it is
 necessary.
