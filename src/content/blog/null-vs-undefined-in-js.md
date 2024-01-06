@@ -1,9 +1,9 @@
 ---
 title: "Null vs Undefined and how to catch them"
 description: "Javascript's similar but not so similar variable states"
-pubDate: 2022-12-29
+pubDate: 2024-12-29
 tags: ["js"]
-heroImage: "https://i.imgur.com/hK7dV13.jpg"
+heroImage: "https://i.imgur.com/2BDffzO.jpg"
 ---
 Undefined and Null are two primitive values in javascript which denotes the absence
 of a meaningful value. But even they have different meanings in terms of usage.
