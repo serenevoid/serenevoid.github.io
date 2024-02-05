@@ -10,9 +10,11 @@ and after few months, I got my first issue and first pull request.
 
 I have created a few PRs on open source projects and tons at my work. But I never
 had to verify a PR from someone else and merge it to a repository yet. This was
-completely new to me. And I struggled a bit to find the proper way. I couldn't find
-any easy youtube videos explaining how to verify PR changes. Most of the tutorials
-mentioned how I can preview the code on the web browser and add suggestions to it.
+completely new to me. Verifying a PR that was generated from a branch of the same repository
+is easy. But verifying the changes in a branch of the clone of the repository was different.
+And I struggled a bit to find the proper way. I couldn't find any easy youtube videos
+explaining how to verify PR changes. Most of the tutorials mentioned how I can
+preview the code on the web browser and add suggestions to it.
 
 Eventually I found the solution to check out the code from a pull request into a
 local branch and carry on with normal verification and testing. 
