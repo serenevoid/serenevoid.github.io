@@ -1,7 +1,7 @@
 ---
 title: "Null vs Undefined and how to catch them"
 description: "Javascript's similar but not so similar variable states"
-pubDate: 2024-12-29
+pubDate: 2023-12-29
 tags: ["js"]
 heroImage: "https://i.imgur.com/2BDffzO.jpg"
 ---
