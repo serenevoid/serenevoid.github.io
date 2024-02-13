@@ -1,7 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import ThemeToggler from './ThemeToggler.astro';
-import DropDownMenu from './DropDownMenu';
+import DropDown from './DropDown.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
@@ -22,7 +22,7 @@ import { SITE_TITLE } from '../consts';
       <div class="flex-1"></div>
       <ThemeToggler />
       <div class="flex md:hidden">
-        <DropDownMenu client:visible />
+        <DropDown />
       </div>
     </nav>
   </div>
