@@ -60,7 +60,7 @@ const { title, description, image = 'https://i.imgur.com/NDz3mZP.jpg' } = Astro.
   } else {
     document.documentElement.classList.add('dark')
   }
-  if (window.location.hostname != "localhost") {
+  if (window.location.hostname == "serenevoid.github.io") {
     const url = "https://script.google.com/macros/s/AKfycbw-LIz_aqIIvDiul-95Tc32Zgm1jAL4IseZ69bEeu0WaLnwF37JWQo2SrhAiKJ78eOr/exec";
     const path = window.location.pathname.replaceAll("\/", "zzz");
     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll("\/", "zzz");
