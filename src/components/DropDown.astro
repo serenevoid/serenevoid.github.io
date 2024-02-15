@@ -14,7 +14,7 @@
     </div>
   </div>
 </div>
-<script in:line>
+<script is:inline>
 function toggleMenu() {
   const menu = document.getElementById("dropdown-menu");
   if (menu.classList.contains("opacity-0")) {
@@ -24,7 +24,7 @@ function toggleMenu() {
   } else {
     menu.classList.add("opacity-0");
     menu.classList.add("translate-y-[-10px]");
-    menu.classList.remove("pointer-events-none");
+    menu.classList.add("pointer-events-none");
   }
 }
 </script>
