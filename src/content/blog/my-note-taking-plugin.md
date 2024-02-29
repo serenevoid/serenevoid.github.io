@@ -52,7 +52,5 @@ you to give this a try.
 
 ## Screenshots
 
-![index.md](https://i.imgur.com/2aZEdlS.jpg)
 ![custom_note.md](https://i.imgur.com/SRnBTuy.jpg)
-![todays_diary.md](https://i.imgur.com/p0zM9yG.jpg)
 ![todo.md](https://i.imgur.com/V6FV9PA.jpg)
