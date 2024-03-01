@@ -48,7 +48,7 @@ I went through different types of keyboards and two of them caught my eye.
 1. [Ferris Sweep series](https://github.com/davidphilipbarr/Sweep)
 ![sweep](https://github.com/davidphilipbarr/Sweep/assets/27895007/97e13cdc-b84b-4545-8e09-139a4bb935e5)
 2. [Dactyl Manuform series](https://github.com/tshort/dactyl-keyboard)
-![dactyl](http://i.imgur.com/LdjEhrR.jpg)
+![dactyl](https://i.redd.it/3vj76judqa151.jpg)
 
 I wanted to build both, but since Ferris Sweep is cheaper to build, I decided to
 build that first.
