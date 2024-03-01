@@ -13,12 +13,12 @@ My keyboard journey started from a youtube video explaining about mechanical key
 and their advantages over regular rubber dome keyboard. After a year of watching more videos,
 I decided to buy one for myself.
 
-The first mechanical keyboard I bought is E-YOOSO Z-11 60% keyboard with Blue clicky
+The first mechanical keyboard I bought is [E-YOOSO Z-11 60% keyboard](https://www.amazon.in/gp/product/B0B12GKBFQ/) with Blue clicky
 switches and RGB lighting. I used it for over a year. I loved the small form factor
 and portability of this keyboard.
 
 I didn't stop there though. I kept on digging more into the mechanical keyboard world.
-That's when I saw a unique keyboard called the ZSA Plank. It had a proper columnar layout.
+That's when I saw a unique keyboard called the [ZSA Plank](https://www.zsa.io/planck/). It had a proper columnar layout.
 It brought a question into my mind.
 
 > Why are regular keyboards designed in this weird staggered layout everywhere?
@@ -31,7 +31,8 @@ widely used keyboard layout.
 
 I wanted to try out this layout but the Plank was costly. So I kept digging till I found my next craze.
 
-A Kineses Advantage 2
+A [Kineses Advantage 2](https://kinesis-ergo.com/keyboards/advantage2-keyboard/)
+![kinesis](https://kinesis-ergo.com/wp-content/uploads/advantage2-glow.png)
 
 This keyboard looked nothing like anything I have seen till that point in my life.
 It had split design that separated left and right hand keys and kept them at a shoulder length distance.
@@ -44,8 +45,10 @@ Split-Ergonomic-Mechanical Keyboards.
 
 There were lots of options to choose from. I was overwhelmed but I took it slow.
 I went through different types of keyboards and two of them caught my eye.
-1. Ferris Sweep series
-2. Dactyl Manuform series
+1. [Ferris Sweep series](https://github.com/davidphilipbarr/Sweep)
+![sweep](https://github.com/davidphilipbarr/Sweep/assets/27895007/97e13cdc-b84b-4545-8e09-139a4bb935e5)
+2. [Dactyl Manuform series](https://github.com/tshort/dactyl-keyboard)
+![dactyl](http://i.imgur.com/LdjEhrR.jpg)
 
 I wanted to build both, but since Ferris Sweep is cheaper to build, I decided to
 build that first.
