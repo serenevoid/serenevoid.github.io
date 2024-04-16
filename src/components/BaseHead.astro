@@ -48,18 +48,6 @@ const { title, description, image = 'https://i.imgur.com/NDz3mZP.jpg' } = Astro.
 <meta name="twitter:cta" content=`Read on ${Astro.url}`>
 
 <script is:inline>
-  const theme = (() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark'
-    }
-    return 'light'
-  })()
-
-  if (theme === 'light') {
-    document.documentElement.classList.remove('dark')
-  } else {
-    document.documentElement.classList.add('dark')
-  }
   if (window.location.hostname == "serenevoid.github.io") {
     const url = "https://script.google.com/macros/s/AKfycbw-LIz_aqIIvDiul-95Tc32Zgm1jAL4IseZ69bEeu0WaLnwF37JWQo2SrhAiKJ78eOr/exec";
     const path = window.location.pathname.replaceAll("\/", "zzz");

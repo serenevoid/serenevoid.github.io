@@ -28,13 +28,35 @@
   </svg>
 </label>
 <script is:inline>
-function toggleTheme() {
-  if (document.getElementById("dark-theme-checkbox").checked) {
-    document.documentElement.classList.add("dark");
-    localStorage.setItem("isDarkMode", true)
-  } else {
-    document.documentElement.classList.remove("dark");
-    localStorage.setItem("isDarkMode", true)
+  function toggleTheme() {
+    if (document.getElementById('dark-theme-checkbox').checked) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('isDarkMode', true)
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('isDarkMode', false)
+    }
   }
-}
+  const browserTheme = (() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark'
+    }
+    return 'light'
+  })()
+  const cacheTheme = localStorage.getItem('isDarkMode');
+  if (cacheTheme == null) {
+    if (browserTheme === 'light') {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('isDarkMode', false)
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('isDarkMode', true)
+    }
+  } else if (cacheTheme == 'true') {
+    document.documentElement.classList.add('dark')
+    document.getElementById('dark-theme-checkbox').checked = true;
+  } else {
+    document.documentElement.classList.remove('dark')
+    document.getElementById('dark-theme-checkbox').checked = false;
+  }
 </script>
