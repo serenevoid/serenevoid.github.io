@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/within.min.css">
 <label class="theme-toggle" title="Toggle theme">
-  <input id="dark-theme-checkbox" type="checkbox" onChange="toggleTheme()" checked />
+  <input id="dark-theme-checkbox" type="checkbox" onclick="toggleTheme()" checked />
   <span class="theme-toggle-sr">Toggle theme</span>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -31,8 +31,10 @@
 function toggleTheme() {
   if (document.getElementById("dark-theme-checkbox").checked) {
     document.documentElement.classList.add("dark");
+    localStorage.setItem("isDarkMode", true)
   } else {
     document.documentElement.classList.remove("dark");
+    localStorage.setItem("isDarkMode", true)
   }
 }
 </script>
