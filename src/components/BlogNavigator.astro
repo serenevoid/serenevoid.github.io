@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+
+const blogs = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+let prevBlog;
+let nextBlog;
+const { currentTitle = '' } = Astro.props
+for (let i = 0; i < blogs.length; i++) {
+  if (blogs[i].data.title == currentTitle) {
+    if (i > 0) {
+      nextBlog = blogs[i-1];
+    }
+    if (i < blogs.length - 1) {
+      prevBlog = blogs[i+1];
+    }
+  }
+}
+---
+<div class="my-12 px-8 mx-auto max-w-3xl w-fit h-fit flex flex-row flex-1">
+  {prevBlog && <div class="text-left mr-2 p-4 border rounded-md border-orange-300 dark:border-zinc-600 hover:text-orange-600 dark:hover:text-orange-300">
+    <a href=`/blog/${prevBlog.slug}` class="flex flex-row">
+      <div class="w-4 mr-4 flex fill-orange-600 dark:fill-orange-300">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+        </svg>
+      </div>
+      <h4>
+        {prevBlog.data.title}
+      </h4>
+    </a>
+  </div>}
+  {nextBlog && <div class="text-right ml-2 p-4 border rounded-md flex flex-row border-orange-300 dark:border-zinc-600 hover:text-orange-600 dark:hover:text-orange-300">
+    <a href=`/blog/${nextBlog.slug}` class="flex flex-row">
+      <h4>
+        {nextBlog.data.title}
+      </h4>
+      <div class="w-4 ml-4 flex fill-orange-600 dark:fill-orange-300">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+        </svg>
+      </div>
+    </a>
+  </div>}
+</div>

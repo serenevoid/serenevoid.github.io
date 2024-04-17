@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
+import BlogNavigator from '../components/BlogNavigator.astro';
 import Header from '../components/Header.astro';
 import Body from '../components/Body.astro';
 import Content from '../components/Content.astro';
@@ -32,6 +33,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
           </div>
         </div>
       </Content>
+      <BlogNavigator currentTitle={title}/>
     </main>
     <Footer />
 	</Body>
