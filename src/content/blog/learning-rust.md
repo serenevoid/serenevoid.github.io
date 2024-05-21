@@ -90,4 +90,29 @@ development which would slow down the development process.
 ## Generic Types, Traits and Lifetimes
 
 This chapter was where things got tougher. The complexity of the rust language rises from
-this chapter.
+this chapter. Generics are commonly found in other languages so that was easier to follow.
+But Traits and Lifetimes were new concepts. Its a bit hard to wrap your mind around them.
+And even after you do, its hard to learn implement them without practicing a lot.
+
+## Writing Automated Tests
+
+This chapter was fun and easier to learn after the tough section on Lifetimes and Traits.
+Testing is a widely common concept and there were just syntax details and steps of running
+tests and organising them.
+
+## Building a CLI program
+
+This was a fun chapter that used most of the concepts learned till now and it was a
+really good experience. There is a lot to learn about the rust style from this chapter.
+
+## The rest of the book
+
+Honestly, the rest of the book were getting advanced with each chapter and the final
+program we write is a complete web server with rust. It was a tough project to really
+understand the inner working but still its a good way to learn.
+
+# Overall
+
+Learning rust was hard but that was expected since it was one of the things the language
+is famous for. Still I learned a lot from the book and I still need good practice for
+getting good at it. I'm hoping to create some good projects with it soon.
