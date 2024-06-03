@@ -6,14 +6,14 @@ tags: ["rust"]
 heroImage: "https://i.imgur.com/l7rW5FB.jpg"
 ---
 
-# Background
+## Background
 
 My introduction to the Rust Programming Language was from the Twitch streamer [ThePrimeagen](https://www.twitch.tv/theprimeagen)
 back in 2022. After hearing about it in a few of his streams and also from few other
 streamers, I wanted to try it out. It was gaining more popularity through youtube
 and other social media as well for being difficult to learn but fun to program in.
 
-# My Failed attempts
+## My Failed attempts
 
 It was my new year resolution in 2023 to finish the Rust Book within 2-3 months.
 I thought it was possible since there were 20 chapters + Appendix in the rust book.
@@ -25,9 +25,9 @@ after the new year resolution.
 
 ![absolute_win](https://media1.tenor.com/m/1PMq-CFZno4AAAAd/avengers-endgame-hulk.gif)
 
-# Summary of the journey
+## Summary of the journey
 
-## Introduction and hands-on Guessing Game
+### Introduction and hands-on Guessing Game
 
 The beginning of the book was a proper introduction and the simple Guessing Game.
 This is a very good introdction to express the highlights of the language. It gives
@@ -35,7 +35,7 @@ you a brief idea on how to think while programming rust. And it gives you a tast
 rust's well polished type system. Some things might be confusing for you but that's
 how it should be. The next chapters take each parts one by one and explain how they work.
 
-## Common Programming Concepts
+### Common Programming Concepts
 
 This chapter included the common concepts like Data Types, Functions, Comments, Control Flow,
 and the most important part, Variables and Mutability. Learning that all variables are
@@ -44,7 +44,7 @@ variables in any language, it should ideally be immutable and then we should cha
 when needed. This avoids errors caused by changing variables that aren't supposed to be
 changed.
 
-## Understanding Ownership
+### Understanding Ownership
 
 This was the first chapter showing the main highlight of the language. Ownership and
 Borrowing, the way of rust's memory management. This teaches the alternative approach to
@@ -52,33 +52,33 @@ manual memory management in C based languages and other Garbage collected langua
 This chapter also teaches about slices and how they operate with the ownership and
 borrowing way of memory management.
 
-## Structs
+### Structs
 
 This chapter was a detailed one for dealing with structured data and having methods
 associated to the struct. Coming from the javascript world, seeing methods related to
 structs was a fun concept to learn. I saw the similarity it had with Go and it was
 a good feature.
 
-## Enums and Pattern Matching
+### Enums and Pattern Matching
 
 This chapter showed how Enums work and how pattern matching is the best kind of syntax
 to write matches similar to how a switch statement work. This also showed how the
 pattern matching syntax does an exhaustive matching in order to avoid unhandled cases.
 
-## Managing growing projects
+### Managing growing projects
 
 This chapter gave an introdction to rust's module system, packages and crates.
 The abstraction of logic inside files and only exposing the necessary API functions
 were similar to that of other languages.
 
-## Common Collections
+### Common Collections
 
 This chapter gave a proper introduction to Vectors and how String data type works.
 Using a HashMap was also a sub-section of this chapter since that is a widely used
 datastructure.
 
 
-## Error handling
+### Error handling
 
 This chapter explained all the ways errors are handled in rust. We could either
 terminate the program with `unwrap()` or `expect()` and print out an error message.
@@ -87,31 +87,31 @@ Errors are properly handled using `match` statements in a production ready appli
 This allowed easier development since you don't have to handle all the errors while
 development which would slow down the development process.
 
-## Generic Types, Traits and Lifetimes
+### Generic Types, Traits and Lifetimes
 
 This chapter was where things got tougher. The complexity of the rust language rises from
 this chapter. Generics are commonly found in other languages so that was easier to follow.
 But Traits and Lifetimes were new concepts. Its a bit hard to wrap your mind around them.
 And even after you do, its hard to learn implement them without practicing a lot.
 
-## Writing Automated Tests
+### Writing Automated Tests
 
 This chapter was fun and easier to learn after the tough section on Lifetimes and Traits.
 Testing is a widely common concept and there were just syntax details and steps of running
 tests and organising them.
 
-## Building a CLI program
+### Building a CLI program
 
 This was a fun chapter that used most of the concepts learned till now and it was a
 really good experience. There is a lot to learn about the rust style from this chapter.
 
-## The rest of the book
+### The rest of the book
 
 Honestly, the rest of the book were getting advanced with each chapter and the final
 program we write is a complete web server with rust. It was a tough project to really
 understand the inner working but still its a good way to learn.
 
-# Overall
+## Overall
 
 Learning rust was hard but that was expected since it was one of the things the language
 is famous for. Still I learned a lot from the book and I still need good practice for
