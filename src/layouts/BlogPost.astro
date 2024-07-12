@@ -24,7 +24,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
       <Content className="pt-6">
         <div class="mb-8">
           {heroImage && <img class="border border-slate-300 dark:border-zinc-700 rounded-xl" width={1410} height={600} src={heroImage} alt="" />}
-          <h1 class="text-3xl my-1 font-mplus">{title}</h1>
+          <h1 class="text-3xl md:text-4xl prose porse-zinc dark:prose-invert max-w-none px-2 my-2 border-l-4">{title}</h1>
           <div>{description}</div>
           <FormattedDate className="opacity-70" date={pubDate} />
           <hr class="border-top border-zinc-400 my-4"/>
