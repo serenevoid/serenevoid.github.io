@@ -22,8 +22,10 @@ const { title, description, pubDate, heroImage } = Astro.props;
 		<Header />
 		<main class="sm:pt-[64px]">
       <Content className="sm:pt-6">
-        {heroImage && <img class="md:rounded-xl" width={1410} height={600} src={heroImage} alt="" />}
-        <div class="mb-8 mx-8">
+        <div class="mb-8 md:mx-6">
+          {heroImage && <img class="m-auto md:rounded-xl" width={1410} height={600} src={heroImage} alt="" />}
+        </div>
+        <div class="mb-8 mx-6">
           <h1 class="text-3xl font-bold md:text-4xl prose porse-zinc dark:prose-invert max-w-none px-2 my-2 border-l-4 border-orange-300 dark:border-zinc-600 transition-colors duration-150">{title}</h1>
           <div>{description}</div>
           <FormattedDate className="opacity-70" date={pubDate} />
@@ -33,6 +35,8 @@ const { title, description, pubDate, heroImage } = Astro.props;
           </div>
         </div>
       </Content>
+      <h3 class="text-xl font-bold w-fit m-auto px-6 mb-4">* * *</h3>
+      <h3 class="text-xl font-bold max-w-3xl m-auto px-6 mb-2">Other similar blogs:</h3>
       <BlogNavigator currentTitle={title}/>
     </main>
     <Footer />

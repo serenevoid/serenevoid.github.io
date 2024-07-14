@@ -1,48 +1,34 @@
 ---
 import { getCollection } from 'astro:content';
+import BlogCard from './BlogCard.astro';
 
-const blogs = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
-let prevBlog;
-let nextBlog;
+const blogs = await getCollection('blog');
 const { currentTitle = '' } = Astro.props
+let tags: string[] = [];
+let similarBlogs: typeof blogs = [];
 for (let i = 0; i < blogs.length; i++) {
   if (blogs[i].data.title == currentTitle) {
-    if (i > 0) {
-      nextBlog = blogs[i-1];
-    }
-    if (i < blogs.length - 1) {
-      prevBlog = blogs[i+1];
+    tags = blogs[i].data.tags;
+    break;
+  }
+}
+for (let i = 0; i < blogs.length; i++) {
+  for (let tag of blogs[i].data.tags) {
+    if (blogs[i].data.title != currentTitle) {
+      if (tags.includes(tag) && !similarBlogs.includes(blogs[i])) {
+        similarBlogs.push(blogs[i]);
+      }
     }
   }
 }
+let currentIndex = similarBlogs.length;
+while (currentIndex != 0) {
+  let randomIndex = Math.floor(Math.random() * currentIndex);
+  currentIndex--;
+  [similarBlogs[currentIndex], similarBlogs[randomIndex]] = [
+    similarBlogs[randomIndex], similarBlogs[currentIndex]];
+}
 ---
-<div class="my-12 px-8 mx-auto max-w-3xl w-fit h-fit flex flex-row flex-1">
-  {prevBlog && <div class="text-left mr-2 p-4 border rounded-md border-orange-300 dark:border-zinc-600 hover:text-orange-600 dark:hover:text-orange-300">
-    <a href=`/blog/${prevBlog.slug}` class="flex flex-row">
-      <div class="w-4 mr-4 flex fill-orange-600 dark:fill-orange-300">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
-        </svg>
-      </div>
-      <h4>
-        {prevBlog.data.title}
-      </h4>
-    </a>
-  </div>}
-  {nextBlog && <div class="text-right ml-2 p-4 border rounded-md flex flex-row border-orange-300 dark:border-zinc-600 hover:text-orange-600 dark:hover:text-orange-300">
-    <a href=`/blog/${nextBlog.slug}` class="flex flex-row">
-      <h4>
-        {nextBlog.data.title}
-      </h4>
-      <div class="w-4 ml-4 flex fill-orange-600 dark:fill-orange-300">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
-        </svg>
-      </div>
-    </a>
-  </div>}
-</div>
+{similarBlogs.length != 0 && 
+  <BlogCard className="" blogs={similarBlogs} />
+}

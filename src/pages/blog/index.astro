@@ -20,8 +20,8 @@ const blogs = (await getCollection('blog')).sort(
 	</head>
 	<Body>
 		<Header />
-		<main class="sm:pt-[64px]">
-      <Content className="mb-6">
+		<main class="pt-4 sm:pt-[64px]">
+      <Content className="mb-6 px-4">
         <section>
           <div class="flex items-center gap-2">
             <h2 class="text-3xl font-semibold">All blog posts</h2>
@@ -41,17 +41,17 @@ const blogs = (await getCollection('blog')).sort(
                   </div>
                   <div class="flex flex-col">
                     <FormattedDate className="text-sm opacity-70 mb-2" date={blog.data.pubDate} />
-                    <a href=`/blog/${blog.slug}`>
+                    <a href=`/blog/${blog.slug}` class="mb-1">
                       <div class="flex flex-row gap-4">
                         <div>
-                          <div class="mb-1 text-xl hover:text-orange-600 dark:hover:text-orange-300">{blog.data.title}</div>
+                          <div class="text-xl hover:text-orange-600 dark:hover:text-orange-300">{blog.data.title}</div>
                         </div>
                       </div>
                     </a>
                     <div class="mb-1 text-lg flex gap-2">{
                       blog.data.tags.map((tag: string) => (
                         <a href=`/tags/${tag}`>
-                          <div class="px-2 py-1 rounded-md font-mplus text-sm bg-orange-300 dark:bg-zinc-600"><code>#{tag}</code></div>
+                          <div class="underline rounded-md font-mono text-sm opacity-90"><code>#{tag}</code></div>
                         </a>
                       ))
                     }</div>
