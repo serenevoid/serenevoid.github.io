@@ -25,9 +25,10 @@ for (let i = 0; i < blogs.length; i++) {
 }
 let i = 0;
 while (similarBlogs.length < 2) {
-  if (blogs[i].data.title != currentTitle) {
-    similarBlogs.push(blogs[i++])
+  if (blogs[i].data.title != currentTitle && !similarBlogs.includes(blogs[i])) {
+    similarBlogs.push(blogs[i])
   }
+  i++;
 }
 let currentIndex = similarBlogs.length;
 while (currentIndex != 0) {
