@@ -2,7 +2,9 @@
 import { getCollection } from 'astro:content';
 import BlogCard from './BlogCard.astro';
 
-const blogs = await getCollection('blog');
+const blogs = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 const { currentTitle = '' } = Astro.props
 let tags: string[] = [];
 let similarBlogs: typeof blogs = [];
@@ -21,6 +23,11 @@ for (let i = 0; i < blogs.length; i++) {
     }
   }
 }
+let i = 0;
+while (similarBlogs.length < 2) {
+  similarBlogs.push(blogs[i])
+  i++;
+}
 let currentIndex = similarBlogs.length;
 while (currentIndex != 0) {
   let randomIndex = Math.floor(Math.random() * currentIndex);
@@ -29,6 +36,4 @@ while (currentIndex != 0) {
     similarBlogs[randomIndex], similarBlogs[currentIndex]];
 }
 ---
-{similarBlogs.length != 0 && 
-  <BlogCard className="" blogs={similarBlogs} />
-}
+<BlogCard className="" blogs={similarBlogs.slice(0,2)} />
