@@ -3,7 +3,7 @@ title: "My experience of learning Rust"
 description: "Finally finished the rust book and this is my thoughts about it."
 pubDate: 2024-4-26
 tags: ["rust"]
-heroImage: "https://i.imgur.com/l7rW5FB.jpg"
+heroImage: "https://u.cubeupload.com/serenevoid/DplyH3.jpg"
 ---
 
 ## Background

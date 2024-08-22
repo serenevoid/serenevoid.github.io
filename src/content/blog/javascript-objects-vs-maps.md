@@ -3,7 +3,7 @@ title: "Are objects the same as Maps in Javascript?"
 description: "Addressing a common practice of using objects as maps."
 pubDate: 2023-09-25
 tags: ["js"]
-heroImage: "https://i.imgur.com/OJL3QV6.png"
+heroImage: "https://u.cubeupload.com/serenevoid/QDBREI.png"
 ---
 ## Javascript Objects
 An Object is a value in memory that can be referenced by an identifier like a variable.

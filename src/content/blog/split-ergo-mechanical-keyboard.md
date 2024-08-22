@@ -3,7 +3,7 @@ title: "I fell into the DIY keyboard rabbit hole, and I don't regret it!"
 description: "The story of how I built my first split ergo mechanical keyboard - a Ferris Sweep"
 pubDate: 2024-02-29
 tags: ["keyboard"]
-heroImage: "https://i.imgur.com/7izGJ63.jpg"
+heroImage: "https://u.cubeupload.com/serenevoid/Ig5P0G.jpg"
 ---
 ## Keyboards
 > Almost everyone uses keyboards in their day to day life. But very few curious minds
@@ -75,7 +75,7 @@ at around 30 wpm.
 Maybe if I get good enough, I'll think about building a Dactyl Manuform next.
 And I highly recommend this keyboard for all the tinkerers out there.
 
-![pcb_test](https://i.imgur.com/gBZiH2X.jpg)
-![pcb_soldering](https://i.imgur.com/LFOKBDn.jpg)
-![key_testing](https://i.imgur.com/4LceDpI.jpg)
-![final](https://i.imgur.com/1WHbE81.jpg)
+![pcb_test](https://u.cubeupload.com/serenevoid/X40Hgt.jpg)
+![pcb_soldering](https://u.cubeupload.com/serenevoid/R9gHR3.jpg)
+![key_testing](https://u.cubeupload.com/serenevoid/rJqPEY.jpg)
+![final](https://u.cubeupload.com/serenevoid/7NzznS.jpg)

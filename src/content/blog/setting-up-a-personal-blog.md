@@ -3,7 +3,7 @@ title: "Setting up a Personal Blog - So Simple Even Kids Do It"
 description: "A guide to create your own personal blog and host it for free"
 pubDate: 2022-09-20
 tags: ["web"]
-heroImage: "https://i.imgur.com/hK7dV13.jpg"
+heroImage: "https://u.cubeupload.com/serenevoid/pj3gR2.jpg"
 ---
 Yes, you read it correctly. This post is not a tutorial to help you write a blog 
 post but to build a blog site.

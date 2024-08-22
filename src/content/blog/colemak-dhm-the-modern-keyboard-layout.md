@@ -3,7 +3,7 @@ title: "Colemak-DHm - A keyboard layout for the modern era"
 description: "Friendship with QWERTY ended. Colemak-DHm is my new best friend"
 pubDate: 2024-03-29
 tags: ["keyboard"]
-heroImage: "https://imgur.com/btoFsNW.jpg"
+heroImage: "https://u.cubeupload.com/serenevoid/x78oOS.jpg"
 ---
 ## Keyboards and Keyboard Layouts
 Last month, I made a custom keyboard called the Ferris Sweep. It is a split, column-staggered,

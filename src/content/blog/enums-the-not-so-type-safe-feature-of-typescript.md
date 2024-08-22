@@ -3,7 +3,7 @@ title: "Enums - The not so type-safe feature of Typescript"
 description: "A small issue inside the typescript ecosystem which very few people notice."
 pubDate: 2023-01-15
 tags: ["js"]
-heroImage: "https://i.imgur.com/F03eqph.jpg"
+heroImage: "https://u.cubeupload.com/serenevoid/JGqPT5.jpg"
 ---
 Enumerated Type or *enum* is a user-defined data type in most programming languages.
 It is used to assign descriptive names to integral or string constants just for 

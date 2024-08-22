@@ -3,7 +3,7 @@ title: "Count API built with Go"
 description: "How I replicated an existing API server with Go"
 pubDate: 2023-05-17
 tags: ["go", "web"]
-heroImage: "https://i.imgur.com/hbIOMVw.jpg"
+heroImage: "https://u.cubeupload.com/serenevoid/AXIIDJ.jpg"
 ---
 [Count API](https://countapi.xyz) was an interesting service that I came across 
 when I was starting to develop my own blog site. I wanted to somehow count the 
@@ -90,4 +90,4 @@ processes running in the system while the test was conducted. But on an average,
 of response time for each requests. And all the requests were unique. That means, there were 
 10,000 keys created in this process and each request had separate reads and writes to the DB.
 
-![Response Graph](https://i.imgur.com/Ke91WNG.jpg)
+![Response Graph](https://u.cubeupload.com/serenevoid/lSfsZv.jpg)
