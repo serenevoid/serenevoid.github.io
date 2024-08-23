@@ -60,7 +60,7 @@ using it for other workflows was hard. I use a lot of different macros and short
 Windows machines. Using Ginny to switch windows, workspaces, browser tabs were hard and I had to use the mouse for
 those.
 
-## Is it for me or you?
+## Would I build a Ginny after this experience?
 Ginny is definitely a wonderful keyboard with a minimal design that is cheaper to build as well. But
 as a programmer who also uses a lot of shortcuts and macros, I feel that Ginny would limit my workflow. So I switched my
 keyboard firmware back to the old one. I kept the chording feature on for the moment. I liked the feeling
