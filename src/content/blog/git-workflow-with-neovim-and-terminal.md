@@ -1,7 +1,7 @@
 ---
 title: "Git Blame in Neovim without a plugin"
 description: "Creating small scripts for your git workflow is fun"
-pubDate: 2024-07-14
+pubDate: 2024-06-14
 tags: ["neovim", "lua", "git"]
 heroImage: "https://u.cubeupload.com/serenevoid/b3AdLw.jpg"
 ---
