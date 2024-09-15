@@ -124,5 +124,5 @@ for each URLs from the table data and then search for that pattern in the compre
 After attempts 1 and 2, I couldn't work on 3 due to other priorities. But even if it
 works, I don't expect it to work perfectly. There will still be issues sometimes because
 of the slow speed of the ESP module. It would be better to use [pihole](https://pi-hole.net/) or
-Adguard on a [RaspberryPi Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) since that has more processing power
+[AdGuard](https://adguard.com/en/welcome.html) on a [RaspberryPi Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) since that has more processing power
 and still consumes very little power. That is something I'm planning to do later.
