@@ -3,7 +3,7 @@ title: "Migrating from webpack to esbuild"
 description: "The simplicity and efficiency of esbuild is unparalleled"
 pubDate: 2024-11-22
 tags: ["js"]
-heroImage: "https://u.cubeupload.com/serenevoid/x78oOS.jpg"
+heroImage: "https://u.cubeupload.com/serenevoid/eRqBqf.jpg"
 ---
 ## Pre-Bundlers Era
 In earlier days, when web was simpler and light, javascript was inlined with the
@@ -25,7 +25,7 @@ deployed with your web page. JS Bundlers combined with CSS Preprocessors and oth
 plugins made the web what it is today.
 
 ### [Browserify](https://browserify.org/)
-![browserify-logo](https://github.com/browserify/browserify/blob/master/assets/logo.png)
+![browserify-logo](https://cdn.icon-icons.com/icons2/2699/PNG/512/browserify_logo_icon_169455.png)
 One of the first popular bundlers that is still being used today in some legacy projects
 is browserify. It took the modular JS files and transpiled them to be compatible with
 the browser. It is an old project and is not used in modern projects. With browserify,
@@ -33,7 +33,7 @@ developers made workflow scripts with [gulp.js](https://gulpjs.com/) to bundle a
 all the files necessary to deploy a project.
 
 ### [Webpack](https://webpack.js.org/)
-![webpack-logo](https://webpack.js.org/assets/icon-square-big.svg)
+![webpack-logo](https://webpack.js.org/site-logo.c0e60df418e04f58.svg)
 Webpack is a more developed build system that has been under use for a long time now.
 It overthrowed Browserify + Gulp build system with it's rich plugin ecosystem.
 There are over hundreds of webpack plugins (Official and community plugins) that
@@ -70,17 +70,17 @@ And configuring esbuild was so much easier when compared with the old implementa
 ### Performance Results
 #### Development
 
-|       |    project1|  project2|
+|       |   Project 1| Project 2|
 |-------|------------|----------|
-|webpack|  1m 28.617s|   34.653s|
-|esbuild|      4.743s|    2.250s|
+|**webpack**|  1m 28.617s|   34.653s|
+|**esbuild**|      4.743s|    2.250s|
 
 #### Production
 
-|       |    project1|  project2|
+|       |   Project 1| Project 2|
 |-------|------------|----------|
-|webpack|  2m 17.917s|   31.486s|
-|esbuild|      2.148s|    1.774s|
+|**webpack**|  2m 17.917s|   31.486s|
+|**esbuild**|      2.148s|    1.774s|
 
 ### Observations
 
