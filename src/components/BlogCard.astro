@@ -12,8 +12,8 @@ const { className = '', blogs = [] } = Astro.props
     {
       blogs.map((blog: any) => (
         <li class=`text-center mb-4 ${className}`>
-          <img class="border border-slate-300 dark:border-zinc-700 rounded-xl object-fill" src={blog.data.heroImage} alt="Thumbnail"/>
           <a href=`/blog/${blog.slug}`>
+            <img class="border border-slate-300 dark:border-zinc-700 rounded-xl object-fill" src={blog.data.heroImage} alt="Thumbnail"/>
             <div class="mt-3 text-xl">{blog.data.title}</div>
             <div class="opacity-70">{blog.data.description}</div>
           </a>
