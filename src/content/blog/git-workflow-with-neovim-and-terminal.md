@@ -6,7 +6,7 @@ tags: ["neovim", "lua", "git"]
 heroImage: "https://u.cubeupload.com/serenevoid/b3AdLw.jpg"
 ---
 
-Soure control is a very important tool that makes software development easier.
+Source control is a very important tool that makes software development easier.
 Git is one of the most widely used version control systems. Almost all new
 developers solely use git at work and even for managing personal projects.
 
