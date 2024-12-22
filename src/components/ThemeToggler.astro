@@ -48,6 +48,7 @@
     if (browserTheme === 'light') {
       document.documentElement.classList.remove('dark')
       localStorage.setItem('isDarkMode', false)
+      document.getElementById('dark-theme-checkbox').checked = false;
     } else {
       document.documentElement.classList.add('dark')
       localStorage.setItem('isDarkMode', true)

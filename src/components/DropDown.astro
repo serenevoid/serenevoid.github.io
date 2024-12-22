@@ -20,21 +20,20 @@ const button = document.getElementById("menu-button");
 const menu = document.getElementById("dropdown-menu");
 button.onclick = toggleMenu;
 function toggleMenu() {
-  if (menu.classList.contains("opacity-0")) {
-    menu.classList.remove("opacity-0");
-    menu.classList.remove("translate-y-[10px]");
-    menu.classList.remove("sm:translate-y-[-10px]");
-    menu.classList.remove("pointer-events-none");
-  } else {
-    menu.classList.add("opacity-0");
-    menu.classList.add("translate-y-[10px]");
-    menu.classList.add("sm:translate-y-[-10px]");
-    menu.classList.add("pointer-events-none");
-  }
+  (menu.classList.contains("opacity-0"))
+    ? showDropdown()
+    : hideDropdown();
 }
-document.onclick = (event) => {
-  if (!button.contains(event.target) && !menu.classList.contains("opacity-0")) {
-    toggleMenu();
-  }
-};
+function showDropdown() {
+  menu.classList.remove("opacity-0");
+  menu.classList.remove("translate-y-[10px]");
+  menu.classList.remove("sm:translate-y-[-10px]");
+  menu.classList.remove("pointer-events-none");
+}
+function hideDropdown() {
+  menu.classList.add("opacity-0");
+  menu.classList.add("translate-y-[10px]");
+  menu.classList.add("sm:translate-y-[-10px]");
+  menu.classList.add("pointer-events-none");
+}
 </script>
