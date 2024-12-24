@@ -1,0 +1,33 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Body from '../../components/Body.astro';
+import Content from '../../components/Content.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title="Mini Games" description="A collection of mini HTML games" />
+  </head>
+  <Body>
+    <Header />
+    <main class="mt-4 sm:pt-[64px]">
+      <Content className="px-4">
+        <h2 class="text-3xl font-semibold">Games</h2>
+        <hr class="border-top border-zinc-400 my-4"/>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xl">
+          <a href="/games/tenzies">
+            <div class="p-2 m-2 text-center rounded-md bg-orange-200 dark:bg-zinc-800">
+              <h3>
+                Tenzies
+              </h3>
+            </div>
+          </a>
+        </section>
+      </Content>
+    </main>
+    <Footer />
+  </Body>
+</html>

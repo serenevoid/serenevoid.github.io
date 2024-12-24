@@ -1,0 +1,128 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Body from '../../components/Body.astro';
+import Content from '../../components/Content.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title="Tenzies" description="A simple game of matching numbers" />
+  </head>
+  <Body>
+    <Header title="Tenzies" />
+    <main class="mt-4 sm:pt-[64px]">
+      <Content className="px-4">
+        <h2 class="text-3xl font-semibold">Tenzies</h2>
+        <hr class="border-top border-zinc-400 my-4"/>
+        <div id="tenzies-container" class="grid grid-cols-5 gap-4 p-8 m-auto w-3/6 min-w-80 text-center rounded-md text-lg font-bold text-zinc-500 bg-stone-200">
+        </div>
+        <div class="bg-stone-200 flex justify-center rounded-md w-3/6 min-w-80 m-auto my-2">
+          <div id="roll-button" class="m-2 py-2 px-4 items-center text-zinc-700 rounded-md font-semibold cursor-pointer">
+            Roll Again
+          </div>
+        </div>
+      </Content>
+    </main>
+    <Footer />
+  </Body>
+</html>
+
+<script>
+const releasedcss = 'background: linear-gradient(145deg, #f0f0f0, #cacaca); box-shadow:  4px 4px 8px #cacaca, -4px -4px 8px #f6f6f6;'
+const pressedcss = 'background: linear-gradient(145deg, #cacaca, #f0f0f0); box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;'
+const container = document.getElementById("tenzies-container");
+const rollBtn = document.getElementById("roll-button");
+
+function setStyles(cell: HTMLElement) {
+  cell.style.width = '2em';
+  cell.style.height = '2em';
+  cell.style.alignContent = 'center';
+  cell.style.userSelect = 'none';
+  cell.style.borderRadius = '8px';
+  cell.style.cursor = 'pointer';
+}
+
+for (let i = 0; i < 10; i++) {
+  let cell = document.createElement('div');
+  cell.setAttribute('style', releasedcss);
+  setStyles(cell);
+  container?.append(cell);
+  cell.onclick = function() {
+    if (cell.getAttribute('locked') == null) {
+      cell.setAttribute('locked', '');
+      cell.setAttribute('style', pressedcss);
+    } else {
+      cell.removeAttribute('locked');
+      cell.setAttribute('style', releasedcss);
+    }
+    setStyles(cell);
+    let value = 0;
+    for (let i = 0; i < container.children.length; i++) {
+      if (container?.children[i].getAttribute('locked') == '') {
+        if (value == 0) {
+          value = Number(container?.children[i].innerHTML);
+        } else {
+          if (value != Number(container?.children[i].innerHTML)) {
+            value = 0;
+            break;
+          }
+        }
+      } else {
+        value = 0;
+        break;
+      }
+    }
+    if (value != 0) {
+      rollBtn.innerHTML = "Replay"
+    }
+  };
+}
+
+const clickEvent = new MouseEvent('click', {
+  bubbles: true,
+  cancelable: true,
+  view: window,
+});
+
+function randomize(reset: boolean) {
+  for (let i = 0; i < container.children.length; i++) {
+    if (reset) {
+      setTimeout(() => {
+        container.children[i].dispatchEvent(clickEvent);
+        container.children[i].innerHTML = `${Math.ceil(Math.random() * 6)}`;
+      }, i * 50);
+    } else {
+      if (container.children[i].getAttribute('locked') == null) {
+        container.children[i].innerHTML = `${Math.ceil(Math.random() * 6)}`;
+      }
+    }
+  }
+}
+
+randomize(false);
+
+rollBtn.setAttribute('style', releasedcss);
+rollBtn.onmousedown = function() {
+  rollBtn?.setAttribute('style', pressedcss);
+}
+rollBtn.ontouchstart = function() {
+  rollBtn?.setAttribute('style', pressedcss);
+}
+rollBtn.onmouseup = function() {
+  rollBtn.setAttribute('style', releasedcss);
+}
+rollBtn.ontouchend = function() {
+  rollBtn.setAttribute('style', releasedcss);
+}
+rollBtn.onclick = function() {
+  if (rollBtn.innerHTML == "Replay") {
+    rollBtn.innerHTML = "Roll Again";
+    randomize(true);
+  } else {
+    randomize(false);
+  }
+}
+</script>
