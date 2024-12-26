@@ -16,10 +16,10 @@ import Footer from '../../components/Footer.astro';
       <Content className="px-4">
         <h2 class="text-3xl font-semibold">Slide Puzzle</h2>
         <hr class="border-top border-zinc-400 my-4"/>
-        <div id="slide-container" class="grid grid-cols-4 p-8 m-auto w-80 text-center rounded-md text-lg font-bold text-zinc-500 bg-stone-200">
+        <div id="slide-container" class="p-4 m-auto w-80 h-80 text-center rounded-md text-lg font-bold text-zinc-500 bg-stone-200">
         </div>
         <div class="bg-stone-200 flex justify-center rounded-md w-80 m-auto my-2">
-          <div id="reset-button" class="m-2 py-2 px-4 items-center text-zinc-700 rounded-md font-semibold cursor-pointer">
+          <div id="reset-button" class="m-2 py-2 px-4 items-center text-zinc-700 rounded-md font-semibold cursor-pointer select-none">
             Reset
           </div>
         </div>
@@ -30,16 +30,22 @@ import Footer from '../../components/Footer.astro';
 </html>
 
 <script>
+const releasedcss = 'background: linear-gradient(145deg, #f7f5f4, #d0cecd); box-shadow:  4px 4px 8px #c4c3c2, -4px -4px 8px #ffffff;'
+const pressedcss = 'background: linear-gradient(145deg, #d0cecd, #f7f5f4); box-shadow:  4px 4px 8px #c4c3c2, -4px -4px 8px #ffffff;'
+const cellSize = 4;
 const style = `background: linear-gradient(145deg, #f7f5f4, #d0cecd);
 border-radius: 0.4em;
-width: 3.5em;
-height: 3.5em;
+position: absolute;
+width: ${cellSize}em;
+height: ${cellSize}em;
 display: flex;
 flex-direction: column;
 justify-content: center;
-transition: transform 0.3s ease;
+transition: transform 0.2s ease;
+user-select: none;
 cursor: pointer;`;
 const slideContainer = document.getElementById("slide-container");
+const resetBtn = document.getElementById('reset-button');
 
 function createRandom() {
   let numbers = [];
@@ -64,30 +70,104 @@ function createRandom() {
   return numbers;
 }
 
-function swap() {
-
+function slide(cellString: string) {
+  let cellPos = { row: null, col: null };
+  let zeroPos = { row: null, col: null };
+  for (let i = 0; i < slideContainer.children.length; i++) {
+    const cellElem = slideContainer.children[i];
+    if (cellElem.innerHTML == cellString) {
+      cellPos.row = cellElem.dataset.row;
+      cellPos.col = cellElem.dataset.col;
+    }
+    if (cellElem.innerHTML == '') {
+      zeroPos.row = cellElem.dataset.row;
+      zeroPos.col = cellElem.dataset.col;
+    }
+  }
+  if ((zeroPos.row != cellPos.row) && (zeroPos.col != cellPos.col)) return;
+  for (let i = 0; i < slideContainer.children.length; i++) {
+    const cellElem = slideContainer.children[i];
+    if ((cellElem.dataset.row == zeroPos.row) && (cellElem.dataset.row == cellPos.row)) {
+      if ((cellElem.dataset.col < zeroPos.col) && (cellElem.dataset.col >= cellPos.col)) {
+        cellElem.style.transform = `translate(${(Number(cellElem.dataset.col) + 1) * 100}%, ${Number(cellElem.dataset.row) * 100}%)`;
+        cellElem.dataset.col = `${Number(cellElem.dataset.col) + 1}`.toString();
+      }
+      if ((cellElem.dataset.col > zeroPos.col) && (cellElem.dataset.col <= cellPos.col)) {
+        cellElem.style.transform = `translate(${(Number(cellElem.dataset.col) - 1) * 100}%, ${Number(cellElem.dataset.row) * 100}%)`;
+        cellElem.dataset.col = `${Number(cellElem.dataset.col) - 1}`.toString();
+      }
+    }
+    if ((cellElem.dataset.col == zeroPos.col) && (cellElem.dataset.col == cellPos.col)) {
+      if ((cellElem.dataset.row < zeroPos.row) && (cellElem.dataset.row >= cellPos.row)) {
+        cellElem.style.transform = `translate(${Number(cellElem.dataset.col) * 100}%, ${(Number(cellElem.dataset.row) + 1) * 100}%)`;
+        cellElem.dataset.row = `${Number(cellElem.dataset.row) + 1}`.toString();
+      }
+      if ((cellElem.dataset.row > zeroPos.row) && (cellElem.dataset.row <= cellPos.row)) {
+        cellElem.style.transform = `translate(${Number(cellElem.dataset.col) * 100}%, ${(Number(cellElem.dataset.row) - 1) * 100}%)`;
+        cellElem.dataset.row = `${Number(cellElem.dataset.row) - 1}`.toString();
+      }
+    }
+  }
+  let isDone = true;
+  for (let i = 0; i < slideContainer.children.length; i++) {
+    const cellElem = slideContainer.children[i];
+    if (cellElem.innerHTML == '') {
+      cellElem.style.transform = `translate(${Number(cellPos.col) * 100}%, ${Number(cellPos.row) * 100}%)`;
+      cellElem.dataset.row = cellPos.row;
+      cellElem.dataset.col = cellPos.col;
+    }
+    if (((Number(cellElem.dataset.row) * 4) + Number(cellElem.dataset.row) + 1) != Number(cellElem.innerHTML)) {
+      isDone = false;
+    }
+  }
+  if (isDone) {
+    resetBtn.innerHTML = 'Replay';
+  }
 }
 
 function shuffle() {
   for (let i = slideContainer.childNodes.length - 1; i >= 0; i--) {
     slideContainer.childNodes[i].remove();
   }
-  createRandom().forEach((num) => {
+  createRandom().forEach((num, i) => {
     const cell = document.createElement("div");
     if (num == 0) {
-      cell.style.width = '3.5em';
-      cell.style.height = '3.5em';
+      cell.style.width = `${cellSize}em`;
+      cell.style.height = `${cellSize}em`;
     } else {
       cell.innerHTML = (num).toString();
       cell.setAttribute("style", style);
-      cell.onclick = swap();
+      cell.addEventListener('click', () => {
+        slide(cell.innerHTML)
+      });
     }
+    const row = Math.floor(i / cellSize);
+    const col = i % cellSize;
+    cell.style.transform = `translate(${col * 100}%, ${row * 100}%)`;
+    cell.dataset.row = row.toString();
+    cell.dataset.col = col.toString();
     slideContainer.appendChild(cell);
   });
 }
 
 shuffle();
 
-const resetBtn = document.getElementById('reset-button');
+function releaseResetBtn() {
+  resetBtn?.setAttribute('style', releasedcss);
+  if (resetBtn?.innerHTML == 'Replay') {
+    resetBtn.innerHTML = 'Reset';
+  }
+  shuffle();
+}
+
+resetBtn?.setAttribute('style', releasedcss);
 resetBtn?.addEventListener('click', shuffle);
+resetBtn.onmousedown = function() {
+  resetBtn?.setAttribute('style', pressedcss);
+}
+resetBtn.ontouchstart = function() {
+  resetBtn?.setAttribute('style', pressedcss);
+}
+resetBtn.onmouseup = releaseResetBtn;
+resetBtn.ontouchend = releaseResetBtn;
 </script>

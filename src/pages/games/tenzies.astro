@@ -19,7 +19,7 @@ import Footer from '../../components/Footer.astro';
         <hr class="border-top border-zinc-400 my-4"/>
         <div id="tenzies-container" class="grid grid-cols-5 gap-4 p-8 m-auto w-80 text-center rounded-md text-lg font-bold text-zinc-500 bg-stone-200">
         </div>
-        <div class="bg-stone-200 flex justify-center rounded-md w-80 m-auto my-2">
+        <div class="bg-stone-200 flex justify-center rounded-md w-80 m-auto my-2 select-none">
           <div id="roll-button" class="m-2 py-2 px-4 items-center text-zinc-700 rounded-md font-semibold cursor-pointer">
             Roll Again
           </div>
@@ -104,20 +104,8 @@ function randomize(reset: boolean) {
 
 randomize(false);
 
-rollBtn.setAttribute('style', releasedcss);
-rollBtn.onmousedown = function() {
-  rollBtn?.setAttribute('style', pressedcss);
-}
-rollBtn.ontouchstart = function() {
-  rollBtn?.setAttribute('style', pressedcss);
-}
-rollBtn.onmouseup = function() {
+function releaseRollBtn() {
   rollBtn.setAttribute('style', releasedcss);
-}
-rollBtn.ontouchend = function() {
-  rollBtn.setAttribute('style', releasedcss);
-}
-rollBtn.onclick = function() {
   if (rollBtn.innerHTML == "Replay") {
     rollBtn.innerHTML = "Roll Again";
     randomize(true);
@@ -125,4 +113,14 @@ rollBtn.onclick = function() {
     randomize(false);
   }
 }
+
+rollBtn.setAttribute('style', releasedcss);
+rollBtn.onmousedown = function() {
+  rollBtn?.setAttribute('style', pressedcss);
+}
+rollBtn.ontouchstart = function() {
+  rollBtn?.setAttribute('style', pressedcss);
+}
+rollBtn.onmouseup = releaseRollBtn;
+rollBtn.ontouchend = releaseRollBtn;
 </script>
