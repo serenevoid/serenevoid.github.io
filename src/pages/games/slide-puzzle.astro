@@ -1,0 +1,93 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Body from '../../components/Body.astro';
+import Content from '../../components/Content.astro';
+import Footer from '../../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title="Slide Puzzle" description="The famous Number Slide puzzle" />
+  </head>
+  <Body>
+    <Header title="Slide Puzzle" />
+    <main class="mt-4 sm:pt-[64px]">
+      <Content className="px-4">
+        <h2 class="text-3xl font-semibold">Slide Puzzle</h2>
+        <hr class="border-top border-zinc-400 my-4"/>
+        <div id="slide-container" class="grid grid-cols-4 p-8 m-auto w-80 text-center rounded-md text-lg font-bold text-zinc-500 bg-stone-200">
+        </div>
+        <div class="bg-stone-200 flex justify-center rounded-md w-80 m-auto my-2">
+          <div id="reset-button" class="m-2 py-2 px-4 items-center text-zinc-700 rounded-md font-semibold cursor-pointer">
+            Reset
+          </div>
+        </div>
+      </Content>
+    </main>
+    <Footer />
+  </Body>
+</html>
+
+<script>
+const style = `background: linear-gradient(145deg, #f7f5f4, #d0cecd);
+border-radius: 0.4em;
+width: 3.5em;
+height: 3.5em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: transform 0.3s ease;
+cursor: pointer;`;
+const slideContainer = document.getElementById("slide-container");
+
+function createRandom() {
+  let numbers = [];
+  for (let i = 0; i < 15; i++) {
+    numbers.push(i + 1);
+  }
+  numbers.sort(() => Math.random() - 0.5);
+  numbers.push(0);
+  let solvable = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      if (numbers[i] > numbers[j]) {
+        solvable += 1;
+      }
+    }
+  }
+  if (solvable % 2 == 0) {
+    let tmp = numbers[1];
+    numbers[1] = numbers[2];
+    numbers[2] = tmp;
+  }
+  return numbers;
+}
+
+function swap() {
+
+}
+
+function shuffle() {
+  for (let i = slideContainer.childNodes.length - 1; i >= 0; i--) {
+    slideContainer.childNodes[i].remove();
+  }
+  createRandom().forEach((num) => {
+    const cell = document.createElement("div");
+    if (num == 0) {
+      cell.style.width = '3.5em';
+      cell.style.height = '3.5em';
+    } else {
+      cell.innerHTML = (num).toString();
+      cell.setAttribute("style", style);
+      cell.onclick = swap();
+    }
+    slideContainer.appendChild(cell);
+  });
+}
+
+shuffle();
+
+const resetBtn = document.getElementById('reset-button');
+resetBtn?.addEventListener('click', shuffle);
+</script>
