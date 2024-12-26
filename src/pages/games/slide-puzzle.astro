@@ -115,13 +115,13 @@ function slide(cellString: string) {
       cellElem.style.transform = `translate(${Number(cellPos.col) * 100}%, ${Number(cellPos.row) * 100}%)`;
       cellElem.dataset.row = cellPos.row;
       cellElem.dataset.col = cellPos.col;
-    }
-    if (((Number(cellElem.dataset.row) * 4) + Number(cellElem.dataset.row) + 1) != Number(cellElem.innerHTML)) {
+    } else if (((Number(cellElem.dataset.row) * 4) + Number(cellElem.dataset.col) + 1) != Number(cellElem.innerHTML)) {
       isDone = false;
     }
   }
   if (isDone) {
     resetBtn.innerHTML = 'Replay';
+    resetBtn.classList.add("animate-pulse");
   }
 }
 
@@ -156,6 +156,7 @@ function releaseResetBtn() {
   resetBtn?.setAttribute('style', releasedcss);
   if (resetBtn?.innerHTML == 'Replay') {
     resetBtn.innerHTML = 'Reset';
+    resetBtn.classList.remove("animate-pulse");
   }
   shuffle();
 }
