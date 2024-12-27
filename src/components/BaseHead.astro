@@ -46,21 +46,3 @@ const { title, description, image = 'https://u.cubeupload.com/serenevoid/zxMeOC.
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta name="twitter:cta" content=`Read on ${Astro.url}`>
-
-<script is:inline>
-  if (window.location.hostname == "serenevoid.github.io") {
-    const url = "https://script.google.com/macros/s/AKfycbw-LIz_aqIIvDiul-95Tc32Zgm1jAL4IseZ69bEeu0WaLnwF37JWQo2SrhAiKJ78eOr/exec";
-    const path = window.location.pathname.replaceAll("\/", "zzz");
-    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone.replaceAll("\/", "zzz");
-    let rf = document.referrer;
-    if (rf.includes(window.location.hostname)) {
-      rf = "";
-    } else {
-      rf = rf.replaceAll("\/", "zzz");
-    }
-    const hook = url + "?path=" + path + "&tz=" + tz + "&rf=" + rf;
-    const req = new XMLHttpRequest();
-    req.open("GET", hook, true);
-    req.send();
-  }
-</script>
