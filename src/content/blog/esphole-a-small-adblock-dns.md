@@ -1,5 +1,5 @@
 ---
-title: "ESPHole - A network wide adblocker for your home"
+title: "ESPHole - A home network adblocker"
 description: "Building an adblocking DNS server on NodeMCU microcontroller"
 pubDate: 2024-8-30
 tags: ["web"]

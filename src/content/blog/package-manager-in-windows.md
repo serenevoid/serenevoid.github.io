@@ -2,7 +2,7 @@
 title: "Package Managers for Windows"
 description: "A linux inspired way of installing software in Windows machines"
 pubDate: 2024-9-25
-tags: ["windows"]
+tags: ["linux"]
 heroImage: "https://u.cubeupload.com/serenevoid/wwb8OT.jpg"
 ---
 Installing software has always been the same on windows machines from my childhood days.
