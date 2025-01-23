@@ -1,5 +1,5 @@
 ---
-title: "Git Worktrees - An tool for power users"
+title: "Git Worktrees - A tool for power users"
 description: "Multi-tasking Mode of git power users"
 pubDate: 2024-10-22
 tags: ["git"]
