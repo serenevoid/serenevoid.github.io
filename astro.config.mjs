@@ -1,9 +1,13 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from "@tailwindcss/vite";
+
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://serenevoid.github.io/',
-  integrations: [sitemap(), tailwind()]
+  integrations: [sitemap()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

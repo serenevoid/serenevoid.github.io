@@ -41,6 +41,7 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark'
     }
+    document.getElementById('dark-theme-checkbox').checked = false;
     return 'light'
   })()
   const cacheTheme = localStorage.getItem('isDarkMode');
