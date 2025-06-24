@@ -33,11 +33,12 @@ const blogs = (await getCollection('blog')).sort(
             in your journey to become a good developer.
           </p>
         </section>
+        <hr class="border-top border-zinc-400 my-4"/>
         <div class="flex items-center gap-2">
-          <h2 class="text-xl font-semibold">Recent blog posts</h2>
+          <h2 class="text-3xl font-semibold">Recent blog posts</h2>
         </div>
         <hr class="border-top border-zinc-400 my-4"/>
-        <BlogCard blogs={blogs.slice(0, 4)} />
+        <BlogCard blogs={blogs.slice(0, 6)} />
       </Content>
 		</main>
 		<Footer />
