@@ -3,7 +3,6 @@ title: "Rate Limiting an API"
 description: "A small post about how API endpoints are protected against huge traffic."
 pubDate: 2023-03-20
 tags: ["web"]
-heroImage: "https://u.cubeupload.com/serenevoid/yx0inU.jpg"
 ---
 > What is meant by API Rate Limiting? How can we implement this?
 

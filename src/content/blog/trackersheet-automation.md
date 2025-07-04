@@ -3,7 +3,6 @@ title: "Automate tracker sheet using Google Forms"
 description: "Automating filling of logs to google sheets with google forms"
 pubDate: 2023-06-30
 tags: ["web"]
-heroImage: "https://u.cubeupload.com/serenevoid/0qV8FK.jpg"
 ---
 I'm sure almost all of you might have used or is currently using sheets as trackers.
 We use sheets as trackers because its easier for the management to track the work 

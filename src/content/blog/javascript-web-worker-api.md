@@ -3,7 +3,6 @@ title: "Javascript Web Workers API"
 description: "The secret behind smooth UI on almost all frontend frameworks"
 pubDate: 2025-01-25
 tags: ["js"]
-heroImage: "https://u.cubeupload.com/serenevoid/LtFyfK.jpg"
 ---
 ## What is Web Workers API?
 

@@ -3,7 +3,6 @@ title: "Hunting buggy commits with Git Bisect"
 description: "A binary search through the commits to hunt the bug introduction"
 pubDate: 2024-12-29
 tags: ["git"]
-heroImage: "https://u.cubeupload.com/serenevoid/sQ8mGA.jpg"
 ---
 Managing and debugging big projects with contributions from multiple people is hard.
 There might be parts of code that you haven't explored or worked on. But still when

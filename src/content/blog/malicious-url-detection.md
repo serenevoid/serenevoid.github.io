@@ -3,7 +3,6 @@ title: "Malicious URL detection"
 description: "A data science topic which I learned after failing an interview."
 pubDate: 2023-02-24
 tags: ["python"]
-heroImage: "https://u.cubeupload.com/serenevoid/sPES90.jpg"
 ---
 Recently I had an interview in which the task I had to complete was to find a solution to the question below.
 

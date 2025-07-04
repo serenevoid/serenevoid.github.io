@@ -3,7 +3,6 @@ title: "Chording keyboards - A new territory for efficiency"
 description: "Wandering off deeper into the world of keyboards."
 pubDate: 2024-07-24
 tags: ["keyboard"]
-heroImage: "https://u.cubeupload.com/serenevoid/BJRb55.jpg"
 ---
 
 I have been using my [Ferris Sweep](/blog/split-ergo-mechanical-keyboard/) keyboard for over 6 months.

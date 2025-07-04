@@ -3,7 +3,6 @@ title: "Fedora Multimedia Codec is a pain to set up"
 description: "A temporary fix to resolve the multimedia codec issue which is present in fedora"
 pubDate: 2024-05-14
 tags: ["linux"]
-heroImage: "https://u.cubeupload.com/serenevoid/WXBWza.jpg"
 ---
 ## Fedora Linux
 Fedora Linux is a Linux distribution that was originally developed in 2003 by Fedora Project as

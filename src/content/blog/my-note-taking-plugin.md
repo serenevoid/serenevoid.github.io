@@ -3,7 +3,6 @@ title: "kiwi.nvim - A simple markdown note taking plugin"
 description: "If you have been using neovim for taking notes and writing journals"
 pubDate: 2023-08-14
 tags: ["neovim", "lua"]
-heroImage: "https://u.cubeupload.com/serenevoid/a1vmgY.jpg"
 ---
 I have been using VimWiki for a while now. It was perfect for my usecase since 
 it was a minimal plugin with sensible keybinds and defaults that helped me take 

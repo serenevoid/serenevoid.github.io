@@ -3,7 +3,6 @@ title: "Migrating from webpack to esbuild"
 description: "The simplicity and efficiency of esbuild is unparalleled"
 pubDate: 2024-11-22
 tags: ["js"]
-heroImage: "https://u.cubeupload.com/serenevoid/eRqBqf.jpg"
 ---
 ## Pre-Bundlers Era
 In earlier days, when web was simpler and light, javascript was inlined with the

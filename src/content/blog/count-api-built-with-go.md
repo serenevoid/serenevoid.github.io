@@ -3,7 +3,6 @@ title: "Count API built with Go"
 description: "How I replicated an existing API server with Go"
 pubDate: 2023-05-17
 tags: ["go", "web"]
-heroImage: "https://u.cubeupload.com/serenevoid/AXIIDJ.jpg"
 ---
 [Count API](https://countapi.xyz) was an interesting service that I came across 
 when I was starting to develop my own blog site. I wanted to somehow count the 

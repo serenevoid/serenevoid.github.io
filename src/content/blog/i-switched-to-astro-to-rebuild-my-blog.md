@@ -3,7 +3,6 @@ title: "I switched to Astro to rebuild my blog"
 description: "A short post on why Astro caught my eye and convinced me to switch over from Hugo."
 pubDate: 2023-02-09
 tags: ["web"]
-heroImage: "https://u.cubeupload.com/serenevoid/s1db20.jpg"
 ---
 [Hugo](https://gohugo.io/), as mentioned in their website, is a fast and modern 
 static site generator written in Go, and designed to make website creation fun again.

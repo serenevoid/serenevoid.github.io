@@ -3,7 +3,6 @@ title: "Teleporting inside a terminal with fzf"
 description: "Traversing folders with the help of shell scripts and fzf"
 pubDate: 2023-07-31
 tags: ["terminal"]
-heroImage: "https://u.cubeupload.com/serenevoid/evSi5Y.jpg"
 ---
 If you are a person who uses terminal or commandline a lot, you might be knowing 
 how difficult it is to jump between directoies. The default way of moving in and out 

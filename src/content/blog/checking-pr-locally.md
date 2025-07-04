@@ -3,7 +3,6 @@ title: "Handling community contributions in your open source project"
 description: "A guide to work together with the open source community"
 pubDate: 2024-01-31
 tags: ["git"]
-heroImage: "https://u.cubeupload.com/serenevoid/24B7Ft.jpg"
 ---
 Not so long ago, I created a small neovim plugin called [kiwi.nvim](https://www.github.com/serenevoid/kiwi.nvim)
 and after few months, I got my first issue and first pull request.

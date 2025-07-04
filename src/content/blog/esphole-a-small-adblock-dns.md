@@ -3,7 +3,6 @@ title: "ESPHole - A home network adblocker"
 description: "Building an adblocking DNS server on NodeMCU microcontroller"
 pubDate: 2024-8-30
 tags: ["web"]
-heroImage: "https://u.cubeupload.com/serenevoid/HY1Yw1.jpg"
 ---
 ### The problem with modern day internet
 

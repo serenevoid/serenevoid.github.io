@@ -3,7 +3,6 @@ title: "Git Worktrees - A tool for power users"
 description: "Multi-tasking Mode of git power users"
 pubDate: 2024-10-22
 tags: ["git"]
-heroImage: "https://u.cubeupload.com/serenevoid/cMOyJF.jpg"
 ---
 Almost every git users use git by checking out to one branch, editing code,
 committing/stashing the changes and then switching to another branch when required.

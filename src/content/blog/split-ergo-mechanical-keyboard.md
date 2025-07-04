@@ -3,7 +3,6 @@ title: "I fell into the DIY keyboard rabbit hole, and I don't regret it!"
 description: "The story of how I built my first split ergo mechanical keyboard - a Ferris Sweep"
 pubDate: 2024-02-29
 tags: ["keyboard"]
-heroImage: "https://u.cubeupload.com/serenevoid/Ig5P0G.jpg"
 ---
 ## Keyboards
 > Almost everyone uses keyboards in their day to day life. But very few curious minds
