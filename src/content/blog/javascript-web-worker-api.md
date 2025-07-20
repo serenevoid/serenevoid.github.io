@@ -24,7 +24,7 @@ through a worker script.
 
 Main thread and Worker thread communicates through message events.
 - Sending data to one thread is done by `postMessage()`
-- Listening for data data from one thread is done by `onmessage()`
+- Listening for data from one thread is done by `onmessage()`
 
 The data shared to the thread is copied instead of being shared.
 
