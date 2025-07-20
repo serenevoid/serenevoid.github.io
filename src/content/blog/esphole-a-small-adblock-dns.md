@@ -93,7 +93,7 @@ change the storage file type.
 
 I decided to store the data like a linux file structure. All the keys in the json would be directories.
 And at the end of it would be just a file with `.` as it's data.
-```text
+```plaintext
 /
 └── com
     ├── google

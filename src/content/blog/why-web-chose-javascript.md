@@ -16,15 +16,16 @@ skill and experience he quickly whipped up a good scripting language within 10 d
 
 It was originally called **Mocha**, then named to **LiveScript** and finally, it changed to **JavaScript**.
 The name JavaScript was used to ride the hype that Java was getting during the time.
-But saying Java is related to JavaScript is like saying a car is related to a carpet.
+But saying Java is related to JavaScript is like saying Car is related to Carpet.
 
 It was shipped with Netscape 2. Soon in 1997, it became the *ECMA-262* standard.
-Following the standardization of JavaScript, Internet Explorer added its own version of the script and called
+Following the standardization of JavaScript, Internet Explorer added its own version and called
 it **JScript**. Netscape and Internet Explorer, being the two dominant browsers at that time, implemented
-JavaScript, it became a de facto standard. Being shipped with the browser meant that
-JavaScript did not need any extra software or plugins other than the standard browser that
-everyone used. Soon the popularity and ease of use of JavaScript triggered the trend of
-building advanced applications for better user experience.
+JavaScript directly to the browser that lead to it becoming the de facto standard.
+Being shipped with the browser meant that JavaScript did not need any extra software
+or plugins other than the standard browser that everyone used. Soon the popularity
+and ease of use of JavaScript triggered the trend of building advanced applications
+for better user experience.
 
 Still JavaScript was synchronous. There were still places where getting the server response was not as smooth
 as it should have been
@@ -59,16 +60,15 @@ This made the language messy. The bugs or non-intuitive behavior of the language
 some application's logic in some way. So deprecating or modifying parts of the language meant adding a new and better
 way to do things even while having backwards compatibility to support the old way of doing things.
 
-This has made the language so messy. And it is something that could not have been avoided in any way. Lua
-and other scripting languages have improved to this robust state because it had the freedom to introduce and deprecate
-language features in different versions but it was not an option for JavaScript for being adopted by the web
-at such a young age.
+This mess was inevitable. Lua and other scripting languages have improved to this robust
+state because it had the freedom to introduce and deprecate language features in different versions.
+But it was not an option for JavaScript because of being adopted by the web at such a young age.
 
 ## So does that mean we are stuck with JavaScript? Will there be no other alternatives?
 To be honest, yes. JavaScript is engraved into the web world so deep that changing it would mean changing
 the whole internet for something new. Still there are better ways to implement performance critical applications
-now. The introduction of WebAssembly has enabled developers to write complex and CPU intensive login as
-WebAssembly Modules (WASM) that can be called through JavaScript. It can handle the complex logic while using JavaScript
-to access the DOM.
+now. The introduction of WebAssembly has enabled developers to write complex and CPU intensive logic as
+WebAssembly Modules (WASM) that can be called through JavaScript. It can run logics that demand performance
+with a suitable language while using JavaScript to access the DOM.
 
 Web is improving day by day but JavaScript will stay with us for a really long time.
