@@ -2,7 +2,7 @@
 title: "WebRelay: A remote controlled power switch board - Part 1"
 description: "A DIY solution to control the power of devices from anywhere"
 pubDate: 2025-3-06
-tags: ["embedded", "c", "electronics"]
+tags: ["c", "electronics"]
 ---
 Controlling power remotely shouldn’t require expensive smart plugs or overly complex automation systems.
 I wanted something lightweight, reliable, flexible, hackable and completely open—so I built it from scratch.
@@ -37,25 +37,23 @@ if the board was still alive and it was.
 
 #### Arduino Program
 ```c
-const relays[] = [2, 3];
-const count = sizeof(relays) / sizeof(relays[0]);
+const RELAYS[] = [2, 3];
+const COUNT = sizeof(RELAYS) / sizeof(RELAYS[0]);
 bool isActive = false;
 
 void setup() {
     // Set relay pins as OUTPUT pins
-    for (int i = 0; i < count; i++) {
-        pinMode(relays[i]);
-    }
     // Initialize all Relays in OFF state
-    // By default, most relays are ACTIVE LOW
-    for (int i = 0; i < count; i++) {
-        digitalWrite(relays[i], HIGH);
+    // Note: By default, most RELAYS are ACTIVE LOW
+    for (int i = 0; i < COUNT; i++) {
+        pinMode(RELAYS[i]);
+        digitalWrite(RELAYS[i], HIGH);
     }
 }
 
 void loop() {
-    for (int i = 0; i < count; i++) {
-        digitalWrite(relays[i], isActive ? HIGH : LOW);
+    for (int i = 0; i < COUNT; i++) {
+        digitalWrite(RELAYS[i], isActive ? HIGH : LOW);
         delay(1000);
     }
     isActive = !isActive;
@@ -65,7 +63,48 @@ void loop() {
 The above program toggles both relays in a pattern with a delay of 1 second
 for each relay.
 
+The next part was to toggle the relay to some user input. And since I wanted to
+implement a remote controlled switch, I chose serial communication to transfer
+user input to the arduino and the arduino would parse the input to toggle the
+relays accordingly.
+
+```c
+const RELAYS[] = [2, 3];
+const COUNT = sizeof(RELAYS) / sizeof(RELAYS[0]);
+String str = "";
+
+void setup() {
+    // Initialize serial communication
+    Serial.begin(9600);
+    // Set relay pins as OUTPUT pins
+    // Initialize all Relays in OFF state
+    // Note: By default, most RELAYS are ACTIVE LOW
+    for (int i = 0; i < COUNT; i++) {
+        pinMode(RELAYS[i]);
+        digitalWrite(RELAYS[i], HIGH);
+    }
+}
+
+void loop() {
+    if (Serial.available() <= 0) return;
+    str = Serial.readStringUntil('\n');
+    str.trim();
+    int separatorIndex = input.indexOf('_');
+    if (separatorIndex == -1) {
+      return;
+    }
+    int relay = str.substring(0, separatorIndex);
+    if (relay.toInt() > COUNT) return;
+    String stateStr = input.substring(separatorIndex + 1);
+
+    digitalWrite(RELAYS[relay.toInt(), (stateStr == "ON") ? LOW : HIGH);
+}
+```
+
+This made it possible to control the relay switches from the serial monitor
+by sending `0_ON`, `1_ON`, `0_OFF` and `1_OFF`.
+
 ### Outcome
-This was just a test program I wanted to run to get a quick dopamine boost before
-diving into the constraints and challenges of this project. With that accomplished,
-I decided to expand it into a version 0 of the project.
+This was just to get a quick dopamine boost before diving into the constraints
+and challenges of this project. With that accomplished, I decided to expand it
+into a version 0 of the project.
