@@ -89,14 +89,13 @@ void loop() {
     if (Serial.available() <= 0) return;
     str = Serial.readStringUntil('\n');
     str.trim();
-    int separatorIndex = input.indexOf('_');
+    int separatorIndex = str.indexOf('_');
     if (separatorIndex == -1) {
       return;
     }
     int relay = str.substring(0, separatorIndex);
     if (relay.toInt() > COUNT) return;
     String stateStr = input.substring(separatorIndex + 1);
-
     digitalWrite(RELAYS[relay.toInt(), (stateStr == "ON") ? LOW : HIGH);
 }
 ```
@@ -107,4 +106,4 @@ by sending `0_ON`, `1_ON`, `0_OFF` and `1_OFF`.
 ### Outcome
 This was just to get a quick dopamine boost before diving into the constraints
 and challenges of this project. With that accomplished, I decided to expand it
-into a version 0 of the project.
+into version 0 of the project.
