@@ -85,3 +85,9 @@ I expected since it required meddling with the permissions and installing driver
 the CP2102 serial adapter device.
 
 Once the script was up and running as expected, the relay system was ready for use.
+
+## Series
+- [Part 1](/blog/diy-web-relay-switch-part-1)
+- Part 2
+- [Part 3](/blog/diy-web-relay-switch-part-3)
+- [Part 4](/blog/diy-web-relay-switch-part-4)

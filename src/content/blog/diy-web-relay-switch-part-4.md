@@ -129,3 +129,9 @@ These are:
 
 In the end, I built a decent project while also gaining a great and valueable experience
 in the process.
+
+## Series
+- [Part 1](/blog/diy-web-relay-switch-part-1)
+- [Part 2](/blog/diy-web-relay-switch-part-2)
+- [Part 3](/blog/diy-web-relay-switch-part-3)
+- Part 4

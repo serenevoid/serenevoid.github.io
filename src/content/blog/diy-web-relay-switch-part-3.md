@@ -46,3 +46,9 @@ confirms that this is the ESP that we hit.
 After modifying the circuit to include the ESP01 module for WiFi, the final circuit
 board was ready to be deployed. The next big thing was to improve the backend server.
 ![final_pcb](https://u.cubeupload.com/serenevoid/v1sriz.jpg)
+
+## Series
+- [Part 1](/blog/diy-web-relay-switch-part-1)
+- [Part 2](/blog/diy-web-relay-switch-part-2)
+- Part 3
+- [Part 4](/blog/diy-web-relay-switch-part-4)

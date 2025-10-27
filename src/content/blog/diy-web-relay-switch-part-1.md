@@ -107,3 +107,9 @@ by sending `0_ON`, `1_ON`, `0_OFF` and `1_OFF`.
 This was just to get a quick dopamine boost before diving into the constraints
 and challenges of this project. With that accomplished, I decided to expand it
 into version 0 of the project.
+
+## Series
+- Part 1
+- [Part 2](/blog/diy-web-relay-switch-part-2)
+- [Part 3](/blog/diy-web-relay-switch-part-3)
+- [Part 4](/blog/diy-web-relay-switch-part-4)
