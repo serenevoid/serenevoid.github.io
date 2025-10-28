@@ -9,8 +9,8 @@ I wanted something lightweight, reliable, flexible, hackable and completely open
 
 This is the first post in a blog series documenting the process of ideating, designing, and building a
 custom solution to meet the needs of myself and my colleagues. This will be a bit long
-that mentioned the mistakes and upgrades I added to the project during each stages. So feel free
-to skip through portions that you don't require.
+that mentions the mistakes and upgrades I added to the project during each stages. So feel free
+to skip through portions that you feel as less important.
 
 ### The Spark
 This all started at work when my coworker was testing a remote server. She wanted to
@@ -18,13 +18,15 @@ turn off the system for a time period and turn it back on. But since she was wor
 from home, there was no way she could test this without asking for help from others
 who would be available on-site. But what if no one was available when she needed it?
 
-There should be a way to resolve this issue, right? Maybe a remote controlled power
-switch that can be controlled from anywhere?
+There should be a way to resolve this issue, right? Maybe a power switch that can be controlled from anywhere?
+A smart switch with a UI?
 
 This idea reignited my passion for hands-on engineering.
 I went back to my old university projects and write-ups for inspiration. I dug out my trusty Arduino Uno
 from the tinkering kit I hadn’t touched in years. As tradition goes, I flashed the Blink program to test
-if the board was still alive and it was.
+if the board was still alive.
+
+It was time to create a test circuit with a small relay module to see if my plan would work.
 
 ### The Prototype
 #### Components

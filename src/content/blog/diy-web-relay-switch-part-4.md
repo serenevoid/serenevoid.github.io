@@ -12,9 +12,6 @@ the backend server in. My first choice was to use Golang. But I have already cre
 projects in Go. So I went to a higher challenge.
 
 ## A good decision? I am not that sure but I am glad I chose this
-If you thought I chose C/C++ for this, you are wrong. I am not skilled enough
-to build a good backend server in the holy languages yet. So I chose to learn rust.
-
 I was learning rust at the moment using simple projects and the Rust Book. So rust
 was the best choice for me at the time. But little did I know that this would be
 a very steep learning curve and hair pulling experience.
@@ -45,9 +42,9 @@ server, calculate the number to be sent to the board using the client, get the p
 client instance, and send the data in the correct json format. This was a bit difficult since
 changing a shared object in rust is made safer with it's borrowing system.
 
-I had to create a Mutex, lock the shared object inside it everytime the value changed.
-This was tough and took some time for me to understand when to lock and when to release the
-state, so as not to block the server's actions.
+I had to lock the shared object everytime the value changed. This was tough and
+took some time for me to understand when to lock and when to release the
+state, so as to avoid blocking the server's other functionality.
 
 ### Improvements up on the server
 After this was ready, I had two features that I wanted to implement in my web server.
