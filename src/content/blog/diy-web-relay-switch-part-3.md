@@ -18,12 +18,17 @@ of this, the relay system had to be set up close to the desktop system.
 The best solution to this issue was suggested by a senior at work. He suggested
 to move to a NodeMCU to control the relay setup. But this would require a big change
 in the circuit. But because of his suggestion, I found the next best thing. I bought
-an ESP01 and added it as a wifi module to the ATmega chip.
+an ESP01 and added it to the circuit. He suggested to use MQTT to communicate with the web server
+as it is the defacto standard in industrial applications. I considered it for the initial
+development but I felt that for this light weight application, using a simple web
+server with API that allows an external client to send data to the board would be the
+easiest and hackable solution.
 
-The ESP had a tiny web server set up in the wifi network. On receiving json data about
-state of the relays, it parsed the values and passed it to the ATmega chip using
-UART connection. No code change was necessary in the ATmega chip since it received
-data similar to how it worked with the USB Serial converter in the previous implementation.
+So I set up a tiny web server and connected it to the wifi network using the ESP01 module.
+On receiving json data about state of the relays, it parsed the values and passed it
+to the ATmega chip using UART connection. No code change was necessary in the ATmega
+chip since it received data similar to how it worked with the USB Serial converter
+in the previous implementation.
 
 Adding ESP01 to the board needed extra components like two extra resistors to set
 up as voltage divider and a 3.3V regulator chip for powering the ESP module.
