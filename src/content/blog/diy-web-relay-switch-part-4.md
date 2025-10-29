@@ -57,8 +57,7 @@ about the recent changes in the relay system
 #### Finding the IP of the relay
 For the relay board, I implemented an API in the ESP01 module that responded with a custom
 message to make sure it was the relay and not any other device in the network.
-The explanation to why I chose TCP searching instead of UDP broadcast is mentioned in
-the previous blog post.
+The reason I chose TCP searching instead of UDP broadcast is explained in the previous blog post.
 
 So anyway, I set up a blocking process that scanned through all the 254 IPs that can be assigned to
 a device in a local network. And when the server received the desired custom message, it locks on that
